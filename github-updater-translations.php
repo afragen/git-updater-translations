@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       GitHub Updater Translations
+ * Plugin Name:       GitHub Updater Language Pack
  * Plugin URI:        https://github.com/afragen/github-updater-translations
  * Description:       Translation files for the GitHub Updater plugin.
  * Version:           0.1.0

@@ -1,8 +1,6 @@
 # GitHub Updater Language Pack
 * Contributors: [Andy Fragen](https://github.com/afragen) and [contributors](https://github.com/afragen/github-updater/graphs/contributors)
 * Tags: plugin, theme, github-updater, translations
-* Requires PHP: 5.3
-* Tested up to: 4.6
 * Stable tag: master
 * Donate link: http://thefragens.com/github-updater-donate
 * License: GPLv2 or later

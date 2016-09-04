@@ -11,7 +11,7 @@
  * GitHub Plugin URI: https://github.com/afragen/github-updater-translations
  * GitHub Languages:  https://github.com/afragen/github-updater-translations
  * GitHub Branch:     develop
- * Requires WP:       3.8
+ * Requires WP:       4.0
  * Requires PHP:      5.3
  */
 

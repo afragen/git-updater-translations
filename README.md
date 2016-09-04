@@ -13,3 +13,5 @@ In order to have translations available for GitHub Updater, this plugin **must**
 Separating the translation files into a separate language pack plugin enables the language updates to be pushed out independently of the main plugin and should allow for a smoother development process.
 
 This language pack plugin will be updated via GitHub Updater in the usual manner.
+
+PRs to the `develop` branch for translations are appreciated.

@@ -3,12 +3,10 @@
  * Plugin Name:       GitHub Updater Translations
  * Plugin URI:        https://github.com/afragen/github-updater-translations
  * Description:       Translation files for the GitHub Updater plugin.
- * Version:           0.0.1
+ * Version:           0.1.0
  * Author:            Andy Fragen
  * License:           GNU General Public License v2
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       github-updater
- * Domain Path:       /languages
  * Network:           true
  * GitHub Plugin URI: https://github.com/afragen/github-updater-translations
  * GitHub Languages:  https://github.com/afragen/github-updater-translations

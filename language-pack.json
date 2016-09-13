@@ -2,112 +2,112 @@
   "ar": {
     "slug": "github-updater",
     "language": "ar",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-05 21:15:02",
     "package": "\/packages\/github-updater-ar.zip",
     "autoupdate": "1"
   },
   "bg_BG": {
     "slug": "github-updater",
     "language": "bg_BG",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-05 21:14:50",
     "package": "\/packages\/github-updater-bg_BG.zip",
     "autoupdate": "1"
   },
   "de_AT": {
     "slug": "github-updater",
     "language": "de_AT",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-05 21:14:41",
     "package": "\/packages\/github-updater-de_AT.zip",
     "autoupdate": "1"
   },
   "de_CH": {
     "slug": "github-updater",
     "language": "de_CH",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-05 21:14:29",
     "package": "\/packages\/github-updater-de_CH.zip",
     "autoupdate": "1"
   },
   "de_DE": {
     "slug": "github-updater",
     "language": "de_DE",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-05 21:14:07",
     "package": "\/packages\/github-updater-de_DE.zip",
     "autoupdate": "1"
   },
   "en_US": {
     "slug": "github-updater",
     "language": "en_US",
-    "updated": "2016-09-04 18:52:16",
+    "updated": "2016-09-13 05:30:47",
     "package": "\/packages\/github-updater-en_US.zip",
     "autoupdate": "1"
   },
   "es_ES": {
     "slug": "github-updater",
     "language": "es_ES",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-05 21:13:58",
     "package": "\/packages\/github-updater-es_ES.zip",
     "autoupdate": "1"
   },
   "fr_FR": {
     "slug": "github-updater",
     "language": "fr_FR",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-05 21:13:47",
     "package": "\/packages\/github-updater-fr_FR.zip",
     "autoupdate": "1"
   },
   "it": {
     "slug": "github-updater",
     "language": "it",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-05 21:13:38",
     "package": "\/packages\/github-updater-it.zip",
     "autoupdate": "1"
   },
   "ja": {
     "slug": "github-updater",
     "language": "ja",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-05 21:13:29",
     "package": "\/packages\/github-updater-ja.zip",
     "autoupdate": "1"
   },
   "pt_BR": {
     "slug": "github-updater",
     "language": "pt_BR",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-05 21:13:19",
     "package": "\/packages\/github-updater-pt_BR.zip",
     "autoupdate": "1"
   },
   "pt_PT": {
     "slug": "github-updater",
     "language": "pt_PT",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-05 21:13:07",
     "package": "\/packages\/github-updater-pt_PT.zip",
     "autoupdate": "1"
   },
   "ro_RO": {
     "slug": "github-updater",
     "language": "ro_RO",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-07 16:12:14",
     "package": "\/packages\/github-updater-ro_RO.zip",
     "autoupdate": "1"
   },
   "ru_RU": {
     "slug": "github-updater",
     "language": "ru_RU",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-05 21:12:34",
     "package": "\/packages\/github-updater-ru_RU.zip",
     "autoupdate": "1"
   },
   "sv_SE": {
     "slug": "github-updater",
     "language": "sv_SE",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-05 21:12:23",
     "package": "\/packages\/github-updater-sv_SE.zip",
     "autoupdate": "1"
   },
   "uk": {
     "slug": "github-updater",
     "language": "uk",
-    "updated": "2016-09-04 18:46:09",
+    "updated": "2016-09-05 21:12:10",
     "package": "\/packages\/github-updater-uk.zip",
     "autoupdate": "1"
   }

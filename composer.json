@@ -1,0 +1,5 @@
+{
+  "require": {
+    "afragen/github-updater-language-pack-maker": "^1.0"
+  }
+}

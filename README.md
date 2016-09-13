@@ -1,17 +1,46 @@
-# GitHub Updater Language Pack
-* Contributors: [Andy Fragen](https://github.com/afragen) and [contributors](https://github.com/afragen/github-updater/graphs/contributors)
-* Tags: plugin, theme, github-updater, translations
-* Stable tag: master
-* Donate link: http://thefragens.com/github-updater-donate
-* License: GPLv2 or later
-* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+# GitHub Updater Translations
 
-This is a separate plugin containing the translation files for [GitHub Updater](https://github.com/afragen/github-updater).
+Uses `class Fragen\GitHub_Updater\Language_Pack_Maker` installed via composer to create a directory of zip archives of translation .mo/.po files and a `language-pack.json` file containing data to pass to GitHub Updater.
 
-In order to have translations available for GitHub Updater, this plugin **must** be activated.
+The format of the generated JSON file is as follows.
 
-Separating the translation files into a separate language pack plugin enables the language updates to be pushed out independently of the main plugin and should allow for a smoother development process.
+```json
+[
+  {
+    "translations": [
+      {
+        "type": "{plugin|theme} from GitHub Updater",
+        "slug": "{$slug}",
+        "language": "en_US",
+        "version": "from GitHub Updater",
+        "updated": "2016-05-12 18:04:38 of .mo or .po file",
+        "package": "/packages/github-updater-en_US.zip",
+        "autoupdate": "1"
+      }
+    ]
+  }
+]
+```
 
-This language pack plugin will be updated via GitHub Updater in the usual manner.
+The update transient expects the `$transient->translations` in the following format.
 
-PRs to the `develop` branch for translations are appreciated.
+```php
+$transient->translations( array(
+	0 => array(
+		'type'       => 'plugin',
+		'slug'       => 'akismet',
+		'language'   => 'de_CH',
+		'version'    => '3.1.11',
+		'updated'    => '2016-05-12 18:04:38',
+		'package'    => 'https://downloads.wordpress.org/translation/plugin/akismet/3.1.11/de_CH.zip',
+		'autoupdate' => 1,
+
+	),
+) );
+```
+
+GitHub Updater with merge the correlative plugin or theme data with the data retrieved from the `language-pack.json` to add data to the update transient.
+
+To utilize the Language Pack Creator, you will need to open `vendor/afragen/github-updater-language-pack-maker/index.php` in localhost.
+
+Download URI for zipfile inside a GitHub repo is `https://raw.github.com/owner/repo/branch/path_to_zipfile.zip`

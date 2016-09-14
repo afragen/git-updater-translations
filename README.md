@@ -1,6 +1,6 @@
 # GitHub Updater Translations
 
-Uses `class Fragen\GitHub_Updater\Language_Pack_Maker` installed via composer to create a directory of zip archives of translation .mo/.po files and a `language-pack.json` file containing data to pass to GitHub Updater.
+Uses [`Language_Pack_Maker`](https://github.com/afragen/github-updater-language-pack-maker) installed via composer to create a directory of zip archives of translation .mo/.po files and a `language-pack.json` file containing data to pass to GitHub Updater.
 
 The format of the generated JSON file is as follows.
 
@@ -39,8 +39,6 @@ $transient->translations( array(
 ) );
 ```
 
-GitHub Updater with merge the correlative plugin or theme data with the data retrieved from the `language-pack.json` to add data to the update transient.
+GitHub Updater merges the correlative plugin or theme data with the data retrieved from the `language-pack.json` to add data to the update transient.
 
-To utilize the Language Pack Creator, you will need to open `vendor/afragen/github-updater-language-pack-maker/index.php` in localhost.
-
-Download URI for zipfile inside a GitHub repo is `https://raw.github.com/owner/repo/branch/path_to_zipfile.zip`
+To utilize the Language Pack Creator, you will need to open `vendor/afragen/github-updater-language-pack-maker/index.php` in localhost. This will create the necessary zipfiles and `language-pack.json`.

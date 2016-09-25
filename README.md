@@ -13,7 +13,7 @@ The format of the generated JSON file is as follows.
         "slug": "{$slug}",
         "language": "en_US",
         "version": "from GitHub Updater",
-        "updated": "2016-05-12 18:04:38 of .mo or .po file",
+        "updated": "PO-Revision-Date from .po file header",
         "package": "/packages/github-updater-en_US.zip",
         "autoupdate": "1"
       }
@@ -41,4 +41,4 @@ $transient->translations( array(
 
 GitHub Updater merges the correlative plugin or theme data with the data retrieved from the `language-pack.json` to add data to the update transient.
 
-To utilize the Language Pack Creator, you will need to open `vendor/afragen/github-updater-language-pack-maker/index.php` in localhost. This will create the necessary zipfiles and `language-pack.json`.
+To utilize the Language Pack Creator, you will need to open `http://localhost/my-translation-repo/vendor/afragen/github-updater-language-pack-maker/index.php` in localhost. This will create the necessary zipfiles and `language-pack.json`.

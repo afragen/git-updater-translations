@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "afragen/github-updater-language-pack-maker",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/github-updater-language-pack-maker.git",
-                "reference": "2dc2c9e3acce9666cd3da9ce543168bb7e73817c"
+                "reference": "f3a5530bc65810d13a03ddf308c73f4f72396028"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/github-updater-language-pack-maker/zipball/2dc2c9e3acce9666cd3da9ce543168bb7e73817c",
-                "reference": "2dc2c9e3acce9666cd3da9ce543168bb7e73817c",
+                "url": "https://api.github.com/repos/afragen/github-updater-language-pack-maker/zipball/f3a5530bc65810d13a03ddf308c73f4f72396028",
+                "reference": "f3a5530bc65810d13a03ddf308c73f4f72396028",
                 "shasum": ""
             },
             "require": {
@@ -43,7 +43,7 @@
                 }
             ],
             "description": "Library that helps create git sourced WordPress Language Packs",
-            "time": "2016-09-19 19:48:58"
+            "time": "2016-09-25 05:32:17"
         }
     ],
     "packages-dev": [],

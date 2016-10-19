@@ -1,5 +1,9 @@
 # GitHub Updater Translations
 
+**Official Language Pack Repository for GitHub Updater plugin**
+
+Translators, please make PRs here. Thanks.
+
 Uses [`Language_Pack_Maker`](https://github.com/afragen/github-updater-language-pack-maker) installed via composer to create a directory of zip archives of translation .mo/.po files and a `language-pack.json` file containing data to pass to GitHub Updater.
 
 The format of the generated JSON file is as follows.

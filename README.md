@@ -2,7 +2,7 @@
 
 **Official Language Pack Repository for GitHub Updater plugin**
 
-Translators, please make PRs here. Thanks.
+Translators, please make PRs here. You only need to submit PRs for the .po/.mo files. Thanks.
 
 Uses [`Language_Pack_Maker`](https://github.com/afragen/github-updater-language-pack-maker) installed via composer to create a directory of zip archives of translation .mo/.po files and a `language-pack.json` file containing data to pass to GitHub Updater.
 

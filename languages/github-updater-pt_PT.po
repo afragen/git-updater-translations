@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GitHub Updater\n"
 "POT-Creation-Date: 2017-02-17 10:54+0000\n"
-"PO-Revision-Date: 2017-02-17 11:03+0000\n"
+"PO-Revision-Date: 2017-02-17 11:13+0000\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -88,11 +88,11 @@ msgstr "É necessário um URI do repositório."
 
 #: src/GitHub_Updater/Install.php:294 src/GitHub_Updater/Settings.php:83
 msgid "Install Plugin"
-msgstr "Instalar Plugin"
+msgstr "Instalar plugin"
 
 #: src/GitHub_Updater/Install.php:297 src/GitHub_Updater/Settings.php:84
 msgid "Install Theme"
-msgstr "Instalar Tema"
+msgstr "Instalar tema"
 
 #: src/GitHub_Updater/Install.php:315
 msgid "Plugin"

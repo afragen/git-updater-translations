@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GitHub Updater\n"
 "POT-Creation-Date: 2017-04-27 12:20-0700\n"
-"PO-Revision-Date: 2017-04-27 12:25-0700\n"
-"Last-Translator: Andréas Lundgren\n"
+"PO-Revision-Date: 2017-05-09 09:30+0200\n"
+"Last-Translator: Andréas Lundgren <adevade@gmail.com>\n"
 "Language-Team: Andréas Lundgren\n"
 "Language: sv_SE\n"
 "MIME-Version: 1.0\n"
@@ -23,30 +23,30 @@ msgid ""
 "GitHub Updater cannot run on PHP versions older than 5.3.0. Please contact "
 "your hosting provider to update your site."
 msgstr ""
-"GitHub Updater köras inte i PHP-versioner äldre än 5.3.0. Kontakta ditt "
+"GitHub Updater fungerar inte med PHP-versioner äldre än 5.3.0. Kontakta ditt "
 "webbhotell för att uppdatera din webbplats."
 
 #: mu/ghu-loader.php:66
 msgid "Activated as mu-plugin"
-msgstr "Aktiverad som mu-tillägg"
+msgstr "Aktiverat som mu-tillägg"
 
 #: src/GitHub_Updater/Base.php:623
 #, php-format
 msgid "Rename successful using extended name to %1$s"
-msgstr "Byt namn på framgångsrik med utökade namn till %1$s"
+msgstr "Namnbyte till %1$s lyckades med Utökade Namn"
 
 #: src/GitHub_Updater/Base.php:1189 src/GitHub_Updater/Theme.php:550
 #, php-format
 msgid "Current branch is `%1$s`, try %2$sanother version%3$s"
-msgstr "Aktuella grenen är '%1$s', prova %2$sanother version %3$s"
+msgstr "Den aktuella branchen är `%1$s`, testa %2$sen annan version%3$s"
 
 #: src/GitHub_Updater/Base.php:1198
 msgid "Switch to branch "
-msgstr "Växla till gren"
+msgstr "Växla till branch "
 
 #: src/GitHub_Updater/Base.php:1212
 msgid "Switch to release "
-msgstr "Växla till release"
+msgstr "Växla till release "
 
 #: src/GitHub_Updater/Base.php:1219 src/GitHub_Updater/Theme.php:582
 msgid "No previous tags to rollback to."
@@ -54,35 +54,35 @@ msgstr "Inga föregående taggar att gå tillbaka till."
 
 #: src/GitHub_Updater/CLI.php:58
 msgid "GitHub Updater cache has been cleared."
-msgstr "GitHub Updater-cachen har rensats."
+msgstr "Cachen för GitHub Updater har rensats."
 
 #: src/GitHub_Updater/CLI.php:60
 #, php-format
 msgid "Incorrect command syntax, see %s for proper syntax."
-msgstr "Felaktig kommandosyntax, se %s för korrekt syntax."
+msgstr "Felaktigt kommandosyntax, se %s för korrekt syntax."
 
 #: src/GitHub_Updater/CLI.php:82
 msgid "GitHub Updater REST API key has been reset."
-msgstr "GitHub Updater REST API nyckel har återställts."
+msgstr "GitHub Updater REST API key har återställts."
 
 #: src/GitHub_Updater/CLI.php:83
 #, php-format
 msgid "The current RESTful endpoint is `%s`"
-msgstr "Den nuvarande RESTful slutpunkten är '%s'"
+msgstr "Nuvarande RESTful endpoint är `%s`"
 
 #: src/GitHub_Updater/CLI_Integration.php:122
 #, php-format
 msgid "Plugin %s installed."
-msgstr "Plugin %s installerad."
+msgstr "Tillägget %s installerades."
 
 #: src/GitHub_Updater/CLI_Integration.php:179
 #, php-format
 msgid "Theme %s installed."
-msgstr "Tema %s installerad."
+msgstr "Temat %s installerades."
 
 #: src/GitHub_Updater/Install.php:100
 msgid "A repository URI is required."
-msgstr "Det krävs ett repository URI."
+msgstr "Det krävs ett repo-URI."
 
 #: src/GitHub_Updater/Install.php:341 src/GitHub_Updater/Settings.php:105
 msgid "Install Plugin"
@@ -94,16 +94,16 @@ msgstr "Installera tema"
 
 #: src/GitHub_Updater/Install.php:362
 msgid "Plugin"
-msgstr "Tilläggs-"
+msgstr "Tillägg"
 
 #: src/GitHub_Updater/Install.php:365
 msgid "Theme"
-msgstr "Tema-"
+msgstr "Tema"
 
 #: src/GitHub_Updater/Install.php:376
 #, php-format
 msgid "GitHub Updater Install %s"
-msgstr "GitHub Updater Install %s"
+msgstr "GitHub Updater - Installera %s"
 
 #: src/GitHub_Updater/Install.php:383
 #, php-format
@@ -136,7 +136,7 @@ msgstr "Privat Bitbucket repo"
 
 #: src/GitHub_Updater/Install.php:447
 msgid "GitLab Access Token"
-msgstr "GitLab åtkomsttoken"
+msgstr "GitLab Access Token"
 
 #: src/GitHub_Updater/Install.php:463
 msgid "URI is case sensitive."
@@ -144,27 +144,27 @@ msgstr "URI är skiftlägeskänsligt."
 
 #: src/GitHub_Updater/Install.php:477
 msgid "Enter branch name or leave empty for `master`"
-msgstr "Fyll i ett branch-namn eller lämna tomt för <code>master</code>"
+msgstr "Fyll i ett branch-namn eller lämna tomt för att använda `master`"
 
 #: src/GitHub_Updater/Install.php:508
 msgid "Check for private Bitbucket repositories."
-msgstr "Kontrollera om privata Bitbucket lagringsplatser."
+msgstr "Kryss i för privata Bitbucket repos."
 
 #: src/GitHub_Updater/Install.php:522
 msgid "Enter GitHub Access Token for private GitHub repositories."
-msgstr "Fyll i GitHub Access Token för privata GitHub repos."
+msgstr "Ange GitHub Access Token för privata GitHub repos."
 
 #: src/GitHub_Updater/Install.php:536
 msgid "Enter Bitbucket username."
-msgstr "Ange användarnamn på Bitbucket."
+msgstr "Ange användarnamn för Bitbucket."
 
 #: src/GitHub_Updater/Install.php:550
 msgid "Enter Bitbucket password."
-msgstr "Ange lösenordet för Bitbucket."
+msgstr "Ange lösenord för Bitbucket."
 
 #: src/GitHub_Updater/Install.php:564
 msgid "Enter GitLab Access Token for private GitLab repositories."
-msgstr "Ange GitLab åtkomst-Token för privata GitLab lagringsplatser."
+msgstr "Ange GitLab Access Token för privata GitLab repos."
 
 #: src/GitHub_Updater/Install.php:608
 msgid "Activate"
@@ -173,7 +173,7 @@ msgstr "Aktivera"
 #: src/GitHub_Updater/Install.php:617
 msgctxt "This refers to a network activation in a multisite installation"
 msgid "Network Enable"
-msgstr ""
+msgstr "Aktivera på nätverk"
 
 #: src/GitHub_Updater/Messages.php:116 src/GitHub_Updater/Messages.php:154
 #: src/GitHub_Updater/Messages.php:199
@@ -183,7 +183,7 @@ msgstr "GitHub Updater felkod:"
 #: src/GitHub_Updater/Messages.php:121
 #, php-format
 msgid "GitHub API's rate limit will reset in %s minutes."
-msgstr "Gränsen för GitHub Apis återställs i %s minuter."
+msgstr "Gränsen för anslutningar till GitHub API återställs om %s minuter."
 
 #: src/GitHub_Updater/Messages.php:126
 #, php-format
@@ -191,22 +191,23 @@ msgid ""
 "It looks like you are running into GitHub API rate limits. Be sure and "
 "configure a %sPersonal Access Token%s to avoid this issue."
 msgstr ""
-"Det ser ut som du kör in i GitHub API hastighetsbegränsningar. Se till och "
-"konfigurera en %sPersonal åtkomsttoken %s för att undvika problemet."
+"Det verkar som att du upplever API-begränsningar från GitHub. Ange ett "
+"%sPersonal Access Token%s för att undvika detta."
 
 #: src/GitHub_Updater/Messages.php:158
 msgid ""
 "There is probably an access token or password error on the GitHub Updater "
 "Settings page."
 msgstr ""
-"Det finns förmodligen ett åtkomst-token eller lösenord fel på GitHub Updater "
-"Webbplatsinställningar."
+"Det verkar vara fel på ett Access Token eller ett lösenord på "
+"inställningssidan för GitHub Updater."
 
 #: src/GitHub_Updater/Messages.php:181
 msgid ""
 "You must set a GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
 msgstr ""
-"Du måste ange en GitLab.com, GitLab CE eller GitLab Enterprise åtkomst-Token."
+"Du måste ange ett Access Token för GitLab.com, GitLab CE eller GitLab "
+"Enterprise."
 
 #: src/GitHub_Updater/Plugin.php:322
 msgid "View details"
@@ -218,7 +219,7 @@ msgstr "Inställningar"
 
 #: src/GitHub_Updater/Settings.php:107 src/GitHub_Updater/Settings.php:709
 msgid "Remote Management"
-msgstr "Remote Management"
+msgstr "Fjärrhantering"
 
 #. Plugin Name of the plugin/theme
 #: src/GitHub_Updater/Settings.php:118 src/GitHub_Updater/Settings.php:177
@@ -232,11 +233,11 @@ msgstr "GitHub"
 
 #: src/GitHub_Updater/Settings.php:123
 msgid "Bitbucket"
-msgstr "BitBucket"
+msgstr "Bitbucket"
 
 #: src/GitHub_Updater/Settings.php:124
 msgid "Bitbucket Server"
-msgstr "BitBucket Server"
+msgstr "Bitbucket Server"
 
 #: src/GitHub_Updater/Settings.php:125
 msgid "GitLab"
@@ -252,11 +253,11 @@ msgstr "Inställningar sparade."
 
 #: src/GitHub_Updater/Settings.php:240
 msgid "RESTful key reset."
-msgstr "Vilsam nyckel Återställ."
+msgstr "RESTful key återställd."
 
 #: src/GitHub_Updater/Settings.php:244
 msgid "Cache refreshed."
-msgstr "Cachen uppdateras."
+msgstr "Cachen uppdaterad."
 
 #: src/GitHub_Updater/Settings.php:272
 msgid "Refresh Cache"
@@ -264,23 +265,23 @@ msgstr "Uppdatera cache"
 
 #: src/GitHub_Updater/Settings.php:297
 msgid "Reset RESTful key"
-msgstr "Återställ vilsam nyckel"
+msgstr "Återställ RESTful key"
 
 #: src/GitHub_Updater/Settings.php:338
 msgid "Enable Branch Switching"
-msgstr "Aktivera gren växling"
+msgstr "Aktivera branch-växling"
 
 #: src/GitHub_Updater/Settings.php:346
 msgid "GitHub Personal Access Token"
-msgstr "GitHub personlig åtkomst-Token"
+msgstr "GitHub Personal Access Token"
 
 #: src/GitHub_Updater/Settings.php:353
 msgid "GitHub.com Access Token"
-msgstr "GitHub.com åtkomsttoken"
+msgstr "GitHub.com Access Token"
 
 #: src/GitHub_Updater/Settings.php:363
 msgid "GitHub Enterprise Access Token"
-msgstr "GitHub Enterprise åtkomst-Token"
+msgstr "GitHub Enterprise Access Token"
 
 #: src/GitHub_Updater/Settings.php:377
 msgid "GitHub Private Settings"
@@ -288,53 +289,53 @@ msgstr "Privata inställningar för GitHub"
 
 #: src/GitHub_Updater/Settings.php:390
 msgid "GitLab Personal Access Token"
-msgstr "GitLab personlig åtkomst-Token"
+msgstr "GitLab Personal Access Token"
 
 #: src/GitHub_Updater/Settings.php:399
 msgid "GitLab Private Settings"
-msgstr "GitLab privata inställningar"
+msgstr "Privata inställningar för GitLab"
 
 #: src/GitHub_Updater/Settings.php:408
 msgid "GitLab.com Access Token"
-msgstr "GitLab.com åtkomst-Token"
+msgstr "GitLab.com Access Token"
 
 #: src/GitHub_Updater/Settings.php:419
 msgid "GitLab CE or GitLab Enterprise Personal Access Token"
-msgstr "GitLab CE eller GitLab Enterprise personlig åtkomst-Token"
+msgstr "GitLab CE eller GitLab Enterprise Personal Access Token"
 
 #: src/GitHub_Updater/Settings.php:432
 msgid "Bitbucket Private Settings"
-msgstr "Inställningar för Bitbucket"
+msgstr "Privata inställningar för Bitbucket"
 
 #: src/GitHub_Updater/Settings.php:461
 msgid "Bitbucket Private Repositories"
-msgstr "Privata inställningar för Bitbucket"
+msgstr "Privata Bitbucket-repos"
 
 #: src/GitHub_Updater/Settings.php:473
 msgid "Bitbucket Server Private Settings"
-msgstr "BitBucket Server privata inställningar"
+msgstr "Privata inställningar för Bitbucket Server"
 
 #: src/GitHub_Updater/Settings.php:480
 msgid "Bitbucket Server Username"
-msgstr "BitBucket Server användarnamn"
+msgstr "Användarnamn för Bitbucket Server"
 
 #: src/GitHub_Updater/Settings.php:489
 msgid "Bitbucket Server Password"
-msgstr "BitBucket serverlösenord"
+msgstr "Lösenord för Bitbucket Server"
 
 #: src/GitHub_Updater/Settings.php:502
 msgid "Bitbucket Server Private Repositories"
-msgstr "BitBucket Server privat förråd"
+msgstr "Privata repos för Bitbucket Server"
 
 #: src/GitHub_Updater/Settings.php:749
 #, php-format
 msgid "Extended Naming is %sactive%s."
-msgstr "Utökade namngivning är %sactive %s."
+msgstr "Utökade Namn är %saktivt%s."
 
 #: src/GitHub_Updater/Settings.php:754
 #, php-format
 msgid "Extended Naming is %snot active%s."
-msgstr "Utökade namngivning är %snor aktiva %s."
+msgstr "Utökade Namn är %sinte aktivt%s."
 
 #: src/GitHub_Updater/Settings.php:756
 #, php-format
@@ -342,17 +343,17 @@ msgid ""
 "Extended Naming renames plugin directories %s to prevent possible conflicts "
 "with WP.org plugins."
 msgstr ""
-"Utökad namngivning döper plugin kataloger %s att förhindra eventuella "
-"konflikter med WP.org plugins."
+"Utökade Namn döper om tilläggs-kataloger %s för att förhindra eventuella "
+"konflikter med tillägg från WP.org."
 
 #: src/GitHub_Updater/Settings.php:757
 #, php-format
 msgid "Activate Extended Naming by setting %s"
-msgstr "Aktivera utökad namngivning av inställningen %s"
+msgstr "Aktivera Utökade Namn genom att definiera %s"
 
 #: src/GitHub_Updater/Settings.php:758
 msgid "Check to enable branch switching from the Plugins or Themes page."
-msgstr "Kontrollera att aktivera gren byter från sidan Plugins eller teman."
+msgstr "Kryssa i för att aktivera branch-byte från tilläggs- och temasidan."
 
 #: src/GitHub_Updater/Settings.php:765
 msgid "Enter your GitHub Access Token. Leave empty for public repositories."
@@ -363,8 +364,8 @@ msgid ""
 "Enter your personal GitHub.com or GitHub Enterprise Access Token to avoid "
 "API access limits."
 msgstr ""
-"Ange ditt personliga GitHub.com eller GitHub Enterprise åtkomst-Token för "
-"att undvika API åtkomst gränser."
+"Ange ditt personliga GitHub.com eller GitHub Enterprise Access Token för att "
+"undvika API-begränsningar."
 
 #: src/GitHub_Updater/Settings.php:779
 msgid ""
@@ -373,58 +374,59 @@ msgstr "Kryssa i boxen för privata repos. Lämna okryssad för publika repos."
 
 #: src/GitHub_Updater/Settings.php:786
 msgid "Enter your personal Bitbucket username and password."
-msgstr "Fyll i inloggningsinformation för din Bitbucketanvändare."
+msgstr "Fyll i inloggningsinformation för ditt Bitbucket-konto."
 
 #: src/GitHub_Updater/Settings.php:793
 msgid "Enter your GitLab Access Token."
-msgstr "Ange din GitLab åtkomst-Token."
+msgstr "Ange ditt GitLab Access Token."
 
 #: src/GitHub_Updater/Settings.php:800
 msgid "Enter your GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
-msgstr "Ange din GitLab.com, GitLab CE eller GitLab Enterprise åtkomst-Token."
+msgstr "Ange ditt GitLab.com, GitLab CE eller GitLab Enterprise Access Token."
 
 #: src/GitHub_Updater/Settings.php:815
 msgid ""
 "Please refer to README for complete list of attributes. RESTful endpoints "
 "begin at:"
 msgstr ""
-"Se README för fullständig lista över attribut. Vilsam slutpunkter börjar på:"
+"Vänligen läs README för en komplett lista över attribut. RESTful endpoints "
+"börjar på:"
 
 #: src/GitHub_Updater/Settings.php:819
 msgid ""
 "Use of Remote Management services may result increase some page load speeds "
 "only for `admin` level users in the dashboard."
 msgstr ""
-"Användning av Remote Management tjänster kan leda öka några sida Last "
-"hastigheter endast för 'admin' nivå användare i instrumentpanelen."
+"Användning av fjärrhantering kan öka laddningstiderna i adminpanelen för "
+"`administratörer`."
 
 #: src/GitHub_Updater/Settings.php:1074
 msgid "Installed Plugins and Themes"
-msgstr "Installerade insticksmoduler och teman"
+msgstr "Installerade tillägg och teman"
 
 #: src/GitHub_Updater/Theme.php:316 src/GitHub_Updater/Theme.php:506
 #, php-format
 msgid "There is a new version of %s available."
-msgstr "Det finns en ny version av temat %s tillgängligt."
+msgstr "En ny version av %s finns tillgänglig."
 
 #: src/GitHub_Updater/Theme.php:324
 #, php-format
 msgid "View version %s details."
-msgstr "Visa detaljer om version %s"
+msgstr "Visa detaljer för version %s."
 
 #: src/GitHub_Updater/Theme.php:328
 msgid "Automatic update is unavailable for this theme."
-msgstr "Automatiska uppdateringar är inte tillgängligt för detta temat."
+msgstr "Automatiska uppdateringar är inte tillgängliga för detta temat."
 
 #: src/GitHub_Updater/Theme.php:331 src/GitHub_Updater/Theme.php:513
 #, php-format
 msgid "View version %1$s details%2$s or %3$supdate now%4$s."
-msgstr "Visa version %1$s Detaljer %2$s eller %3$supdate nu %4$s."
+msgstr "Visa %1$sdetaljer för version%2$s eller %3$suppdatera nu%4$s."
 
 #: src/GitHub_Updater/Theme.php:334 src/GitHub_Updater/Theme.php:516
 #, php-format
 msgid "Update %s now"
-msgstr "Uppdatera %s"
+msgstr "Uppdatera %s nu"
 
 #: src/GitHub_Updater/Theme.php:564
 msgid "Choose a Version"
@@ -444,9 +446,9 @@ msgid ""
 "plugins, themes, and language packs. It also allows for remote installation "
 "of plugins or themes into WordPress."
 msgstr ""
-"En plugin för att automatiskt uppdatera GitHub och Bitbucket GitLab värd "
-"plugins, teman och språkpaket. Det möjliggör också för fjärrinstallation av "
-"plugins eller teman i WordPress."
+"Ett tillägg för att automatiskt uppdatera tillägg, teman och översättningar "
+"lagrade hos GitHub, Bitbucket eller GitLab. Det går även att fjärrinstallera "
+"tillägg och teman direkt i WordPress."
 
 #. Author of the plugin/theme
 msgid "Andy Fragen"

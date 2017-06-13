@@ -3,7 +3,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Project-Id-Version: GitHub Updater\n"
 "POT-Creation-Date: 2017-06-12 18:18+0800\n"
-"PO-Revision-Date: 2017-06-12 21:25+0800\n"
+"PO-Revision-Date: 2017-06-13 16:57+0800\n"
 "Language-Team: Alex Lion <learnwithalex@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -143,7 +143,7 @@ msgstr "GitLab 存取權杖"
 
 #: src/GitHub_Updater/Install.php:463
 msgid "URI is case sensitive."
-msgstr "URI 必須區分大小寫。"
+msgstr "URI 為區分大小寫。"
 
 #: src/GitHub_Updater/Install.php:477
 msgid "Enter branch name or leave empty for `master`"
@@ -328,12 +328,12 @@ msgstr "Bitbucket Server 私有版本庫"
 #: src/GitHub_Updater/Settings.php:753
 #, php-format
 msgid "Extended Naming is %sactive%s."
-msgstr "延伸命名%s已啟用%s。"
+msgstr "[延伸命名] %s已啟用%s。"
 
 #: src/GitHub_Updater/Settings.php:758
 #, php-format
 msgid "Extended Naming is %snot active%s."
-msgstr "延伸命名%s尚未啟用%s。"
+msgstr "[延伸命名] %s尚未啟用%s。"
 
 #: src/GitHub_Updater/Settings.php:760
 #, php-format
@@ -341,12 +341,15 @@ msgid ""
 "Extended Naming renames plugin directories %s to prevent possible conflicts "
 "with WP.org plugins."
 msgstr ""
-"延伸命名重新命名外掛目錄 %s，以防止與 WordPress.org 上的外掛發生衝突。"
+"[延伸命名] 會將外掛目錄重新命名為 %s，以防止與 WordPress.org 上的外掛發生衝"
+"突。"
 
 #: src/GitHub_Updater/Settings.php:761
 #, php-format
 msgid "Activate Extended Naming by setting %s"
-msgstr "在程式碼內加入 %s 以啟用延伸命名。"
+msgstr ""
+"在 wp-config.php 或你使用的佈景主題的 functions.php 內加入 %s 以啟用 [延伸命"
+"名]。"
 
 #: src/GitHub_Updater/Settings.php:762
 msgid "Check to enable branch switching from the Plugins or Themes page."

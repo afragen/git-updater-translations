@@ -1,22 +1,20 @@
 <?php
 
 /**
- * GitHub Updater Language Pack Maker
+ * Language Pack Maker
  *
- * @package   Language_Pack_Maker
  * @author    Andy Fragen
  * @license   MIT
  * @link      https://github.com/afragen/github-updater-language-pack-maker
- * @version   1.3.0
+ * @version   1.4.0
  */
 
-namespace Fragen\GitHub_Updater;
+namespace Fragen\Language_Pack_Maker;
 
 
 /**
  * Class Language_Pack_Maker
  *
- * @package Fragen\GitHub_Updater
  */
 class Language_Pack_Maker {
 
@@ -95,8 +93,8 @@ class Language_Pack_Maker {
 		$dir_list = array();
 
 		// Only add .mo/.po/.zip files
-		foreach ( glob( $dir . "/*.{mo,po,zip}", GLOB_BRACE ) as $file ) {
-			array_push( $dir_list, basename( $file ) );
+		foreach ( glob( $dir . '/*.{mo,po,zip}', GLOB_BRACE ) as $file ) {
+			$dir_list[] = basename( $file );
 		}
 
 		return $dir_list;
@@ -128,7 +126,7 @@ class Language_Pack_Maker {
 		foreach ( $this->translations as $translation ) {
 			$package = array();
 			foreach ( $this->directory_list as $file ) {
-				if ( false !== stristr( $file, $translation ) ) {
+				if ( false !== stripos( $file, $translation ) ) {
 					$package[] = $this->language_files_dir . '/' . $file;
 				}
 			}
@@ -194,7 +192,7 @@ class Language_Pack_Maker {
 
 		foreach ( $packages as $package ) {
 			foreach ( $this->translations as $translation ) {
-				if ( false !== stristr( $package, $translation ) ) {
+				if ( false !== stripos( $package, $translation ) ) {
 					$locale = ltrim( strrchr( $translation, '-' ), '-' );
 					$arr[ $locale ]['slug']       = stristr( $translation, strrchr( $translation, '-' ), true );
 					$arr[ $locale ]['language']   = $locale;

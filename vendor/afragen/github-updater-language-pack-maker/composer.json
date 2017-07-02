@@ -6,19 +6,15 @@
     {
       "name": "Andy Fragen",
       "email": "andy@thefragens.com",
-      "homepage": "http://thefragens.com",
+      "homepage": "https://thefragens.com",
       "role": "Developer"
     }
   ],
+  "prefer-stable": true,
   "require": {
     "php": ">=5.3"
   },
   "support": {
     "issues": "https://github.com/afragen/github-updater-language-pack-maker/issues"
-  },
-  "autoload": {
-    "psr-4": {
-      "Fragen\\GitHub_Updater\\": "/"
-    }
   }
 }

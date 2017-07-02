@@ -1,3 +1,7 @@
+## 1.4.0 / 2017-07-02
+* changed namespace to `Fragen\Language_Pack_Maker`
+* minor linting improvements
+
 ## 1.3.0 / 2016-09-24
 * get updated date from .po file header
 

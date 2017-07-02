@@ -1,6 +1,6 @@
-# GitHub Updater Language Pack Maker
+# Language Pack Maker
 
-Uses `class Fragen\GitHub_Updater\Language_Pack_Maker` installed via composer into your translation repository to create a directory of zip archives of translation .mo/.po files and a `language-pack.json` file containing data to pass to GitHub Updater.
+Uses `class Fragen\Language_Pack_Maker\Language_Pack_Maker` installed via composer into your translation repository to create a directory of zip archives of translation .mo/.po files and a `language-pack.json` file containing data to pass to GitHub Updater.
 
 Install the package via composer.
 

@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "728fbd2153cb6ea7902f6dc1621e5c92",
+    "content-hash": "b3304d9b3e384595dc8c892b21556d92",
     "packages": [
         {
-            "name": "afragen/github-updater-language-pack-maker",
-            "version": "1.4.0",
+            "name": "afragen/language-pack-maker",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/afragen/github-updater-language-pack-maker.git",
-                "reference": "5b36045223be7371f12576d7485f3a05ff0be504"
+                "url": "https://github.com/afragen/language-pack-maker.git",
+                "reference": "15d18461786688b875977183b0c1995413dace7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/github-updater-language-pack-maker/zipball/5b36045223be7371f12576d7485f3a05ff0be504",
-                "reference": "5b36045223be7371f12576d7485f3a05ff0be504",
+                "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/15d18461786688b875977183b0c1995413dace7e",
+                "reference": "15d18461786688b875977183b0c1995413dace7e",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +37,7 @@
                 }
             ],
             "description": "Library that helps create git sourced WordPress Language Packs",
-            "time": "2017-07-02T19:39:23+00:00"
+            "time": "2017-12-09T05:33:42+00:00"
         }
     ],
     "packages-dev": [],

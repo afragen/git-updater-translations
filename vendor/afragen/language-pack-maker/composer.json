@@ -1,5 +1,5 @@
 {
-  "name": "afragen/github-updater-language-pack-maker",
+  "name": "afragen/language-pack-maker",
   "description": "Library that helps create git sourced WordPress Language Packs",
   "license": "MIT",
   "authors": [
@@ -15,6 +15,6 @@
     "php": ">=5.3"
   },
   "support": {
-    "issues": "https://github.com/afragen/github-updater-language-pack-maker/issues"
+    "issues": "https://github.com/afragen/language-pack-maker/issues"
   }
 }

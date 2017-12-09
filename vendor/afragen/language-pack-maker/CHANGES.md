@@ -1,3 +1,6 @@
+## 1.5.0 / 2017-12-09
+* renamed on GitHub
+
 ## 1.4.0 / 2017-07-02
 * changed namespace to `Fragen\Language_Pack_Maker`
 * minor linting improvements

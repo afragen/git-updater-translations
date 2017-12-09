@@ -5,8 +5,8 @@
  *
  * @author    Andy Fragen
  * @license   MIT
- * @link      https://github.com/afragen/github-updater-language-pack-maker
- * @version   1.4.0
+ * @link      https://github.com/afragen/language-pack-maker
+ * @version   1.5.0
  */
 
 namespace Fragen\Language_Pack_Maker;

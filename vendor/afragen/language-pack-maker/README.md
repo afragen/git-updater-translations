@@ -4,7 +4,7 @@ Uses `class Fragen\Language_Pack_Maker\Language_Pack_Maker` installed via compos
 
 Install the package via composer.
 
-Run the composer command: ```composer require afragen/github-updater-language-pack-maker```
+Run the composer command: ```composer require afragen/language-pack-maker```
 
 
 This library requires all .mo/.po files to be in a `/languages` directory located in the repository root. It will create zipfiles in a `/packages` directory in the repository root. It will create a `language-pack.json` file in the repository root.
@@ -48,4 +48,4 @@ $transient->translations( array(
 
 GitHub Updater will merge the correlative plugin or theme data with the data retrieved from the `language-pack.json` to add data to the update transient.
 
-To utilize the Language Pack Creator, you will need to open `http://localhost/my-translation-repo/vendor/afragen/github-updater-language-pack-maker/index.php` in localhost in your browser.
+To utilize the Language Pack Creator, you will need to open `http://localhost/my-translation-repo/vendor/afragen/language-pack-maker/index.php` in localhost in your browser.

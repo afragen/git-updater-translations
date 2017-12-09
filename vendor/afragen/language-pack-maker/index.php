@@ -6,8 +6,8 @@
  * @package   Language_Pack_Maker
  * @author    Andy Fragen
  * @license   MIT
- * @link      https://github.com/afragen/github-updater-language-pack-maker
- * @version   1.1.0
+ * @link      https://github.com/afragen/language-pack-maker
+ * @version   1.2.0
  */
 
 require_once __DIR__ . '/Language_Pack_Maker.php';

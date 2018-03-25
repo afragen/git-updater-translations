@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GitHub Updater\n"
 "POT-Creation-Date: 2018-03-24 10:13-0700\n"
-"PO-Revision-Date: 2018-03-25 20:10+0100\n"
+"PO-Revision-Date: 2018-03-25 20:16+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -268,7 +268,7 @@ msgstr "O URI é sensível a maiúsculas e minúsculas."
 
 #: src/GitHub_Updater/Install.php:347
 msgid "Enter branch name or leave empty for `master`"
-msgstr "Insira o nome do ramo ou deixe vazio para `master`"
+msgstr "Insira o nome do ramo ou deixe em branco para `master`"
 
 #: src/GitHub_Updater/Install.php:409
 msgid "Activate"

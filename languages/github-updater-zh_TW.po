@@ -1,57 +1,216 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=1; plural=0;\n"
 "Project-Id-Version: GitHub Updater\n"
-"POT-Creation-Date: 2017-06-12 18:18+0800\n"
-"PO-Revision-Date: 2017-06-14 07:27-0700\n"
+"POT-Creation-Date: 2018-05-16 17:02+0800\n"
+"PO-Revision-Date: 2018-05-16 18:16+0800\n"
+"Last-Translator: Alex Lion <learnwithalex@gmail.com>\n"
 "Language-Team: Alex Lion <learnwithalex@gmail.com>\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.7\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: github-updater.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Last-Translator: Alex Lion <learnwithalex@gmail.com>\n"
-"Language: zh_TW\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: github-updater.php:41
+#: github-updater.php:40
+#, php-format
 msgid ""
-"GitHub Updater cannot run on PHP versions older than 5.3.0. Please contact "
-"your hosting provider to update your site."
+"GitHub Updater cannot run on PHP versions older than %s. Please contact your "
+"hosting provider to update your site."
 msgstr ""
-"GitHub Updater 無法執行於比 PHP 5.3.0 版更舊的環境。請聯絡主機提供商以進行更"
-"新。"
+"GitHub Updater 無法執行於比 PHP %s 版更舊的環境。請聯絡主機提供商以進行更新。"
 
 #: mu/ghu-loader.php:66
 msgid "Activated as mu-plugin"
 msgstr "啟用為 WPMU 外掛"
 
-#: src/GitHub_Updater/Base.php:632
-#, php-format
-msgid "Rename successful using extended name to %1$s"
-msgstr "成功使用延伸名稱重新命名為 %1$s"
+#: src/GitHub_Updater/API/Bitbucket_API.php:506
+msgid "Bitbucket Private Settings"
+msgstr "Bitbucket 私有設定"
 
-#: src/GitHub_Updater/Base.php:1198 src/GitHub_Updater/Theme.php:551
+#: src/GitHub_Updater/API/Bitbucket_API.php:513
+#: src/GitHub_Updater/API/Bitbucket_API.php:587
+msgid "Bitbucket Username"
+msgstr "Bitbucket 使用者名稱"
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:522
+#: src/GitHub_Updater/API/Bitbucket_API.php:595
+msgid "Bitbucket Password"
+msgstr "Bitbucket 密碼"
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:535
+msgid "Bitbucket Private Repositories"
+msgstr "Bitbucket 私有版本庫"
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:563
+msgid ""
+"Check box if private repository. Leave unchecked for public repositories."
+msgstr ""
+"如果存取的是私有版本庫，請啟用這項設定。未啟用這項設定則代表要存取的是公開版"
+"本庫。"
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:570
+msgid "Enter your personal Bitbucket username and password."
+msgstr "輸入個人的 Bitbucket 使用者名稱和密碼。"
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:604
+msgid "Private Bitbucket Repository"
+msgstr "Bitbucket 私有版本庫"
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:620
+msgid "Check for private Bitbucket repositories."
+msgstr "檢查 Bitbucket 私有版本庫。"
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:635
+msgid "Enter Bitbucket username."
+msgstr "輸入 Bitbucket 使用者名稱。"
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:650
+msgid "Enter Bitbucket password."
+msgstr "輸入 Bitbucket 密碼。"
+
+#: src/GitHub_Updater/API/Bitbucket_Server_API.php:487
+msgid "Bitbucket Server Private Settings"
+msgstr "Bitbucket Server 私有設定"
+
+#: src/GitHub_Updater/API/Bitbucket_Server_API.php:494
+msgid "Bitbucket Server Username"
+msgstr "Bitbucket Server 使用者名稱"
+
+#: src/GitHub_Updater/API/Bitbucket_Server_API.php:503
+msgid "Bitbucket Server Password"
+msgstr "Bitbucket Server 密碼"
+
+#: src/GitHub_Updater/API/Bitbucket_Server_API.php:516
+msgid "Bitbucket Server Private Repositories"
+msgstr "Bitbucket Server 私有版本庫"
+
+#: src/GitHub_Updater/API/GitHub_API.php:582
+msgid "GitHub Personal Access Token"
+msgstr "GitHub Personal 存取權杖"
+
+#: src/GitHub_Updater/API/GitHub_API.php:589
+msgid "GitHub.com Access Token"
+msgstr "GitHub.com 存取權杖"
+
+#: src/GitHub_Updater/API/GitHub_API.php:599
+msgid "GitHub Enterprise Access Token"
+msgstr "GitHub Enterprise 存取權杖"
+
+#: src/GitHub_Updater/API/GitHub_API.php:613
+msgid "GitHub Private Settings"
+msgstr "GitHub Private 設定"
+
+#: src/GitHub_Updater/API/GitHub_API.php:640
+msgid "Enter your GitHub Access Token. Leave empty for public repositories."
+msgstr "輸入 GitHub 存取權杖。留空僅能存取公開版本庫。"
+
+#: src/GitHub_Updater/API/GitHub_API.php:647
+msgid ""
+"Enter your personal GitHub.com or GitHub Enterprise Access Token to avoid "
+"API access limits."
+msgstr "輸入個人 GitHub.com 或 GitHub Enterprise 存取權杖以避免 API 存取限制。"
+
+#: src/GitHub_Updater/API/GitHub_API.php:658
+msgid "GitHub Access Token"
+msgstr "GitHub 存取權杖"
+
+#: src/GitHub_Updater/API/GitHub_API.php:674
+msgid "Enter GitHub Access Token for private GitHub repositories."
+msgstr "為 GitHub 私有版本庫輸入 GitHub 存取權杖。"
+
+#: src/GitHub_Updater/API/GitLab_API.php:588
+msgid "GitLab Personal Access Token"
+msgstr "GitLab Personal 存取權杖"
+
+#: src/GitHub_Updater/API/GitLab_API.php:597
+msgid "GitLab Private Settings"
+msgstr "GitLab 私有設定"
+
+#: src/GitHub_Updater/API/GitLab_API.php:606
+msgid "GitLab.com Access Token"
+msgstr "GitLab.com 存取權杖"
+
+#: src/GitHub_Updater/API/GitLab_API.php:617
+msgid "GitLab CE or GitLab Enterprise Personal Access Token"
+msgstr "GitLab CE 或 GitLab Enterprise 個人存取權杖"
+
+#: src/GitHub_Updater/API/GitLab_API.php:646
+msgid "Enter your repository specific GitLab Access Token."
+msgstr "為版本庫輸入指定的 GitLab 存取權杖。"
+
+#: src/GitHub_Updater/API/GitLab_API.php:653
+msgid "Enter your GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
+msgstr "輸入 GitLab.com、GitLab CE 或 GitLab Enterprise 存取權杖。"
+
+#: src/GitHub_Updater/API/GitLab_API.php:664
+msgid "GitLab Access Token"
+msgstr "GitLab 存取權杖"
+
+#: src/GitHub_Updater/API/GitLab_API.php:680
+msgid "Enter GitLab Access Token for private GitLab repositories."
+msgstr "為 GitLab 私有版本庫輸入 GitLab 存取權杖。"
+
+#: src/GitHub_Updater/API/GitLab_API.php:715
+msgid ""
+"You must set a GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
+msgstr "你必須設定 GitLab.com、GitLab CE 或 GitLab Enterprise 的存取權杖。"
+
+#: src/GitHub_Updater/API/Gitea_API.php:484
+#: src/GitHub_Updater/API/Gitea_API.php:502
+#: src/GitHub_Updater/API/Gitea_API.php:550
+msgid "Gitea Access Token"
+msgstr "Gitea 存取權杖"
+
+#: src/GitHub_Updater/API/Gitea_API.php:493
+msgid "Gitea Private Settings"
+msgstr "Gitea 私有設定"
+
+#: src/GitHub_Updater/API/Gitea_API.php:532
+msgid "Enter your repository specific Gitea Access Token."
+msgstr "為版本庫輸入指定的 Gitea 存取權杖。"
+
+#: src/GitHub_Updater/API/Gitea_API.php:539
+msgid "Enter your Gitea Access Token."
+msgstr "輸入 Gitea 存取權杖。"
+
+#: src/GitHub_Updater/API/Gitea_API.php:566
+msgid "Enter Gitea Access Token for private Gitea repositories."
+msgstr "為 Gitea 私有版本庫輸入 Gitea 存取權杖。"
+
+#: src/GitHub_Updater/API/Gitea_API.php:598
+msgid "You must set a Gitea Access Token."
+msgstr "你必須設定 Gitea 存取權杖。"
+
+#: src/GitHub_Updater/Base.php:430
+msgid ""
+"There may be a problem with WP-Cron. A GitHub Updater WP-Cron event is "
+"overdue."
+msgstr "WP-Cron 執行時發生問題。GitHub Updater 的 WP-Cron 事件已逾期。"
+
+#: src/GitHub_Updater/Base.php:965 src/GitHub_Updater/Theme.php:559
 #, php-format
 msgid "Current branch is `%1$s`, try %2$sanother version%3$s"
 msgstr "目前分支版本為 %1$s，試試%2$s其他版本%3$s"
 
-#: src/GitHub_Updater/Base.php:1207
+#: src/GitHub_Updater/Base.php:975
 msgid "Switch to branch "
 msgstr "切換至分支版本 "
 
-#: src/GitHub_Updater/Base.php:1221
+#: src/GitHub_Updater/Base.php:990
 msgid "Switch to release "
 msgstr "切換至正式版本 "
 
-#: src/GitHub_Updater/Base.php:1228 src/GitHub_Updater/Theme.php:583
+#: src/GitHub_Updater/Base.php:998 src/GitHub_Updater/Theme.php:591
 msgid "No previous tags to rollback to."
 msgstr "沒有前版標籤可供復原。"
 
@@ -83,112 +242,72 @@ msgstr "%s 外掛已安裝。"
 msgid "Theme %s installed."
 msgstr "佈景主題 %s 已安裝。"
 
-#: src/GitHub_Updater/Install.php:100
+#: src/GitHub_Updater/Install.php:105
 msgid "A repository URI is required."
 msgstr "版本庫 URI 為必要資料。"
 
-#: src/GitHub_Updater/Install.php:341 src/GitHub_Updater/Settings.php:104
+#: src/GitHub_Updater/Install.php:242 src/GitHub_Updater/Settings.php:118
 msgid "Install Plugin"
 msgstr "安裝外掛"
 
-#: src/GitHub_Updater/Install.php:344 src/GitHub_Updater/Settings.php:105
+#: src/GitHub_Updater/Install.php:245 src/GitHub_Updater/Settings.php:119
 msgid "Install Theme"
 msgstr "安裝佈景主題"
 
-#: src/GitHub_Updater/Install.php:362
+#: src/GitHub_Updater/Install.php:262
 msgid "Plugin"
 msgstr "外掛"
 
-#: src/GitHub_Updater/Install.php:365
+#: src/GitHub_Updater/Install.php:265
 msgid "Theme"
 msgstr "佈景主題"
 
-#: src/GitHub_Updater/Install.php:376
+#: src/GitHub_Updater/Install.php:276
 #, php-format
 msgid "GitHub Updater Install %s"
 msgstr "透過 GitHub Updater 安裝%s"
 
-#: src/GitHub_Updater/Install.php:383
+#: src/GitHub_Updater/Install.php:283
 #, php-format
 msgid "%s URI"
 msgstr "%s URI"
 
-#: src/GitHub_Updater/Install.php:391
+#: src/GitHub_Updater/Install.php:291
 msgid "Repository Branch"
 msgstr "版本庫分支"
 
-#: src/GitHub_Updater/Install.php:399
+#: src/GitHub_Updater/Install.php:299
 msgid "Remote Repository Host"
 msgstr "遠端版本庫主機"
 
-#: src/GitHub_Updater/Install.php:407
-msgid "GitHub Access Token"
-msgstr "GitHub 存取權杖"
-
-#: src/GitHub_Updater/Install.php:422 src/GitHub_Updater/Settings.php:438
-msgid "Bitbucket Username"
-msgstr "Bitbucket 使用者名稱"
-
-#: src/GitHub_Updater/Install.php:430 src/GitHub_Updater/Settings.php:447
-msgid "Bitbucket Password"
-msgstr "Bitbucket 密碼"
-
-#: src/GitHub_Updater/Install.php:439
-msgid "Private Bitbucket Repository"
-msgstr "Bitbucket 私有版本庫"
-
-#: src/GitHub_Updater/Install.php:447
-msgid "GitLab Access Token"
-msgstr "GitLab 存取權杖"
-
-#: src/GitHub_Updater/Install.php:463
+#: src/GitHub_Updater/Install.php:329
 msgid "URI is case sensitive."
 msgstr "URI 為區分大小寫。"
 
-#: src/GitHub_Updater/Install.php:477
+#: src/GitHub_Updater/Install.php:344
 msgid "Enter branch name or leave empty for `master`"
 msgstr "輸入分支版本名稱，留空則代表 master 版本。"
 
-#: src/GitHub_Updater/Install.php:508
-msgid "Check for private Bitbucket repositories."
-msgstr "檢查 Bitbucket 私有版本庫。"
-
-#: src/GitHub_Updater/Install.php:522
-msgid "Enter GitHub Access Token for private GitHub repositories."
-msgstr "為 GitHub 私有版本庫輸入 GitHub 存取權杖。"
-
-#: src/GitHub_Updater/Install.php:536
-msgid "Enter Bitbucket username."
-msgstr "輸入 Bitbucket 使用者名稱。"
-
-#: src/GitHub_Updater/Install.php:550
-msgid "Enter Bitbucket password."
-msgstr "輸入 Bitbucket 密碼。"
-
-#: src/GitHub_Updater/Install.php:564
-msgid "Enter GitLab Access Token for private GitLab repositories."
-msgstr "為 GitLab 私有版本庫輸入 GitLab 存取權杖。"
-
-#: src/GitHub_Updater/Install.php:608
+#: src/GitHub_Updater/Install.php:406
 msgid "Activate"
 msgstr "啟用"
 
-#: src/GitHub_Updater/Install.php:617
+#: src/GitHub_Updater/Install.php:415
 msgctxt "This refers to a network activation in a multisite installation"
 msgid "Network Enable"
 msgstr "網路啟用"
 
-#: src/GitHub_Updater/Messages.php:116 src/GitHub_Updater/Messages.php:154
-#: src/GitHub_Updater/Messages.php:199
+#: src/GitHub_Updater/Messages.php:95 src/GitHub_Updater/Messages.php:134
+#: src/GitHub_Updater/Messages.php:157
 msgid "GitHub Updater Error Code:"
 msgstr "GitHub Updater 錯誤代碼:"
 
-#: src/GitHub_Updater/Messages.php:121
+#: src/GitHub_Updater/Messages.php:100
 #, php-format
 msgid "GitHub API's rate limit will reset in %s minutes."
 msgstr "GitHub API 的使用量限制將在 %s 分鐘後重設。"
 
-#: src/GitHub_Updater/Messages.php:126
+#: src/GitHub_Updater/Messages.php:105
 #, php-format
 msgid ""
 "It looks like you are running into GitHub API rate limits. Be sure and "
@@ -196,242 +315,170 @@ msgid ""
 msgstr ""
 "你的 GitHub 使用量限制接近上限。請設定%s個人存取權杖%s以避免發生這個狀況。"
 
-#: src/GitHub_Updater/Messages.php:158
+#: src/GitHub_Updater/Messages.php:138
 msgid ""
 "There is probably an access token or password error on the GitHub Updater "
 "Settings page."
 msgstr "在 GitHub Updater 設定頁面中，發生存取權杖或密碼設定錯誤。"
 
-#: src/GitHub_Updater/Messages.php:181
-msgid ""
-"You must set a GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
-msgstr "你必須設定 GitLab.com、GitLab CE 或 GitLab Enterprise 的存取權杖。"
-
-#: src/GitHub_Updater/Plugin.php:323
+#: src/GitHub_Updater/Plugin.php:334
 msgid "View details"
 msgstr "檢視資訊"
 
-#: src/GitHub_Updater/Settings.php:103 src/GitHub_Updater/Settings.php:1022
+#: src/GitHub_Updater/Settings.php:117 src/GitHub_Updater/Settings.php:810
 msgid "Settings"
 msgstr "設定"
 
-#: src/GitHub_Updater/Settings.php:106 src/GitHub_Updater/Settings.php:713
+#: src/GitHub_Updater/Settings.php:120 src/GitHub_Updater/Settings.php:554
 msgid "Remote Management"
 msgstr "遠端管理"
 
 #. Plugin Name of the plugin/theme
-#: src/GitHub_Updater/Settings.php:117 src/GitHub_Updater/Settings.php:176
-#: src/GitHub_Updater/Settings.php:229
+#: src/GitHub_Updater/Settings.php:131 src/GitHub_Updater/Settings.php:172
+#: src/GitHub_Updater/Settings.php:225
 msgid "GitHub Updater"
 msgstr "GitHub Updater"
 
-#: src/GitHub_Updater/Settings.php:121
+#: src/GitHub_Updater/Settings.php:137
 msgid "GitHub"
 msgstr "GitHub"
 
-#: src/GitHub_Updater/Settings.php:122
+#: src/GitHub_Updater/Settings.php:140
 msgid "Bitbucket"
 msgstr "Bitbucket"
 
-#: src/GitHub_Updater/Settings.php:123
+#: src/GitHub_Updater/Settings.php:143
 msgid "Bitbucket Server"
 msgstr "Bitbucket Server"
 
-#: src/GitHub_Updater/Settings.php:124
+#: src/GitHub_Updater/Settings.php:146
 msgid "GitLab"
 msgstr "GitLab"
 
-#: src/GitHub_Updater/Settings.php:175 src/GitHub_Updater/Settings.php:326
+#: src/GitHub_Updater/Settings.php:149
+msgid "Gitea"
+msgstr "Gitea"
+
+#: src/GitHub_Updater/Settings.php:171 src/GitHub_Updater/Settings.php:323
 msgid "GitHub Updater Settings"
 msgstr "GitHub Updater 設定"
 
-#: src/GitHub_Updater/Settings.php:235
+#: src/GitHub_Updater/Settings.php:231
 msgid "Settings saved."
 msgstr "設定已儲存。"
 
-#: src/GitHub_Updater/Settings.php:239
+#: src/GitHub_Updater/Settings.php:235
 msgid "RESTful key reset."
 msgstr "RESTful 金鑰已重設。"
 
-#: src/GitHub_Updater/Settings.php:243
+#: src/GitHub_Updater/Settings.php:239
 msgid "Cache refreshed."
 msgstr "快取已重新載入。"
 
-#: src/GitHub_Updater/Settings.php:271
+#: src/GitHub_Updater/Settings.php:268
 msgid "Refresh Cache"
 msgstr "重新載入快取"
 
-#: src/GitHub_Updater/Settings.php:296
+#: src/GitHub_Updater/Settings.php:293
 msgid "Reset RESTful key"
 msgstr "重設 RESTful 金鑰"
 
-#: src/GitHub_Updater/Settings.php:337
+#: src/GitHub_Updater/Settings.php:334
 msgid "Enable Branch Switching"
 msgstr "啟用分支版本切換"
 
-#: src/GitHub_Updater/Settings.php:345
-msgid "GitHub Personal Access Token"
-msgstr "GitHub Personal 存取權杖"
-
-#: src/GitHub_Updater/Settings.php:352
-msgid "GitHub.com Access Token"
-msgstr "GitHub.com 存取權杖"
-
-#: src/GitHub_Updater/Settings.php:362
-msgid "GitHub Enterprise Access Token"
-msgstr "GitHub Enterprise 存取權杖"
-
-#: src/GitHub_Updater/Settings.php:376
-msgid "GitHub Private Settings"
-msgstr "GitHub Private 設定"
-
-#: src/GitHub_Updater/Settings.php:389
-msgid "GitLab Personal Access Token"
-msgstr "GitLab Personal 存取權杖"
-
-#: src/GitHub_Updater/Settings.php:398
-msgid "GitLab Private Settings"
-msgstr "GitLab 私有設定"
-
-#: src/GitHub_Updater/Settings.php:407
-msgid "GitLab.com Access Token"
-msgstr "GitLab.com 存取權杖"
-
-#: src/GitHub_Updater/Settings.php:418
-msgid "GitLab CE or GitLab Enterprise Personal Access Token"
-msgstr "GitLab CE 或 GitLab Enterprise 個人存取權杖"
-
-#: src/GitHub_Updater/Settings.php:431
-msgid "Bitbucket Private Settings"
-msgstr "Bitbucket 私有設定"
-
-#: src/GitHub_Updater/Settings.php:460
-msgid "Bitbucket Private Repositories"
-msgstr "Bitbucket 私有版本庫"
-
-#: src/GitHub_Updater/Settings.php:472
-msgid "Bitbucket Server Private Settings"
-msgstr "Bitbucket Server 私有設定"
-
-#: src/GitHub_Updater/Settings.php:479
-msgid "Bitbucket Server Username"
-msgstr "Bitbucket Server 使用者名稱"
-
-#: src/GitHub_Updater/Settings.php:488
-msgid "Bitbucket Server Password"
-msgstr "Bitbucket Server 密碼"
-
-#: src/GitHub_Updater/Settings.php:501
-msgid "Bitbucket Server Private Repositories"
-msgstr "Bitbucket Server 私有版本庫"
-
-#: src/GitHub_Updater/Settings.php:753
+#: src/GitHub_Updater/Settings.php:594
 #, php-format
-msgid "Extended Naming is %sactive%s."
-msgstr "[延伸命名] %s已啟用%s。"
+msgid "Override Dot Org is %sactive%s."
+msgstr "[覆寫 WordPress.org 設定] %s已啟用%s。"
 
-#: src/GitHub_Updater/Settings.php:758
+#: src/GitHub_Updater/Settings.php:596
 #, php-format
-msgid "Extended Naming is %snot active%s."
-msgstr "[延伸命名] %s尚未啟用%s。"
+msgid "Override Dot Org is %snot active%s."
+msgstr "[覆寫 WordPress.org 設定] %s尚未啟用%s。"
 
-#: src/GitHub_Updater/Settings.php:760
-#, php-format
+#: src/GitHub_Updater/Settings.php:598
 msgid ""
-"Extended Naming renames plugin directories %s to prevent possible conflicts "
-"with WP.org plugins."
+"Override Dot Org will skip any updates from wordpress.org for plugins with "
+"identical slugs."
 msgstr ""
-"[延伸命名] 會將外掛目錄重新命名為 %s，以防止與 WordPress.org 上的外掛發生衝"
-"突。"
+"[覆寫 WordPress.org 設定] 會略過來自 WordPress.org 且外掛代稱完全相同的更新。"
 
-#: src/GitHub_Updater/Settings.php:761
+#: src/GitHub_Updater/Settings.php:599
 #, php-format
-msgid "Activate Extended Naming by setting %s"
-msgstr "在程式碼內加入 %s 以啟用延伸命名。"
+msgid "Activate Override Dot Org by setting %s"
+msgstr "在 wp-config.php 內加入 %s 以啟用 [覆寫 WordPress.org 設定]。"
 
-#: src/GitHub_Updater/Settings.php:762
+#: src/GitHub_Updater/Settings.php:601
 msgid "Check to enable branch switching from the Plugins or Themes page."
-msgstr "核取這個選項，便可從外掛或佈景主題頁面中啟用分支版本切換。"
+msgstr "啟用這項設定後，便可在外掛或佈景主題頁面中啟用分支版本切換。"
 
-#: src/GitHub_Updater/Settings.php:769
-msgid "Enter your GitHub Access Token. Leave empty for public repositories."
-msgstr "輸入 GitHub 存取權杖。留空僅能存取公開版本庫。"
-
-#: src/GitHub_Updater/Settings.php:776
-msgid ""
-"Enter your personal GitHub.com or GitHub Enterprise Access Token to avoid "
-"API access limits."
-msgstr ""
-"輸入個人 GitHub.com 或 GitHub Enterprise 存取權杖以避免 API 存取限制。"
-
-#: src/GitHub_Updater/Settings.php:783
-msgid ""
-"Check box if private repository. Leave unchecked for public repositories."
-msgstr ""
-"如果是私有版本庫，請核取這個選項。未核取這個選項則代表這是公開版本庫。"
-
-#: src/GitHub_Updater/Settings.php:790
-msgid "Enter your personal Bitbucket username and password."
-msgstr "輸入個人的 Bitbucket 使用者名稱和密碼。"
-
-#: src/GitHub_Updater/Settings.php:797
-msgid "Enter your GitLab Access Token."
-msgstr "輸入 GitLab 存取權杖。"
-
-#: src/GitHub_Updater/Settings.php:804
-msgid "Enter your GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
-msgstr "輸入 GitLab.com、GitLab CE 或 GitLab Enterprise 存取權杖。"
-
-#: src/GitHub_Updater/Settings.php:819
+#: src/GitHub_Updater/Settings.php:615
 msgid ""
 "Please refer to README for complete list of attributes. RESTful endpoints "
 "begin at:"
 msgstr "請參閱 README 檔案以取得完整的屬性清單。RESTful 端點起始位置如下:"
 
-#: src/GitHub_Updater/Settings.php:823
+#: src/GitHub_Updater/Settings.php:619
 msgid ""
 "Use of Remote Management services may result increase some page load speeds "
 "only for `admin` level users in the dashboard."
 msgstr ""
 "使用遠端管理服務，會增加 [管理者] 角色使用者在 [控制台] 中的頁面載入時間。"
 
-#: src/GitHub_Updater/Settings.php:1080
+#: src/GitHub_Updater/Settings.php:844
+msgid "This is a private repository."
+msgstr "這是私有版本庫。"
+
+#: src/GitHub_Updater/Settings.php:845
+msgid "This repository has not connected to the API or was unable to connect."
+msgstr "這個版本庫無法連線至 API 或無法進行連線。"
+
+#: src/GitHub_Updater/Settings.php:846
+msgid "This repository is hosted on WordPress.org."
+msgstr "這個版本庫託管於 WordPress.org。"
+
+#: src/GitHub_Updater/Settings.php:847
+msgid "Waiting for WP-Cron to finish."
+msgstr "等待 WP-Cron 完成工作。"
+
+#: src/GitHub_Updater/Settings.php:878
 msgid "Installed Plugins and Themes"
 msgstr "已安裝外掛和佈景主題"
 
-#: src/GitHub_Updater/Theme.php:317 src/GitHub_Updater/Theme.php:507
+#: src/GitHub_Updater/Theme.php:332 src/GitHub_Updater/Theme.php:517
 #, php-format
 msgid "There is a new version of %s available."
 msgstr "%s 有新版本可供下載安裝。"
 
-#: src/GitHub_Updater/Theme.php:325
+#: src/GitHub_Updater/Theme.php:340
 #, php-format
 msgid "View version %s details."
 msgstr "檢視 %s 版的詳細資訊。"
 
-#: src/GitHub_Updater/Theme.php:329
+#: src/GitHub_Updater/Theme.php:344
 msgid "Automatic update is unavailable for this theme."
 msgstr "這個佈景主題無法使用自動更新。"
 
-#: src/GitHub_Updater/Theme.php:332 src/GitHub_Updater/Theme.php:514
+#: src/GitHub_Updater/Theme.php:347 src/GitHub_Updater/Theme.php:524
 #, php-format
 msgid "View version %1$s details%2$s or %3$supdate now%4$s."
 msgstr "檢視該版本%1$s詳細資訊%2$s或%3$s立即更新%4$s。"
 
-#: src/GitHub_Updater/Theme.php:335 src/GitHub_Updater/Theme.php:517
+#: src/GitHub_Updater/Theme.php:350 src/GitHub_Updater/Theme.php:527
 #, php-format
 msgid "Update %s now"
 msgstr "立即更新 %s"
 
-#: src/GitHub_Updater/Theme.php:565
+#: src/GitHub_Updater/Theme.php:573
 msgid "Choose a Version"
 msgstr "選擇版本"
 
-#: src/GitHub_Updater/Theme.php:589
+#: src/GitHub_Updater/Theme.php:595
 msgid "Install"
 msgstr "安裝"
 
-#: vendor/class-parser.php:354
+#: vendor/class-parser.php:365
 msgid "Installation Instructions"
 msgstr "安裝指南"
 
@@ -441,16 +488,26 @@ msgstr "https://github.com/afragen/github-updater"
 
 #. Description of the plugin/theme
 msgid ""
-"A plugin to automatically update GitHub, Bitbucket, or GitLab hosted "
+"A plugin to automatically update GitHub, Bitbucket, GitLab, or Gitea hosted "
 "plugins, themes, and language packs. It also allows for remote installation "
 "of plugins or themes into WordPress."
 msgstr ""
-"一個能為託管於 GitHub、Bitbucket 或 GitLab 的外掛、佈景主題和語系檔進行自動"
-"更新的外掛。它還能將外掛或佈景主題遠端安裝至 WordPress 網站中。繁體中文本地"
-"化由「<a href=\"https://www.alexclassroom.com/\" target=\"_blank\">阿力獅的"
-"教室</a>」站長<a href=\"https://www.facebook.com/captain.alexlion\" target="
-"\"_blank\">阿力獅</a>提供。"
+"GitHub Updater 能為託管於 GitHub、Bitbucket、GitLab 或 Gitea 的外掛、佈景主題"
+"和語系檔進行自動更新的外掛，還能將外掛或佈景主題遠端安裝至 WordPress 網站中。"
+"繁體中文本地化由《<a href=\"https://www.alexclassroom.com/\" target=\"_blank"
+"\">阿力獅的教室</a>》站長<a href=\"https://www.facebook.com/captain.alexlion"
+"\" target=\"_blank\">阿力獅</a>提供。"
 
 #. Author of the plugin/theme
 msgid "Andy Fragen"
 msgstr "Andy Fragen"
+
+#~ msgid "Rename successful using extended name to %1$s"
+#~ msgstr "成功使用延伸名稱重新命名為 %1$s"
+
+#~ msgid ""
+#~ "Extended Naming renames plugin directories %s to prevent possible "
+#~ "conflicts with WP.org plugins."
+#~ msgstr ""
+#~ "[延伸命名] 會將外掛目錄重新命名為 %s，以防止與 WordPress.org 上的外掛發生"
+#~ "衝突。"

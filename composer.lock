@@ -4,32 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3802f9653194e869d1bc7b8f098ab104",
-    "content-hash": "728fbd2153cb6ea7902f6dc1621e5c92",
+    "content-hash": "b3304d9b3e384595dc8c892b21556d92",
     "packages": [
         {
-            "name": "afragen/github-updater-language-pack-maker",
-            "version": "1.3.0",
+            "name": "afragen/language-pack-maker",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/afragen/github-updater-language-pack-maker.git",
-                "reference": "f3a5530bc65810d13a03ddf308c73f4f72396028"
+                "url": "https://github.com/afragen/language-pack-maker.git",
+                "reference": "15d18461786688b875977183b0c1995413dace7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/github-updater-language-pack-maker/zipball/f3a5530bc65810d13a03ddf308c73f4f72396028",
-                "reference": "f3a5530bc65810d13a03ddf308c73f4f72396028",
+                "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/15d18461786688b875977183b0c1995413dace7e",
+                "reference": "15d18461786688b875977183b0c1995413dace7e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3"
             },
             "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Fragen\\GitHub_Updater\\": "/"
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -38,12 +32,12 @@
                 {
                     "name": "Andy Fragen",
                     "email": "andy@thefragens.com",
-                    "homepage": "http://thefragens.com",
+                    "homepage": "https://thefragens.com",
                     "role": "Developer"
                 }
             ],
             "description": "Library that helps create git sourced WordPress Language Packs",
-            "time": "2016-09-25 05:32:17"
+            "time": "2017-12-09T05:33:42+00:00"
         }
     ],
     "packages-dev": [],

@@ -1,0 +1,20 @@
+{
+  "name": "afragen/language-pack-maker",
+  "description": "Library that helps create git sourced WordPress Language Packs",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andy Fragen",
+      "email": "andy@thefragens.com",
+      "homepage": "https://thefragens.com",
+      "role": "Developer"
+    }
+  ],
+  "prefer-stable": true,
+  "require": {
+    "php": ">=5.3"
+  },
+  "support": {
+    "issues": "https://github.com/afragen/language-pack-maker/issues"
+  }
+}

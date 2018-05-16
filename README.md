@@ -4,7 +4,7 @@
 
 Translators, please make PRs here. You only need to submit PRs for the .po/.mo files. Thanks.
 
-Uses [`Language_Pack_Maker`](https://github.com/afragen/github-updater-language-pack-maker) installed via composer to create a directory of zip archives of translation .mo/.po files and a `language-pack.json` file containing data to pass to GitHub Updater.
+Uses [`Language_Pack_Maker`](https://github.com/afragen/language-pack-maker) installed via composer to create a directory of zip archives of translation .mo/.po files and a `language-pack.json` file containing data to pass to GitHub Updater.
 
 The format of the generated JSON file is as follows.
 
@@ -45,4 +45,4 @@ $transient->translations( array(
 
 GitHub Updater merges the correlative plugin or theme data with the data retrieved from the `language-pack.json` to add data to the update transient.
 
-To utilize the Language Pack Creator, you will need to open `http://localhost/my-translation-repo/vendor/afragen/github-updater-language-pack-maker/index.php` in localhost. This will create the necessary zipfiles and `language-pack.json`.
+To utilize the Language Pack Creator, you will need to open `http://localhost/my-translation-repo/vendor/afragen/language-pack-maker/index.php` in localhost. This will create the necessary zipfiles and `language-pack.json`.

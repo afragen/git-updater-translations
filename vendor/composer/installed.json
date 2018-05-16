@@ -1,0 +1,37 @@
+[
+    {
+        "name": "afragen/language-pack-maker",
+        "version": "1.5.0",
+        "version_normalized": "1.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/afragen/language-pack-maker.git",
+            "reference": "15d18461786688b875977183b0c1995413dace7e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/15d18461786688b875977183b0c1995413dace7e",
+            "reference": "15d18461786688b875977183b0c1995413dace7e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "time": "2017-12-09T05:33:42+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andy Fragen",
+                "email": "andy@thefragens.com",
+                "homepage": "https://thefragens.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Library that helps create git sourced WordPress Language Packs"
+    }
+]

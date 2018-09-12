@@ -1,29 +1,34 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3304d9b3e384595dc8c892b21556d92",
+    "content-hash": "acd326f2bf92f604028acb6b63a30635",
     "packages": [
         {
             "name": "afragen/language-pack-maker",
-            "version": "1.5.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/language-pack-maker.git",
-                "reference": "15d18461786688b875977183b0c1995413dace7e"
+                "reference": "ad4ad32740d222f43f3c7312f1b4b96d9a214624"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/15d18461786688b875977183b0c1995413dace7e",
-                "reference": "15d18461786688b875977183b0c1995413dace7e",
+                "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/ad4ad32740d222f43f3c7312f1b4b96d9a214624",
+                "reference": "ad4ad32740d222f43f3c7312f1b4b96d9a214624",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3"
+                "php": ">=5.4"
             },
             "type": "library",
+            "autoload": {
+                "files": [
+                    "index.php"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -36,14 +41,21 @@
                     "role": "Developer"
                 }
             ],
-            "description": "Library that helps create git sourced WordPress Language Packs",
-            "time": "2017-12-09T05:33:42+00:00"
+            "description": "Library that helps create git sourced WordPress Language Packs from mo/po files.",
+            "keywords": [
+                "language packs",
+                "translations",
+                "wordpress"
+            ],
+            "time": "2018-09-12T01:42:27+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "afragen/language-pack-maker": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

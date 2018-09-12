@@ -13,7 +13,7 @@ The format of the generated JSON file is as follows.
   {
     "translations": [
       {
-        "type": "{plugin|theme} from GitHub Updater",
+        "type": "(plugin|theme) from GitHub Updater",
         "slug": "{$slug}",
         "language": "en_US",
         "version": "from GitHub Updater",

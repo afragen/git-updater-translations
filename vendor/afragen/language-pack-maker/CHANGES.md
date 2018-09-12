@@ -1,3 +1,8 @@
+## 1.6.0 / 2018-09-11
+* moved action from constructor
+* update README
+* update composer.json
+
 ## 1.5.0 / 2017-12-09
 * renamed on GitHub
 

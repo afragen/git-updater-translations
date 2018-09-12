@@ -1,25 +1,30 @@
 [
     {
         "name": "afragen/language-pack-maker",
-        "version": "1.5.0",
-        "version_normalized": "1.5.0.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/afragen/language-pack-maker.git",
-            "reference": "15d18461786688b875977183b0c1995413dace7e"
+            "reference": "ad4ad32740d222f43f3c7312f1b4b96d9a214624"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/15d18461786688b875977183b0c1995413dace7e",
-            "reference": "15d18461786688b875977183b0c1995413dace7e",
+            "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/ad4ad32740d222f43f3c7312f1b4b96d9a214624",
+            "reference": "ad4ad32740d222f43f3c7312f1b4b96d9a214624",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3"
+            "php": ">=5.4"
         },
-        "time": "2017-12-09T05:33:42+00:00",
+        "time": "2018-09-12T01:42:27+00:00",
         "type": "library",
-        "installation-source": "dist",
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "index.php"
+            ]
+        },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
@@ -32,6 +37,11 @@
                 "role": "Developer"
             }
         ],
-        "description": "Library that helps create git sourced WordPress Language Packs"
+        "description": "Library that helps create git sourced WordPress Language Packs from mo/po files.",
+        "keywords": [
+            "language packs",
+            "translations",
+            "wordpress"
+        ]
     }
 ]

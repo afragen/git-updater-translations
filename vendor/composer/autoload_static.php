@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit5020ed2a8038c08a51d486fd8cc31d9e
 {
+    public static $files = array (
+        'df8a40b17c5100a26c9a66da9a553799' => __DIR__ . '/..' . '/afragen/language-pack-maker/index.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "acd326f2bf92f604028acb6b63a30635",
+    "content-hash": "64b1dbdf91f57966a13094d02656363e",
     "packages": [
         {
             "name": "afragen/language-pack-maker",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/language-pack-maker.git",
-                "reference": "ad4ad32740d222f43f3c7312f1b4b96d9a214624"
+                "reference": "3103731534332fb1e2df96871d782a9c5cddb1dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/ad4ad32740d222f43f3c7312f1b4b96d9a214624",
-                "reference": "ad4ad32740d222f43f3c7312f1b4b96d9a214624",
+                "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/3103731534332fb1e2df96871d782a9c5cddb1dd",
+                "reference": "3103731534332fb1e2df96871d782a9c5cddb1dd",
                 "shasum": ""
             },
             "require": {
@@ -25,6 +25,9 @@
             },
             "type": "library",
             "autoload": {
+                "classmap": [
+                    "Language_Pack_Maker.php"
+                ],
                 "files": [
                     "index.php"
                 ]
@@ -47,7 +50,7 @@
                 "translations",
                 "wordpress"
             ],
-            "time": "2018-09-12T01:42:27+00:00"
+            "time": "2018-11-26T19:50:45+00:00"
         }
     ],
     "packages-dev": [],
@@ -56,8 +59,10 @@
     "stability-flags": {
         "afragen/language-pack-maker": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.4"
+    },
     "platform-dev": []
 }

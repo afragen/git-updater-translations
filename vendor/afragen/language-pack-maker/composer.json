@@ -25,6 +25,9 @@
     "php": ">=5.4"
   },
   "autoload": {
+    "classmap": [
+      "Language_Pack_Maker.php"
+    ],
     "files": [
       "index.php"
     ]

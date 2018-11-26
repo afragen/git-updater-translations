@@ -6,21 +6,24 @@
         "source": {
             "type": "git",
             "url": "https://github.com/afragen/language-pack-maker.git",
-            "reference": "ad4ad32740d222f43f3c7312f1b4b96d9a214624"
+            "reference": "3103731534332fb1e2df96871d782a9c5cddb1dd"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/ad4ad32740d222f43f3c7312f1b4b96d9a214624",
-            "reference": "ad4ad32740d222f43f3c7312f1b4b96d9a214624",
+            "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/3103731534332fb1e2df96871d782a9c5cddb1dd",
+            "reference": "3103731534332fb1e2df96871d782a9c5cddb1dd",
             "shasum": ""
         },
         "require": {
             "php": ">=5.4"
         },
-        "time": "2018-09-12T01:42:27+00:00",
+        "time": "2018-11-26T19:50:45+00:00",
         "type": "library",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
+            "classmap": [
+                "Language_Pack_Maker.php"
+            ],
             "files": [
                 "index.php"
             ]

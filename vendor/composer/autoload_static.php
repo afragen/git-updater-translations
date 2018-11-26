@@ -4,15 +4,20 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit5020ed2a8038c08a51d486fd8cc31d9e
+class ComposerStaticInitf3f5cc6daba47647c78a948a69041e08
 {
     public static $files = array (
         'df8a40b17c5100a26c9a66da9a553799' => __DIR__ . '/..' . '/afragen/language-pack-maker/index.php',
     );
 
+    public static $classMap = array (
+        'Fragen\\Language_Pack_Maker\\Language_Pack_Maker' => __DIR__ . '/..' . '/afragen/language-pack-maker/Language_Pack_Maker.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->classMap = ComposerStaticInitf3f5cc6daba47647c78a948a69041e08::$classMap;
 
         }, null, ClassLoader::class);
     }

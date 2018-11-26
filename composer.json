@@ -1,5 +1,34 @@
 {
+  "name": "afragen/github-updater-translations",
+  "description": "Translation language packs for GitHub Updater plugin",
+  "type": "library",
+  "keywords": [
+    "github-updater",
+    "language packs",
+    "translations"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andy Fragen",
+      "email": "andy@thefragens.com",
+      "homepage": "https://thefragens.com",
+      "role": "Developer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/afragen/github-updater-translations"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/afragen/wp-debugging/issues",
+    "source": "https://github.com/afragen/github-updater-translations"
+  },
+  "prefer-stable": true,
   "require": {
+    "php": ">=5.4",
     "afragen/language-pack-maker": "dev-master"
   }
 }

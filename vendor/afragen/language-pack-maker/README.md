@@ -47,4 +47,4 @@ $transient->translations( array(
 
 [GitHub Updater](https://github.com/afragen/github-updater) or the [Translations Updater library](https://github.com/afragen/translations-updater) will merge the correlative plugin or theme data with the data retrieved from the `language-pack.json` to add data to the update transient. Language updates will appear in the WordPress dashboard.
 
-To utilize the Language Pack Creator, you will need to `require_once()` or open `http://localhost/my-translation-repo/vendor/afragen/language-pack-maker/index.php` in localhost in your browser. Once these packages and the JSON file are created, simply upload them to your public git repository of translations.
+To utilize the Language Pack Creator, you will need to open and run `http://localhost/<my-translation-repo>/vendor/autoload.php` in localhost. This will create the necessary zipfiles and `language-pack.json`.

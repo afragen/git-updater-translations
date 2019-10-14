@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: GitHub Updater\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/github-updater\n"
 "POT-Creation-Date: 2019-09-30T17:04:58+00:00\n"
-"PO-Revision-Date: 2019-10-14 15:33+0100\n"
+"PO-Revision-Date: 2019-10-14 16:12+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -40,6 +40,10 @@ msgstr "Andy Fragen"
 #: github-updater.php:42
 msgid "GitHub Updater cannot run on PHP versions older than %1$s. <a href=\"%2$s\">Learn about updating your PHP.</a>"
 msgstr "Não é possível executar o GitHub Updater em versões de PHP anteriores à %s. <a href=\"%2$s\">Saiba mais sobre como actualizar o seu PHP.</a>"
+
+#: github-updater.php:44
+msgid "https://wordpress.org/support/update-php/"
+msgstr "https://pt.wordpress.org/support/update-php/"
 
 #: mu/ghu-loader.php:65
 msgid "Activated as mu-plugin"

@@ -1,3 +1,7 @@
+## 1.8.0 / 2019-11-24
+* put version info in composer.json
+* add .json files to processing for `wp_set_script_translations`
+
 ## 1.6.0 / 2018-09-11
 * moved action from constructor
 * update README

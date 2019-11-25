@@ -7,7 +7,105 @@ namespace Composer\Autoload;
 class ComposerStaticInitf3f5cc6daba47647c78a948a69041e08
 {
     public static $files = array (
+        '3937806105cc8e221b8fa8db5b70d2f2' => __DIR__ . '/..' . '/wp-cli/mustangostang-spyc/includes/functions.php',
+        'be01b9b16925dcb22165c40b46681ac6' => __DIR__ . '/..' . '/wp-cli/php-cli-tools/lib/cli/cli.php',
         'df8a40b17c5100a26c9a66da9a553799' => __DIR__ . '/..' . '/afragen/language-pack-maker/index.php',
+        'ffb465a494c3101218c4417180c2c9a2' => __DIR__ . '/..' . '/wp-cli/i18n-command/i18n-command.php',
+    );
+
+    public static $prefixLengthsPsr4 = array (
+        'c' => 
+        array (
+            'cweagans\\Composer\\' => 18,
+        ),
+        'W' => 
+        array (
+            'WP_CLI\\I18n\\' => 12,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Component\\Finder\\' => 25,
+        ),
+        'P' => 
+        array (
+            'Peast\\test\\' => 11,
+            'Peast\\' => 6,
+        ),
+        'M' => 
+        array (
+            'Mustangostang\\' => 14,
+        ),
+        'G' => 
+        array (
+            'Gettext\\Languages\\' => 18,
+            'Gettext\\' => 8,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'cweagans\\Composer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cweagans/composer-patches/src',
+        ),
+        'WP_CLI\\I18n\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wp-cli/i18n-command/src',
+        ),
+        'Symfony\\Component\\Finder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/finder',
+        ),
+        'Peast\\test\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mck89/peast/test/Peast',
+        ),
+        'Peast\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mck89/peast/lib/Peast',
+        ),
+        'Mustangostang\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wp-cli/mustangostang-spyc/src',
+        ),
+        'Gettext\\Languages\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gettext/languages/src',
+        ),
+        'Gettext\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gettext/gettext/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'c' => 
+        array (
+            'cli' => 
+            array (
+                0 => __DIR__ . '/..' . '/wp-cli/php-cli-tools/lib',
+            ),
+        ),
+        'W' => 
+        array (
+            'WP_CLI' => 
+            array (
+                0 => __DIR__ . '/..' . '/wp-cli/wp-cli/php',
+            ),
+        ),
+        'R' => 
+        array (
+            'Requests' => 
+            array (
+                0 => __DIR__ . '/..' . '/rmccue/requests/library',
+            ),
+        ),
+        'M' => 
+        array (
+            'Mustache' => 
+            array (
+                0 => __DIR__ . '/..' . '/mustache/mustache/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
@@ -17,6 +115,9 @@ class ComposerStaticInitf3f5cc6daba47647c78a948a69041e08
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf3f5cc6daba47647c78a948a69041e08::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf3f5cc6daba47647c78a948a69041e08::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitf3f5cc6daba47647c78a948a69041e08::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitf3f5cc6daba47647c78a948a69041e08::$classMap;
 
         }, null, ClassLoader::class);

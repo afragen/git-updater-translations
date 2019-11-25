@@ -3,18 +3,18 @@
 /**
  * Language Pack Maker
  *
+ * A lightweight class to combine mo/po/json files into language packs
+ * and create a `language-pack.json` file containing update data.
+ *
  * @author    Andy Fragen
  * @license   MIT
  * @link      https://github.com/afragen/language-pack-maker
- * @version   1.6.0
  */
 
 namespace Fragen\Language_Pack_Maker;
 
-
 /**
  * Class Language_Pack_Maker
- *
  */
 class Language_Pack_Maker {
 
@@ -91,8 +91,8 @@ class Language_Pack_Maker {
 	private function list_directory( $dir ) {
 		$dir_list = array();
 
-		// Only add .mo/.po/.zip files
-		foreach ( glob( $dir . '/*.{mo,po,zip}', GLOB_BRACE ) as $file ) {
+		// Only add mo/po/zip/json files.
+		foreach ( glob( $dir . '/*.{mo,po,zip,json}', GLOB_BRACE ) as $file ) {
 			$dir_list[] = basename( $file );
 		}
 
@@ -110,7 +110,8 @@ class Language_Pack_Maker {
 		$translation_list = array_map(
 			function( $e ) {
 					return pathinfo( $e, PATHINFO_FILENAME );
-			}, $dir_list
+			},
+			$dir_list
 		);
 		$translation_list = array_unique( $translation_list );
 
@@ -158,25 +159,25 @@ class Language_Pack_Maker {
 	 * @return bool
 	 */
 	private function create_zip( $files = array(), $destination = '', $overwrite = true ) {
-		//if the zip file already exists and overwrite is false, return false
+		// if the zip file already exists and overwrite is false, return false.
 		if ( file_exists( $destination ) && ! $overwrite ) {
 			return false;
 		}
 
-		//create the archive
+		// create the archive.
 		$zip = new \ZipArchive();
 		if ( $zip->open( $destination, \ZIPARCHIVE::OVERWRITE | \ZIPARCHIVE::CREATE ) !== true ) {
 			return false;
 		}
-		//add the files
+		// add the files.
 		foreach ( $files as $file ) {
 			$zip->addFile( $file, basename( $file ) );
 		}
 
-		//close the zip -- done!
+		// close the zip -- done!
 		$zip->close();
 
-		//check to make sure the file exists
+		// check to make sure the file exists.
 		if ( file_exists( $destination ) ) {
 			printf( basename( $destination ) . ' created.' . "\n<br>" );
 		} else {
@@ -211,7 +212,7 @@ class Language_Pack_Maker {
 	/**
 	 * Returns PO-Revision-Date from .po file.
 	 *
-	 * @param $file
+	 * @param $file File name.
 	 *
 	 * @return mixed
 	 */
@@ -243,7 +244,7 @@ class Language_Pack_Maker {
 	/**
 	 * Cleanup header comment.
 	 *
-	 * @param $str
+	 * @param $str File header.
 	 *
 	 * @return string
 	 */

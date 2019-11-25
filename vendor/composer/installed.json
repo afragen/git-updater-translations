@@ -6,18 +6,18 @@
         "source": {
             "type": "git",
             "url": "https://github.com/afragen/language-pack-maker.git",
-            "reference": "f3e8034bdc00f2283aca06d7f68ea455280666ac"
+            "reference": "c15dd86fd339766e848cfc4314fdce8c6d7b1f66"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/f3e8034bdc00f2283aca06d7f68ea455280666ac",
-            "reference": "f3e8034bdc00f2283aca06d7f68ea455280666ac",
+            "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/c15dd86fd339766e848cfc4314fdce8c6d7b1f66",
+            "reference": "c15dd86fd339766e848cfc4314fdce8c6d7b1f66",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.4"
+            "php": ">=5.6"
         },
-        "time": "2018-11-26T20:16:13+00:00",
+        "time": "2019-11-25T00:49:48+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -44,6 +44,607 @@
         "keywords": [
             "language packs",
             "translations",
+            "wordpress"
+        ]
+    },
+    {
+        "name": "cweagans/composer-patches",
+        "version": "1.6.7",
+        "version_normalized": "1.6.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cweagans/composer-patches.git",
+            "reference": "2e6f72a2ad8d59cd7e2b729f218bf42adb14f590"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/2e6f72a2ad8d59cd7e2b729f218bf42adb14f590",
+            "reference": "2e6f72a2ad8d59cd7e2b729f218bf42adb14f590",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "composer/composer": "~1.0",
+            "phpunit/phpunit": "~4.6"
+        },
+        "time": "2019-08-29T20:11:49+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "cweagans\\Composer\\Patches"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "cweagans\\Composer\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Cameron Eagans",
+                "email": "me@cweagans.net"
+            }
+        ],
+        "description": "Provides a way to patch Composer packages."
+    },
+    {
+        "name": "gettext/gettext",
+        "version": "v4.8.1",
+        "version_normalized": "4.8.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-gettext/Gettext.git",
+            "reference": "494237c1315438e13777f327271a0dd99fbb6e09"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-gettext/Gettext/zipball/494237c1315438e13777f327271a0dd99fbb6e09",
+            "reference": "494237c1315438e13777f327271a0dd99fbb6e09",
+            "shasum": ""
+        },
+        "require": {
+            "gettext/languages": "^2.3",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "illuminate/view": "*",
+            "phpunit/phpunit": "^4.8|^5.7|^6.5",
+            "squizlabs/php_codesniffer": "^3.0",
+            "symfony/yaml": "~2",
+            "twig/extensions": "*",
+            "twig/twig": "^1.31|^2.0"
+        },
+        "suggest": {
+            "illuminate/view": "Is necessary if you want to use the Blade extractor",
+            "symfony/yaml": "Is necessary if you want to use the Yaml extractor/generator",
+            "twig/extensions": "Is necessary if you want to use the Twig extractor",
+            "twig/twig": "Is necessary if you want to use the Twig extractor"
+        },
+        "time": "2019-11-14T23:28:55+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Gettext\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Oscar Otero",
+                "email": "oom@oscarotero.com",
+                "homepage": "http://oscarotero.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "PHP gettext manager",
+        "homepage": "https://github.com/oscarotero/Gettext",
+        "keywords": [
+            "JS",
+            "gettext",
+            "i18n",
+            "mo",
+            "po",
+            "translation"
+        ]
+    },
+    {
+        "name": "gettext/languages",
+        "version": "2.6.0",
+        "version_normalized": "2.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-gettext/Languages.git",
+            "reference": "38ea0482f649e0802e475f0ed19fa993bcb7a618"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-gettext/Languages/zipball/38ea0482f649e0802e475f0ed19fa993bcb7a618",
+            "reference": "38ea0482f649e0802e475f0ed19fa993bcb7a618",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.16.0",
+            "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5 || ^7.5 || ^8.4"
+        },
+        "time": "2019-11-13T10:30:21+00:00",
+        "bin": [
+            "bin/export-plural-rules"
+        ],
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Gettext\\Languages\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michele Locati",
+                "email": "mlocati@gmail.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "gettext languages with plural rules",
+        "homepage": "https://github.com/php-gettext/Languages",
+        "keywords": [
+            "cldr",
+            "i18n",
+            "internationalization",
+            "l10n",
+            "language",
+            "languages",
+            "localization",
+            "php",
+            "plural",
+            "plural rules",
+            "plurals",
+            "translate",
+            "translations",
+            "unicode"
+        ]
+    },
+    {
+        "name": "mck89/peast",
+        "version": "v1.10",
+        "version_normalized": "1.10.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mck89/peast.git",
+            "reference": "ce12201132d953a13f41565c82122a5fe2616837"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mck89/peast/zipball/ce12201132d953a13f41565c82122a5fe2616837",
+            "reference": "ce12201132d953a13f41565c82122a5fe2616837",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.0|^5.0"
+        },
+        "time": "2019-11-22T18:07:58+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.10.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Peast\\": "lib/Peast/",
+                "Peast\\test\\": "test/Peast/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Marco Marchiò",
+                "email": "marco.mm89@gmail.com"
+            }
+        ],
+        "description": "Peast is PHP library that generates AST for JavaScript code"
+    },
+    {
+        "name": "mustache/mustache",
+        "version": "v2.13.0",
+        "version_normalized": "2.13.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bobthecow/mustache.php.git",
+            "reference": "e95c5a008c23d3151d59ea72484d4f72049ab7f4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/e95c5a008c23d3151d59ea72484d4f72049ab7f4",
+            "reference": "e95c5a008c23d3151d59ea72484d4f72049ab7f4",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.4"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "~1.11",
+            "phpunit/phpunit": "~3.7|~4.0|~5.0"
+        },
+        "time": "2019-11-23T21:40:31+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Mustache": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Justin Hileman",
+                "email": "justin@justinhileman.info",
+                "homepage": "http://justinhileman.com"
+            }
+        ],
+        "description": "A Mustache implementation in PHP.",
+        "homepage": "https://github.com/bobthecow/mustache.php",
+        "keywords": [
+            "mustache",
+            "templating"
+        ]
+    },
+    {
+        "name": "rmccue/requests",
+        "version": "v1.7.0",
+        "version_normalized": "1.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/rmccue/Requests.git",
+            "reference": "87932f52ffad70504d93f04f15690cf16a089546"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/rmccue/Requests/zipball/87932f52ffad70504d93f04f15690cf16a089546",
+            "reference": "87932f52ffad70504d93f04f15690cf16a089546",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2"
+        },
+        "require-dev": {
+            "requests/test-server": "dev-master"
+        },
+        "time": "2016-10-13T00:11:37+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Requests": "library/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "ISC"
+        ],
+        "authors": [
+            {
+                "name": "Ryan McCue",
+                "homepage": "http://ryanmccue.info"
+            }
+        ],
+        "description": "A HTTP library written in PHP, for human beings.",
+        "homepage": "http://github.com/rmccue/Requests",
+        "keywords": [
+            "curl",
+            "fsockopen",
+            "http",
+            "idna",
+            "ipv6",
+            "iri",
+            "sockets"
+        ]
+    },
+    {
+        "name": "symfony/finder",
+        "version": "v5.0.0",
+        "version_normalized": "5.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/finder.git",
+            "reference": "17874dd8ab9a19422028ad56172fb294287a701b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/finder/zipball/17874dd8ab9a19422028ad56172fb294287a701b",
+            "reference": "17874dd8ab9a19422028ad56172fb294287a701b",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.2.5"
+        },
+        "time": "2019-11-18T17:27:11+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Finder\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Finder Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "wp-cli/i18n-command",
+        "version": "v2.2.1",
+        "version_normalized": "2.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wp-cli/i18n-command.git",
+            "reference": "6a0582103ecf4a28b3086eac55a9fe590bd3dc96"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wp-cli/i18n-command/zipball/6a0582103ecf4a28b3086eac55a9fe590bd3dc96",
+            "reference": "6a0582103ecf4a28b3086eac55a9fe590bd3dc96",
+            "shasum": ""
+        },
+        "require": {
+            "gettext/gettext": "^4.8",
+            "mck89/peast": "^1.8",
+            "wp-cli/wp-cli": "^2"
+        },
+        "require-dev": {
+            "wp-cli/scaffold-command": "^1.2 || ^2",
+            "wp-cli/wp-cli-tests": "^2.1.3"
+        },
+        "time": "2019-11-12T06:57:35+00:00",
+        "type": "wp-cli-package",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.x-dev"
+            },
+            "bundled": true,
+            "commands": [
+                "i18n",
+                "i18n make-pot",
+                "i18n make-json"
+            ]
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "WP_CLI\\I18n\\": "src/"
+            },
+            "files": [
+                "i18n-command.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Pascal Birchler",
+                "homepage": "https://pascalbirchler.com/"
+            }
+        ],
+        "description": "Provides internationalization tools for WordPress projects.",
+        "homepage": "https://github.com/wp-cli/i18n-command"
+    },
+    {
+        "name": "wp-cli/mustangostang-spyc",
+        "version": "0.6.3",
+        "version_normalized": "0.6.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wp-cli/spyc.git",
+            "reference": "6aa0b4da69ce9e9a2c8402dab8d43cf32c581cc7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wp-cli/spyc/zipball/6aa0b4da69ce9e9a2c8402dab8d43cf32c581cc7",
+            "reference": "6aa0b4da69ce9e9a2c8402dab8d43cf32c581cc7",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.1"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.3.*@dev"
+        },
+        "time": "2017-04-25T11:26:20+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.5.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Mustangostang\\": "src/"
+            },
+            "files": [
+                "includes/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "mustangostang",
+                "email": "vlad.andersen@gmail.com"
+            }
+        ],
+        "description": "A simple YAML loader/dumper class for PHP (WP-CLI fork)",
+        "homepage": "https://github.com/mustangostang/spyc/"
+    },
+    {
+        "name": "wp-cli/php-cli-tools",
+        "version": "v0.11.11",
+        "version_normalized": "0.11.11.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wp-cli/php-cli-tools.git",
+            "reference": "fe9c7c44a9e1bf2196ec51dc38da0593dbf2993f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wp-cli/php-cli-tools/zipball/fe9c7c44a9e1bf2196ec51dc38da0593dbf2993f",
+            "reference": "fe9c7c44a9e1bf2196ec51dc38da0593dbf2993f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">= 5.3.0"
+        },
+        "time": "2018-09-04T13:28:00+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "cli": "lib/"
+            },
+            "files": [
+                "lib/cli/cli.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "James Logsdon",
+                "email": "jlogsdon@php.net",
+                "role": "Developer"
+            },
+            {
+                "name": "Daniel Bachhuber",
+                "email": "daniel@handbuilt.co",
+                "role": "Maintainer"
+            }
+        ],
+        "description": "Console utilities for PHP",
+        "homepage": "http://github.com/wp-cli/php-cli-tools",
+        "keywords": [
+            "cli",
+            "console"
+        ]
+    },
+    {
+        "name": "wp-cli/wp-cli",
+        "version": "v2.4.0",
+        "version_normalized": "2.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wp-cli/wp-cli.git",
+            "reference": "74c949c74708e3a88ad0add70f3236c8675dfd85"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/74c949c74708e3a88ad0add70f3236c8675dfd85",
+            "reference": "74c949c74708e3a88ad0add70f3236c8675dfd85",
+            "shasum": ""
+        },
+        "require": {
+            "cweagans/composer-patches": "^1.6",
+            "ext-curl": "*",
+            "mustache/mustache": "~2.4",
+            "php": "^5.4 || ^7.0",
+            "rmccue/requests": "~1.6",
+            "symfony/finder": ">2.7",
+            "wp-cli/mustangostang-spyc": "^0.6.3",
+            "wp-cli/php-cli-tools": "~0.11.2"
+        },
+        "require-dev": {
+            "roave/security-advisories": "dev-master",
+            "wp-cli/db-command": "^1.3 || ^2",
+            "wp-cli/entity-command": "^1.2 || ^2",
+            "wp-cli/extension-command": "^1.1 || ^2",
+            "wp-cli/package-command": "^1 || ^2",
+            "wp-cli/wp-cli-tests": "^2.1"
+        },
+        "suggest": {
+            "ext-readline": "Include for a better --prompt implementation",
+            "ext-zip": "Needed to support extraction of ZIP archives when doing downloads or updates"
+        },
+        "time": "2019-11-12T15:26:05+00:00",
+        "bin": [
+            "bin/wp",
+            "bin/wp.bat"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.4.x-dev"
+            },
+            "patches": {
+                "mustache/mustache": {
+                    "Avoid notices on PHP 7.4+": "https://patch-diff.githubusercontent.com/raw/bobthecow/mustache.php/pull/349.patch"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "WP_CLI": "php"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "WP-CLI framework",
+        "homepage": "https://wp-cli.org",
+        "keywords": [
+            "cli",
             "wordpress"
         ]
     }

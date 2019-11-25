@@ -13,6 +13,9 @@
 
 namespace Fragen\Language_Pack_Maker;
 
+use Gettext\Translations;
+//use Gettext\Extractors\Po as PoExtractor;
+
 /**
  * Class Language_Pack_Maker
  */
@@ -76,6 +79,7 @@ class Language_Pack_Maker {
 	public function run() {
 		$this->directory_list = $this->list_directory( $this->language_files_dir );
 		$this->translations   = $this->process_directory( $this->directory_list );
+		$this->create_mo_files($this->language_files_dir);
 		$this->packages       = $this->create_packages();
 		$this->create_language_packs();
 		$this->create_json();
@@ -119,6 +123,27 @@ class Language_Pack_Maker {
 	}
 
 	/**
+	 * Create mo files from po files and get new directory listing.
+	 *
+	 * @param string $dir File path to directory.
+	 *
+	 * @return void
+	 */
+	private function create_mo_files($dir){
+		foreach ( glob( $dir . '/*.po' ) as $file ) {
+			$base = str_replace( '.po', '', basename( $file ));
+			$po_list[$base] = $file;
+		}
+
+		foreach ($this->translations as $locale) {
+			$translations = Translations::fromPoFile($po_list[$locale]);
+			$translations->toMoFile("$dir/$locale.mo");
+		}
+
+		$this->directory_list = $this->list_directory($dir);
+	}
+
+	/**
 	 * Creates an associative array of translations from directory listing.
 	 *
 	 * @return array $packages Associative array of translation files per translation.
@@ -152,7 +177,7 @@ class Language_Pack_Maker {
 	 *
 	 * @link https://davidwalsh.name/create-zip-php
 	 *
-	 * @param array  $files       Array of .mo/.po files for each translation.
+	 * @param array  $files       Array of .mo/.po/.json files for each translation.
 	 * @param string $destination Filepath to zipfile.
 	 * @param bool   $overwrite   Boolean to set zipfile creation overwrite mode.
 	 *
@@ -198,7 +223,7 @@ class Language_Pack_Maker {
 					$locale                       = ltrim( strrchr( $translation, '-' ), '-' );
 					$arr[ $locale ]['slug']       = stristr( $translation, strrchr( $translation, '-' ), true );
 					$arr[ $locale ]['language']   = $locale;
-					$arr[ $locale ]['updated']    = $this->get_po_revision( $translation . '.po' );
+					$arr[ $locale ]['updated']    = $this->get_po_revision( "$translation.po" );
 					$arr[ $locale ]['package']    = '/packages/' . $package;
 					$arr[ $locale ]['autoupdate'] = '1';
 				}
@@ -217,39 +242,11 @@ class Language_Pack_Maker {
 	 * @return mixed
 	 */
 	private function get_po_revision( $file ) {
-		$file        = $this->language_files_dir . '/' . $file;
-		$headers     = array( 'PO-Revision-Date' => '"PO-Revision-Date' );
-		$all_headers = array();
+		$file         = $this->language_files_dir . '/' . $file;
+		$translations = Translations::fromPoFile($file);
 
-		$fp = fopen( $file, 'r' );
-
-		// Pull only the first 1kiB of the file in.
-		$contents = fread( $fp, 1024 );
-
-		fclose( $fp );
-
-		foreach ( $headers as $field => $regex ) {
-			if ( preg_match( '/^[ \t\/*#@]*' . preg_quote( $regex, '/' ) . ':(.*)$/mi', $contents, $match ) && $match[1] ) {
-				$value                 = $this->_cleanup_header_comment( $match[1] );
-				$value                 = preg_replace( '~(\\\n)?"$~', '', $value );
-				$all_headers[ $field ] = $value;
-			} else {
-				$all_headers[ $field ] = '';
-			}
-		}
-
-		return $all_headers['PO-Revision-Date'];
+		return $translations->getHeader( 'PO-Revision-Date' );
 	}
 
-	/**
-	 * Cleanup header comment.
-	 *
-	 * @param $str File header.
-	 *
-	 * @return string
-	 */
-	private function _cleanup_header_comment( $str ) {
-		return trim( preg_replace( '/\s*(?:\*\/|\?>).*/', '', $str ) );
-	}
 
 }

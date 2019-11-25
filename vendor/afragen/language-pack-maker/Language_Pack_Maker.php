@@ -130,7 +130,7 @@ class Language_Pack_Maker {
 	 * @return void
 	 */
 	private function create_mo_files($dir){
-		foreach ( glob( $dir . '/*.po' ) as $file ) {
+		foreach ( glob( "$dir/*.po" ) as $file ) {
 			$base = str_replace( '.po', '', basename( $file ));
 			$po_list[$base] = $file;
 		}

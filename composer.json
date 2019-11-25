@@ -23,12 +23,13 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/afragen/wp-debugging/issues",
+    "issues": "https://github.com/afragen/github-updater-translations/issues",
     "source": "https://github.com/afragen/github-updater-translations"
   },
   "prefer-stable": true,
   "require": {
     "php": ">=5.6",
-    "afragen/language-pack-maker": "dev-master"
+    "afragen/language-pack-maker": "dev-master",
+    "gettext/gettext": "^4.8"
   }
 }

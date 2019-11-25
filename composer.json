@@ -29,7 +29,6 @@
   "prefer-stable": true,
   "require": {
     "php": ">=5.6",
-    "afragen/language-pack-maker": "dev-master",
-    "gettext/gettext": "^4.8"
+    "afragen/language-pack-maker": "dev-master"
   }
 }

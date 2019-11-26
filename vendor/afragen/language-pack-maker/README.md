@@ -64,8 +64,9 @@ With the following added to your `composer.json` file, it will run the sequence 
 ```
   "scripts": {
     "post-update-cmd": [
-      "cp -r ./originals/*.po ./languages/",
-      "wp i18n make-json languages/"
+      "mkdir -p ./languages; cp -r ./originals/*.po ./languages/",
+      "wp i18n make-json languages/",
+      "php ./vendor/autoload.php"
     ]
   }
 ```

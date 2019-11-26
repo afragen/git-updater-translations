@@ -6,12 +6,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/afragen/language-pack-maker.git",
-            "reference": "646ad838938d0ee68942324b17385bd4907985fe"
+            "reference": "4c9051ad9ecead17fab8fe2bfe9bbbaa1a7ec6e0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/646ad838938d0ee68942324b17385bd4907985fe",
-            "reference": "646ad838938d0ee68942324b17385bd4907985fe",
+            "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/4c9051ad9ecead17fab8fe2bfe9bbbaa1a7ec6e0",
+            "reference": "4c9051ad9ecead17fab8fe2bfe9bbbaa1a7ec6e0",
             "shasum": ""
         },
         "require": {
@@ -19,7 +19,7 @@
             "php": ">=5.6",
             "wp-cli/i18n-command": "^2"
         },
-        "time": "2019-11-26T19:44:44+00:00",
+        "time": "2019-11-26T21:09:40+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

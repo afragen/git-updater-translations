@@ -14,13 +14,11 @@
 namespace Fragen\Language_Pack_Maker;
 
 use Gettext\Translations;
-//use Gettext\Extractors\Po as PoExtractor;
 
 /**
  * Class Language_Pack_Maker
  */
 class Language_Pack_Maker {
-
 	/**
 	 * List of files in specified directory.
 	 *
@@ -36,7 +34,7 @@ class Language_Pack_Maker {
 	private $translations;
 
 	/**
-	 * Array of .mo/.po files for each translation.
+	 * Array of .mo/.po/.json files for each translation.
 	 *
 	 * @var array
 	 */
@@ -79,8 +77,8 @@ class Language_Pack_Maker {
 	public function run() {
 		$this->directory_list = $this->list_directory( $this->language_files_dir );
 		$this->translations   = $this->process_directory( $this->directory_list );
-		$this->create_mo_files($this->language_files_dir);
-		$this->packages       = $this->create_packages();
+		$this->create_mo_files( $this->language_files_dir );
+		$this->packages = $this->create_packages();
 		$this->create_language_packs();
 		$this->create_json();
 	}
@@ -93,7 +91,7 @@ class Language_Pack_Maker {
 	 * @return array $dir_list Listing of directory contents.
 	 */
 	private function list_directory( $dir ) {
-		$dir_list = array();
+		$dir_list = [];
 
 		// Only add mo/po/zip/json files.
 		foreach ( glob( $dir . '/*.{mo,po,zip,json}', GLOB_BRACE ) as $file ) {
@@ -101,6 +99,27 @@ class Language_Pack_Maker {
 		}
 
 		return $dir_list;
+	}
+
+	/**
+	 * Returns a string of the translation name.
+	 *
+	 * @param string $filename filename
+	 *
+	 * @return string $dir_list Listing of directory contents.
+	 */
+	private function process_name( $filename ) {
+		if ( 'json' === pathinfo( $filename, PATHINFO_EXTENSION ) ) {
+
+			// Parse filename.
+			$list = explode( '-', pathinfo( $filename, PATHINFO_FILENAME ) );
+
+			// Remove the md5 part.
+			array_pop( $list );
+
+			return implode( '-', $list );
+		}
+		return pathinfo( $filename, PATHINFO_FILENAME );
 	}
 
 	/**
@@ -112,9 +131,7 @@ class Language_Pack_Maker {
 	 */
 	private function process_directory( $dir_list ) {
 		$translation_list = array_map(
-			function( $e ) {
-					return pathinfo( $e, PATHINFO_FILENAME );
-			},
+			array( $this, 'process_name' ),
 			$dir_list
 		);
 		$translation_list = array_unique( $translation_list );
@@ -123,24 +140,25 @@ class Language_Pack_Maker {
 	}
 
 	/**
-	 * Create mo files from po files and get new directory listing.
+	 * Create .mo files from .po files.
 	 *
-	 * @param string $dir File path to directory.
+	 * @param string $dir File path to language files directory.
 	 *
 	 * @return void
 	 */
-	private function create_mo_files($dir){
+	private function create_mo_files( $dir ) {
 		foreach ( glob( "$dir/*.po" ) as $file ) {
-			$base = str_replace( '.po', '', basename( $file ));
-			$po_list[$base] = $file;
+			$base             = str_replace( '.po', '', basename( $file ) );
+			$po_list[ $base ] = $file;
 		}
 
-		foreach ($this->translations as $locale) {
-			$translations = Translations::fromPoFile($po_list[$locale]);
-			$translations->toMoFile("$dir/$locale.mo");
+		foreach ( $this->translations as $locale ) {
+			$translations = Translations::fromPoFile( $po_list[ $locale ] );
+			$translations->toMoFile( "$dir/$locale.mo" );
 		}
 
-		$this->directory_list = $this->list_directory($dir);
+		// Re-create directory list of files to include new .mo files.
+		$this->directory_list = $this->list_directory( $dir );
 	}
 
 	/**
@@ -149,9 +167,9 @@ class Language_Pack_Maker {
 	 * @return array $packages Associative array of translation files per translation.
 	 */
 	private function create_packages() {
-		$packages = array();
+		$packages = [];
 		foreach ( $this->translations as $translation ) {
-			$package = array();
+			$package = [];
 			foreach ( $this->directory_list as $file ) {
 				if ( false !== stripos( $file, $translation ) ) {
 					$package[] = $this->language_files_dir . '/' . $file;
@@ -177,13 +195,13 @@ class Language_Pack_Maker {
 	 *
 	 * @link https://davidwalsh.name/create-zip-php
 	 *
-	 * @param array  $files       Array of .mo/.po/.json files for each translation.
+	 * @param array  $files       Array of .mo/.po files for each translation.
 	 * @param string $destination Filepath to zipfile.
 	 * @param bool   $overwrite   Boolean to set zipfile creation overwrite mode.
 	 *
 	 * @return bool
 	 */
-	private function create_zip( $files = array(), $destination = '', $overwrite = true ) {
+	private function create_zip( $files = [], $destination = '', $overwrite = true ) {
 		// if the zip file already exists and overwrite is false, return false.
 		if ( file_exists( $destination ) && ! $overwrite ) {
 			return false;
@@ -191,7 +209,7 @@ class Language_Pack_Maker {
 
 		// create the archive.
 		$zip = new \ZipArchive();
-		if ( $zip->open( $destination, \ZIPARCHIVE::OVERWRITE | \ZIPARCHIVE::CREATE ) !== true ) {
+		if ( true !== $zip->open( $destination, \ZIPARCHIVE::OVERWRITE | \ZIPARCHIVE::CREATE ) ) {
 			return false;
 		}
 		// add the files.
@@ -204,9 +222,9 @@ class Language_Pack_Maker {
 
 		// check to make sure the file exists.
 		if ( file_exists( $destination ) ) {
-			printf( basename( $destination ) . ' created.' . "\n<br>" );
+			printf( "\n" . basename( $destination ) . ' created. <br>' );
 		} else {
-			printf( '<span style="color:#f00">' . basename( $destination ) . ' failed.</span>' . "\n<br>" );
+			printf( "\n<span style='color:#f00'>" . basename( $destination ) . ' failed.</span><br>' );
 		}
 	}
 
@@ -215,7 +233,7 @@ class Language_Pack_Maker {
 	 */
 	private function create_json() {
 		$packages = $this->list_directory( $this->packages_dir );
-		$arr      = array();
+		$arr      = [];
 
 		foreach ( $packages as $package ) {
 			foreach ( $this->translations as $translation ) {
@@ -231,7 +249,7 @@ class Language_Pack_Maker {
 		}
 
 		file_put_contents( $this->root_dir . '/language-pack.json', json_encode( $arr ) );
-		printf( "\n<br>" . 'language-pack.json created.' . "\n<br>" );
+		printf( "\n<br>" . 'language-pack.json created.' . "\n" );
 	}
 
 	/**
@@ -239,14 +257,12 @@ class Language_Pack_Maker {
 	 *
 	 * @param $file File name.
 	 *
-	 * @return mixed
+	 * @return string
 	 */
 	private function get_po_revision( $file ) {
 		$file         = $this->language_files_dir . '/' . $file;
-		$translations = Translations::fromPoFile($file);
+		$translations = Translations::fromPoFile( $file );
 
 		return $translations->getHeader( 'PO-Revision-Date' );
 	}
-
-
 }

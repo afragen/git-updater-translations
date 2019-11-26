@@ -29,8 +29,7 @@
   "prefer-stable": true,
   "require": {
     "php": ">=5.6",
-    "afragen/language-pack-maker": "dev-master",
-    "wp-cli/i18n-command": "^2.2"
+    "afragen/language-pack-maker": "dev-master"
   },
   "scripts": {
     "post-update-cmd": [

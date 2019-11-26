@@ -9,8 +9,8 @@ class ComposerStaticInitf3f5cc6daba47647c78a948a69041e08
     public static $files = array (
         '3937806105cc8e221b8fa8db5b70d2f2' => __DIR__ . '/..' . '/wp-cli/mustangostang-spyc/includes/functions.php',
         'be01b9b16925dcb22165c40b46681ac6' => __DIR__ . '/..' . '/wp-cli/php-cli-tools/lib/cli/cli.php',
-        'df8a40b17c5100a26c9a66da9a553799' => __DIR__ . '/..' . '/afragen/language-pack-maker/index.php',
         'ffb465a494c3101218c4417180c2c9a2' => __DIR__ . '/..' . '/wp-cli/i18n-command/i18n-command.php',
+        'df8a40b17c5100a26c9a66da9a553799' => __DIR__ . '/..' . '/afragen/language-pack-maker/index.php',
     );
 
     public static $prefixLengthsPsr4 = array (

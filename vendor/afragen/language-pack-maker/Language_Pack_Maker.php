@@ -68,6 +68,7 @@ class Language_Pack_Maker {
 		$this->root_dir           = dirname( dirname( dirname( __DIR__ ) ) );
 		$this->language_files_dir = $this->root_dir . '/languages';
 		$this->packages_dir       = $this->root_dir . '/packages';
+		@mkdir( $this->language_files_dir, 0777 );
 		@mkdir( $this->packages_dir, 0777 );
 	}
 
@@ -104,7 +105,7 @@ class Language_Pack_Maker {
 	/**
 	 * Returns a string of the translation name.
 	 *
-	 * @param string $filename filename
+	 * @param string $filename Filename.
 	 *
 	 * @return string $dir_list Listing of directory contents.
 	 */

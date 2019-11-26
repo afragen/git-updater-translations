@@ -1,0 +1,612 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: GitHub Updater\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/github-updater\n"
+"Last-Translator: Andréas Lundgren <adevade@gmail.com>\n"
+"Language-Team: Andréas Lundgren\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-06-12T00:38:56+00:00\n"
+"PO-Revision-Date: 2019-10-11 14:27+0200\n"
+"Language: sv_SE\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. Plugin Name of the plugin
+#: src/GitHub_Updater/Settings.php:133
+#: src/GitHub_Updater/Settings.php:172
+#: src/GitHub_Updater/Settings.php:223
+msgid "GitHub Updater"
+msgstr "GitHub Updater"
+
+#. Plugin URI of the plugin
+msgid "https://github.com/afragen/github-updater"
+msgstr "https://github.com/afragen/github-updater"
+
+#. Description of the plugin
+msgid "A plugin to automatically update GitHub, Bitbucket, GitLab, or Gitea hosted plugins, themes, and language packs. It also allows for remote installation of plugins or themes into WordPress."
+msgstr "Ett tillägg för att automatiskt uppdatera tillägg, teman och översättningar från GitHub, Bitbucket, GitLab och Gitea. Det möjliggör även fjärrinstallation av tillägg och teman direkt i WordPress."
+
+#. Author of the plugin
+msgid "Andy Fragen"
+msgstr "Andy Fragen"
+
+#: mu/ghu-loader.php:65
+msgid "Activated as mu-plugin"
+msgstr "Aktiverat som mu-tillägg"
+
+#. translators: 1: minimum PHP version required, 2: Upgrade PHP URL
+#: github-updater.php:42
+msgid "GitHub Updater cannot run on PHP versions older than %1$s. <a href=\"%2$s\">Learn about updating your PHP.</a>"
+msgstr "GitHub Updater fungerar inte med PHP-versioner äldre än %1$s. <a href=\"%2$s\">Läs mer om att uppdatera PHP.</a>"
+
+#: src/GitHub_Updater/Install.php:104
+#: src/GitHub_Updater/Install.php:366
+msgid "Install Plugin"
+msgstr "Installera tillägg"
+
+#: src/GitHub_Updater/Install.php:107
+#: src/GitHub_Updater/Install.php:369
+msgid "Install Theme"
+msgstr "Installera tema"
+
+#: src/GitHub_Updater/Install.php:160
+msgid "A repository URI is required."
+msgstr "Du måste fylla i repo-URI."
+
+#: src/GitHub_Updater/Install.php:386
+msgid "Plugin"
+msgstr "Tillägg"
+
+#: src/GitHub_Updater/Install.php:389
+msgid "Theme"
+msgstr "Tema"
+
+#. translators: variable is 'Plugin' or 'Theme'
+#: src/GitHub_Updater/Install.php:401
+msgid "GitHub Updater Install %s"
+msgstr "GitHub Updater - Installera %s"
+
+#. translators: variable is 'Plugin' or 'Theme'
+#: src/GitHub_Updater/Install.php:409
+msgid "%s URI"
+msgstr "%s URI"
+
+#: src/GitHub_Updater/Install.php:417
+msgid "Repository Branch"
+msgstr "Repo-branch"
+
+#: src/GitHub_Updater/Install.php:425
+msgid "Remote Repository Host"
+msgstr "Fjärrvärd för repo"
+
+#: src/GitHub_Updater/Install.php:461
+msgid "URI is case sensitive."
+msgstr "URI är skiftlägeskänsligt."
+
+#: src/GitHub_Updater/Install.php:476
+msgid "Enter branch name or leave empty for `master`"
+msgstr "Fyll i ett branch-namn eller lämna tomt för att använda `master`"
+
+#: src/GitHub_Updater/Install.php:541
+msgid "Activate"
+msgstr "Aktivera"
+
+#: src/GitHub_Updater/Install.php:553
+msgctxt "This refers to a network activation in a multisite installation"
+msgid "Network Enable"
+msgstr "Aktivera på nätverk"
+
+#: src/GitHub_Updater/Settings.php:114
+#: src/GitHub_Updater/Settings.php:719
+msgid "Settings"
+msgstr "Inställningar"
+
+#: src/GitHub_Updater/Settings.php:171
+#: src/GitHub_Updater/Settings.php:310
+msgid "GitHub Updater Settings"
+msgstr "Inställningar för GitHub Updater"
+
+#: src/GitHub_Updater/Settings.php:245
+msgid "Refresh Cache"
+msgstr "Uppdatera cache"
+
+#: src/GitHub_Updater/Settings.php:277
+msgid "Settings saved."
+msgstr "Inställningar sparade."
+
+#: src/GitHub_Updater/Settings.php:279
+msgid "RESTful key reset."
+msgstr "RESTful key återställd."
+
+#: src/GitHub_Updater/Settings.php:281
+msgid "Cache refreshed."
+msgstr "Cachen uppdaterad."
+
+#: src/GitHub_Updater/Settings.php:323
+msgid "Enable Branch Switching"
+msgstr "Aktivera branch-växling"
+
+#: src/GitHub_Updater/Settings.php:526
+msgid "Check to enable branch switching from the Plugins or Themes page."
+msgstr "Kryssa i för att aktivera branch-byte från tilläggs- och temasidorna."
+
+#: src/GitHub_Updater/Settings.php:550
+msgid "Overridden Plugins and Themes"
+msgstr "Överskrivna tillägg och teman"
+
+#: src/GitHub_Updater/Settings.php:551
+msgid "The following plugins or themes might exist on wp.org, but any updates will be downloaded from their respective git repositories."
+msgstr "Följande tillägg eller teman kan finnas på wp.org, men framtida uppdateringar kommer att hämtas från deras respektive git repos."
+
+#: src/GitHub_Updater/Settings.php:753
+msgid "This is a private repository."
+msgstr "Det här är en privat repo."
+
+#: src/GitHub_Updater/Settings.php:754
+msgid "This repository has not connected to the API or was unable to connect."
+msgstr "Den här repon har inte anslutit till sitt API eller kunde inte ansluta."
+
+#: src/GitHub_Updater/Settings.php:755
+msgid "This repository is hosted on WordPress.org."
+msgstr "Den här repon finns på WordPress.org."
+
+#: src/GitHub_Updater/Settings.php:792
+msgid "Installed Plugins and Themes"
+msgstr "Installerade tillägg och teman"
+
+#: src/GitHub_Updater/Plugin.php:324
+msgid "View details"
+msgstr "Visa detaljer"
+
+#. translators: %s: theme name
+#: src/GitHub_Updater/Theme.php:333
+#: src/GitHub_Updater/Theme.php:529
+msgid "There is a new version of %s available."
+msgstr "En ny version av %s finns tillgänglig."
+
+#. translators: %s: theme version
+#: src/GitHub_Updater/Theme.php:345
+msgid "View version %s details."
+msgstr "Visa detaljer för version %s."
+
+#: src/GitHub_Updater/Theme.php:349
+msgid "Automatic update is unavailable for this theme."
+msgstr "Automatiska uppdateringar är inte tillgängliga för det här temat."
+
+#. translators: 1: version number, 2: closing anchor tag, 3: update URL
+#: src/GitHub_Updater/Theme.php:354
+#: src/GitHub_Updater/Theme.php:539
+msgid "View version %1$s details%2$s or %3$supdate now%2$s."
+msgstr "Visa %1$sdetaljer för version%2$s eller %3$suppdatera nu%2$s."
+
+#. translators: %s: theme name
+#: src/GitHub_Updater/Theme.php:359
+#: src/GitHub_Updater/Theme.php:544
+msgid "Update %s now"
+msgstr "Uppdatera %s nu"
+
+#. translators: 1: branch name, 2: jQuery dropdown, 3: closing tag
+#: src/GitHub_Updater/Theme.php:581
+#: src/GitHub_Updater/Base.php:828
+msgid "Current branch is `%1$s`, try %2$sanother version%3$s"
+msgstr "Den aktuella branchen är `%1$s`, testa %2$sen annan version%3$s"
+
+#: src/GitHub_Updater/Theme.php:589
+msgid "Choose a Version"
+msgstr "Välj en version"
+
+#: src/GitHub_Updater/Theme.php:607
+#: src/GitHub_Updater/Base.php:863
+msgid "No previous tags to rollback to."
+msgstr "Inga föregående taggar att gå tillbaka till."
+
+#: src/GitHub_Updater/Theme.php:611
+msgid "Install"
+msgstr "Installera"
+
+#: src/GitHub_Updater/Base.php:446
+msgid "There may be a problem with WP-Cron. A GitHub Updater WP-Cron event is overdue."
+msgstr "Det kan vara fel på WP-Cron. Ett event för GitHub Updater är försenat."
+
+#: src/GitHub_Updater/Base.php:839
+msgid "Switch to branch "
+msgstr "Växla till branch "
+
+#: src/GitHub_Updater/Base.php:855
+msgid "Switch to release "
+msgstr "Växla till release "
+
+#: src/GitHub_Updater/Remote_Management.php:138
+#: src/GitHub_Updater/Remote_Management.php:195
+msgid "Remote Management"
+msgstr "Fjärrhantering"
+
+#: src/GitHub_Updater/Remote_Management.php:177
+msgid "Reset RESTful key"
+msgstr "Återställ RESTful key"
+
+#. translators: %s: Link to wiki
+#: src/GitHub_Updater/Remote_Management.php:235
+msgid "Please refer to the <a href=\"%s\">wiki</a> for complete list of attributes. RESTful endpoints begin at:"
+msgstr "Vänligen läs vår <a href=\"%s\">wiki</a> för en lista med alla attribut. RESTful endpoints börjar på:"
+
+#: src/GitHub_Updater/Remote_Management.php:243
+msgid "Use of Remote Management services may result increase some page load speeds only for `admin` level users in the dashboard."
+msgstr "Användning av fjärrhantering kan öka laddningstiderna i adminpanelen för `administratörer`."
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:386
+msgid "Bitbucket Private Settings"
+msgstr "Privata inställningar för Bitbucket"
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:393
+#: src/GitHub_Updater/API/Bitbucket_API.php:481
+msgid "Bitbucket Username"
+msgstr "Användarnamn för Bitbucket"
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:402
+#: src/GitHub_Updater/API/Bitbucket_API.php:489
+msgid "Bitbucket Password"
+msgstr "Lösenord för Bitbucket"
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:418
+msgid "Bitbucket Private Repositories"
+msgstr "Privata Bitbucket-repos"
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:448
+msgid "Bitbucket"
+msgstr "Bitbucket"
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:457
+msgid "Check box if private repository. Leave unchecked for public repositories."
+msgstr "Kryssa i boxen för privata repos. Lämna okryssad för öppna repos."
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:464
+msgid "Enter your personal Bitbucket username and password."
+msgstr "Fyll i inloggningsinformation för ditt Bitbucket-konto."
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:498
+msgid "Private Bitbucket Repository"
+msgstr "Privat Bitbucket-repo"
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:514
+msgid "Check for private Bitbucket repositories."
+msgstr "Kryssa i för privata Bitbucket-repos."
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:529
+msgid "Enter Bitbucket username."
+msgstr "Ange användarnamn för Bitbucket."
+
+#: src/GitHub_Updater/API/Bitbucket_API.php:544
+msgid "Enter Bitbucket password."
+msgstr "Ange lösenord för Bitbucket."
+
+#: src/GitHub_Updater/API/Zipfile_API.php:37
+msgid "Zipfile Slug"
+msgstr "Permalänk för zip-fil"
+
+#: src/GitHub_Updater/API/Zipfile_API.php:53
+msgid "Enter plugin or theme slug."
+msgstr "Ange permalänk för tillägg eller tema."
+
+#: src/GitHub_Updater/API/Gitea_API.php:343
+#: src/GitHub_Updater/API/Gitea_API.php:361
+#: src/GitHub_Updater/API/Gitea_API.php:423
+msgid "Gitea Access Token"
+msgstr "Gitea Access Token"
+
+#: src/GitHub_Updater/API/Gitea_API.php:352
+msgid "Gitea Private Settings"
+msgstr "Privata inställningar för Gitea"
+
+#: src/GitHub_Updater/API/Gitea_API.php:396
+msgid "Gitea"
+msgstr "Gitea"
+
+#: src/GitHub_Updater/API/Gitea_API.php:405
+msgid "Enter your repository specific Gitea Access Token."
+msgstr "Ange ditt repo-specifika Gitea Access Token."
+
+#: src/GitHub_Updater/API/Gitea_API.php:412
+msgid "Enter your Gitea Access Token."
+msgstr "Ange ditt Gitea Access Token."
+
+#: src/GitHub_Updater/API/Gitea_API.php:439
+msgid "Enter Gitea Access Token for private Gitea repositories."
+msgstr "Ange Gitea Access Token för privata Gitea-repos."
+
+#: src/GitHub_Updater/API/Gitea_API.php:470
+msgid "You must set a Gitea Access Token."
+msgstr "Du måste ange ett Gitea Access Token."
+
+#: src/GitHub_Updater/API/GitLab_API.php:436
+msgid "GitLab Personal Access Token"
+msgstr "GitLab Personal Access Token"
+
+#: src/GitHub_Updater/API/GitLab_API.php:445
+msgid "GitLab Private Settings"
+msgstr "Privata inställningar för GitLab"
+
+#: src/GitHub_Updater/API/GitLab_API.php:454
+msgid "GitLab.com Access Token"
+msgstr "GitLab.com Access Token"
+
+#: src/GitHub_Updater/API/GitLab_API.php:468
+msgid "GitLab CE or GitLab Enterprise Personal Access Token"
+msgstr "GitLab CE eller GitLab Enterprise Personal Access Token"
+
+#: src/GitHub_Updater/API/GitLab_API.php:503
+msgid "GitLab"
+msgstr "GitLab"
+
+#: src/GitHub_Updater/API/GitLab_API.php:512
+msgid "Enter your repository specific GitLab Access Token."
+msgstr "Ange ditt repo-specifika GitLab Access Token."
+
+#: src/GitHub_Updater/API/GitLab_API.php:519
+msgid "Enter your GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
+msgstr "Ange ditt GitLab.com, GitLab CE eller GitLab Enterprise Access Token."
+
+#: src/GitHub_Updater/API/GitLab_API.php:530
+msgid "GitLab Access Token"
+msgstr "GitLab Access Token"
+
+#: src/GitHub_Updater/API/GitLab_API.php:546
+msgid "Enter GitLab Access Token for private GitLab repositories."
+msgstr "Ange GitLab Access Token för privata GitLab-repos."
+
+#: src/GitHub_Updater/API/GitLab_API.php:579
+msgid "You must set a GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
+msgstr "Du måste ange ett Access Token för GitLab.com, GitLab CE eller GitLab Enterprise."
+
+#: src/GitHub_Updater/API/GitHub_API.php:371
+msgid "GitHub Personal Access Token"
+msgstr "GitHub Personal Access Token"
+
+#: src/GitHub_Updater/API/GitHub_API.php:378
+msgid "GitHub.com Access Token"
+msgstr "GitHub.com Access Token"
+
+#: src/GitHub_Updater/API/GitHub_API.php:391
+msgid "GitHub Enterprise Access Token"
+msgstr "GitHub Enterprise Access Token"
+
+#: src/GitHub_Updater/API/GitHub_API.php:408
+msgid "GitHub Private Settings"
+msgstr "Privata inställningar för GitHub"
+
+#: src/GitHub_Updater/API/GitHub_API.php:435
+msgid "Enter your GitHub Access Token. Leave empty for public repositories."
+msgstr "Fyll i ditt GitHub Access Token. Lämna tomt för öppna repos."
+
+#: src/GitHub_Updater/API/GitHub_API.php:442
+msgid "Enter your personal GitHub.com or GitHub Enterprise Access Token to avoid API access limits."
+msgstr "Ange ditt personliga GitHub.com eller GitHub Enterprise Access Token för att undvika API-begränsningar."
+
+#: src/GitHub_Updater/API/GitHub_API.php:453
+msgid "GitHub Access Token"
+msgstr "GitHub Access Token"
+
+#: src/GitHub_Updater/API/GitHub_API.php:467
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/GitHub_Updater/API/GitHub_API.php:481
+msgid "Enter GitHub Access Token for private GitHub repositories."
+msgstr "Ange GitHub Access Token för privata GitHub-repos."
+
+#: src/GitHub_Updater/API/Bitbucket_Server_API.php:340
+msgid "Bitbucket Server Private Settings"
+msgstr "Privata inställningar för Bitbucket Server"
+
+#: src/GitHub_Updater/API/Bitbucket_Server_API.php:347
+msgid "Bitbucket Server Username"
+msgstr "Användarnamn för Bitbucket Server"
+
+#: src/GitHub_Updater/API/Bitbucket_Server_API.php:356
+msgid "Bitbucket Server Password"
+msgstr "Lösenord för Bitbucket Server"
+
+#: src/GitHub_Updater/API/Bitbucket_Server_API.php:372
+msgid "Bitbucket Server Private Repositories"
+msgstr "Privata repos för Bitbucket Server"
+
+#: src/GitHub_Updater/API/Bitbucket_Server_API.php:402
+msgid "Bitbucket Server"
+msgstr "Bitbucket Server"
+
+#: src/GitHub_Updater/Messages.php:112
+#: src/GitHub_Updater/Messages.php:153
+#: src/GitHub_Updater/Messages.php:173
+msgid "GitHub Updater Error Code:"
+msgstr "GitHub Updater felkod:"
+
+#. translators: %s: wait time
+#: src/GitHub_Updater/Messages.php:119
+msgid "GitHub API&#8217;s rate limit will reset in %s minutes."
+msgstr "Gränsen för anslutningar till GitHub&#8217;s API återställs om %s minuter."
+
+#. translators: %s: GitHub personal access token URL
+#: src/GitHub_Updater/Messages.php:125
+msgid "It looks like you are running into GitHub API rate limits. Be sure and configure a <a href=\"%s\">Personal Access Token</a> to avoid this issue."
+msgstr "Det verkar som att du upplever API-begränsningar från GitHub. Ange ett <a href=\"%s\">Personal Access Token</a> för att undvika detta."
+
+#: src/GitHub_Updater/Messages.php:157
+msgid "There is probably an access token or password error on the GitHub Updater Settings page."
+msgstr "Det verkar vara fel på ett Access Token eller ett lösenord på inställningssidan för GitHub Updater."
+
+#: src/GitHub_Updater/Messages.php:188
+msgid "GitHub Updater Information"
+msgstr "Information om GitHub Updater"
+
+#: src/GitHub_Updater/Messages.php:190
+msgid "Please be patient while WP-Cron finishes making API calls."
+msgstr "Vänligen vänta medan WP-Cron kontaktar API:er."
+
+#~ msgid "Rename successful using extended name to %1$s"
+#~ msgstr "Namnbyte till %1$s lyckades med Utökade Namn"
+
+#~ msgid "GitHub Updater cache has been cleared."
+#~ msgstr "Cachen för GitHub Updater har rensats."
+
+#~ msgid "Incorrect command syntax, see %s for proper syntax."
+#~ msgstr "Felaktigt kommandosyntax, se %s för korrekt syntax."
+
+#~ msgid "GitHub Updater REST API key has been reset."
+#~ msgstr "GitHub Updater REST API key har återställts."
+
+#~ msgid "The current RESTful endpoint is `%s`"
+#~ msgstr "Nuvarande RESTful endpoint är `%s`"
+
+#~ msgid "Plugin %s installed."
+#~ msgstr "Tillägget %s installerades."
+
+#~ msgid "Theme %s installed."
+#~ msgstr "Temat %s installerades."
+
+#~ msgid "Extended Naming is %sactive%s."
+#~ msgstr "Utökade Namn är %saktivt%s."
+
+#~ msgid "Extended Naming is %snot active%s."
+#~ msgstr "Utökade Namn är %sinte aktivt%s."
+
+#~ msgid ""
+"\n"
+"Naming renames plugin directories %s to prevent possible \"\n"
+"with WP.org plugins.\""
+#~ msgstr ""
+"\n"
+"Namn döper om tilläggs-kataloger %s för att förhindra eventuella \"\n"
+"med tillägg från WP.org.\""
+
+#~ msgid "Activate Extended Naming by setting %s"
+#~ msgstr "Aktivera Utökade Namn genom att definiera %s"
+
+#~ msgid "GitLab Private Token"
+#~ msgstr "GitLab privata Token"
+
+#~ msgid "Enter GitLab Private Token for private GitLab repositories."
+#~ msgstr "Ange GitLab privata Token för privata GitLab lagringsplatser."
+
+#~ msgid "Plugin not found or not updatable with GitHub Updater: "
+#~ msgstr ""
+"\n"
+"inte hittades eller inte uppdateringsbara med GitHub Updater:\""
+
+#~ msgid "Plugin reactivated successfully."
+#~ msgstr "Tillägget återaktiverades."
+
+#~ msgid "Theme not found or not updatable with GitHub Updater: "
+#~ msgstr "Tema inte hittades eller inte uppdateringsbart med GitHub Updater:"
+
+#~ msgid "Available Updates"
+#~ msgstr "Tillgängliga uppdateringar"
+
+#~ msgid "Bad api key."
+#~ msgstr "Dåliga API-nyckel."
+
+#~ msgid "No plugin or theme specified for update."
+#~ msgstr "Ingen plugin eller tema som angetts för uppdatering."
+
+#, fuzzy
+#~ msgid "GitLab.com Private Token"
+#~ msgstr "Privata inställningar för GitHub"
+
+#~ msgid "No private repositories are installed."
+#~ msgstr "Inga privata repos är installerade."
+
+#~ msgid "Theme is up-to-date!"
+#~ msgstr "Temat är aktuellt!"
+
+#, fuzzy
+#~ msgid "Rollback to:"
+#~ msgstr "%sGå tillbaka till:%s"
+
+#, fuzzy
+#~ msgid "Rollback"
+#~ msgstr "%sGå tillbaka till:%s"
+
+#, fuzzy
+#~ msgid "Current branch is `%s`. Try %sanother version%s"
+#~ msgstr "Nuvarande version är aktuell. Testa"
+
+#~ msgid "Saved."
+#~ msgstr "Sparat."
+
+#~ msgid "Theme:"
+#~ msgstr "Tema:"
+
+#, fuzzy
+#~ msgid "Current version is up to date. Try %sanother version%s"
+#~ msgstr "Nuvarande version är aktuell. Testa"
+
+#, fuzzy
+#~ msgid "%s was not checked. GitHub Updater Error Code:"
+#~ msgstr "%1$s har inte kontrollerats. GitHub Updater felkod: %2$s"
+
+#, fuzzy
+#~ msgid "Renaming %1$s to %2$s"
+#~ msgstr "Döper om %s till %s"
+
+#~ msgid "Rename successful"
+#~ msgstr "Namnbytet lyckades"
+
+#~ msgid "Unable to rename downloaded repository."
+#~ msgstr "Kunde inte döpa om den"
+
+#, fuzzy
+#~ msgid "this plugin"
+#~ msgstr "Tilläggs-"
+
+#, fuzzy
+#~ msgid ""
+"\n"
+"plugin to automatically update GitHub, Bitbucket or GitLab hosted \"\n"
+"and themes. It also allows for remote installation of plugins or \"\n"
+"into WordPress. Plugin class based upon <a href=\"https://github.\"\n"
+"\n"
+"Theme class based upon <a href=\"https://github.com/WordPress-Phoenix/\"\n"
+"Framework</a> modifications.\""
+#~ msgstr ""
+"\n"
+"tillägg för att automatiskt uppdatera teman och tillägg från GitHub \"\n"
+"Bitbucket direkt i WordPress. Tilläggsklassen baserad på <a href=\"\n"
+"\n"
+"Temaklassen baserad på modifikationer av <a href=\"\n"
+"\n"
+""
+
+#~ msgid ""
+"\n"
+"changelog is available via GitHub Updater. Create a file <code>CHANGES.\"\n"
+"or <code>CHANGELOG.md</code> in your repository.\""
+#~ msgstr ""
+"\n"
+"changelog finns tillgänglig via GitHub Updater. Skapa <code>CHANGES.\"\n"
+"eller  <code>CHANGELOG.md</code> i din repo.\""
+
+#~ msgid "%sView version %s details%s or %supdate now%s."
+#~ msgstr "%sVisa detaljer för version %s %s eller %suppdatera nu%s."
+
+#~ msgid "URI"
+#~ msgstr "URI"
+
+#~ msgid "available now."
+#~ msgstr "tillgänglig."
+
+#~ msgid "View version"
+#~ msgstr "Visa detaljer för version"
+
+#~ msgid "or"
+#~ msgstr "eller"
+
+#~ msgid "another version?"
+#~ msgstr "en annan version?"
+
+#~ msgid "was not checked."
+#~ msgstr "kunde inte kontrolleras. "

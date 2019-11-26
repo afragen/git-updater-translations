@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0839817fc38c5eb0985259539431b58",
+    "content-hash": "95b464686be2796936c5db6aa4e21999",
     "packages": [
         {
             "name": "afragen/language-pack-maker",
@@ -12,15 +12,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/language-pack-maker.git",
-                "reference": "c15dd86fd339766e848cfc4314fdce8c6d7b1f66"
+                "reference": "d672ed22ba15aeb0199c1bef94378c97dae22187"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/c15dd86fd339766e848cfc4314fdce8c6d7b1f66",
-                "reference": "c15dd86fd339766e848cfc4314fdce8c6d7b1f66",
+                "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/d672ed22ba15aeb0199c1bef94378c97dae22187",
+                "reference": "d672ed22ba15aeb0199c1bef94378c97dae22187",
                 "shasum": ""
             },
             "require": {
+                "gettext/gettext": "^4.8",
                 "php": ">=5.6"
             },
             "type": "library",
@@ -44,13 +45,13 @@
                     "role": "Developer"
                 }
             ],
-            "description": "Library that helps create git sourced WordPress Language Packs from mo/po files.",
+            "description": "Library that helps create git sourced WordPress Language Packs from po files.",
             "keywords": [
                 "language packs",
                 "translations",
                 "wordpress"
             ],
-            "time": "2019-11-25T00:49:48+00:00"
+            "time": "2019-11-26T17:30:24+00:00"
         },
         {
             "name": "cweagans/composer-patches",

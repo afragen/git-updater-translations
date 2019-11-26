@@ -1,3 +1,8 @@
+## 2.0.0 / 2019-11-26
+* fix processing of .json files, thanks @ahmader
+* use gettext/gettext to parse translation headers for 'PO-Revision-Date'
+* create the .mo files from the .po files with gettext/gettext
+
 ## 1.8.0 / 2019-11-24
 * put version info in composer.json
 * add .json files to processing for `wp_set_script_translations`

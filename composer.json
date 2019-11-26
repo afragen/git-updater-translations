@@ -23,18 +23,19 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/afragen/wp-debugging/issues",
+    "issues": "https://github.com/afragen/github-updater-translations/issues",
     "source": "https://github.com/afragen/github-updater-translations"
   },
   "prefer-stable": true,
   "require": {
     "php": ">=5.6",
     "afragen/language-pack-maker": "dev-master",
-    "wp-cli/i18n-command":"^2"
+    "wp-cli/i18n-command": "^2.2"
   },
   "scripts": {
     "post-update-cmd": [
-      "wp i18n make-json languages/ --no-purge"
+      "cp -r ./originals/*.po ./languages/",
+      "wp i18n make-json languages/"
     ]
   }
 }

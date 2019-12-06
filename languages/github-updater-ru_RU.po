@@ -1,28 +1,33 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GitHub Updater\n"
-"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-26 10:14-0800\n"
+"PO-Revision-Date: 2018-12-01 11:31+0500\n"
 "Last-Translator: Airat Halitov <translate@airat.biz>\n"
 "Language-Team: Airat Halitov <translate@airat.biz>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2018-11-26 10:14-0800\n"
-"PO-Revision-Date: 2018-12-01 11:31+0500\n"
-"Language: ru_RU\n"
 "X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: github-updater.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Language: ru_RU\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #. translators: 1: minimum PHP version required, 2: Upgrade PHP URL
 #: github-updater.php:40
 #, php-format
-msgid "GitHub Updater cannot run on PHP versions older than %1$s. <a href=\"%2$s\">Learn about upgrading your PHP.</a>"
-msgstr "GitHub Updater не может работать на версиях PHP старше %1$s. <a href=\"%2$s\">Узнайте об обновлении вашего PHP.</a>"
+msgid ""
+"GitHub Updater cannot run on PHP versions older than %1$s. <a href=\"%2$s"
+"\">Learn about upgrading your PHP.</a>"
+msgstr ""
+"GitHub Updater не может работать на версиях PHP старше %1$s. <a href=\"%2$s"
+"\">Узнайте об обновлении вашего PHP.</a>"
 
 #: github-updater.php:42
 msgid "https://wordpress.org/support/upgrade-php/"
@@ -55,8 +60,11 @@ msgid "Bitbucket"
 msgstr "Bitbucket"
 
 #: src/GitHub_Updater/API/Bitbucket_API.php:422
-msgid "Check box if private repository. Leave unchecked for public repositories."
-msgstr "Отметьте, если частные хранилища. Не устанавливайте флажок для публичных хранилищ."
+msgid ""
+"Check box if private repository. Leave unchecked for public repositories."
+msgstr ""
+"Отметьте, если частные хранилища. Не устанавливайте флажок для публичных "
+"хранилищ."
 
 #: src/GitHub_Updater/API/Bitbucket_API.php:429
 msgid "Enter your personal Bitbucket username and password."
@@ -116,11 +124,16 @@ msgstr "Личные настройки GitHub"
 
 #: src/GitHub_Updater/API/GitHub_API.php:429
 msgid "Enter your GitHub Access Token. Leave empty for public repositories."
-msgstr "Введите ваш GitHub маркер доступа. Оставьте пустым для публичных хранилищ."
+msgstr ""
+"Введите ваш GitHub маркер доступа. Оставьте пустым для публичных хранилищ."
 
 #: src/GitHub_Updater/API/GitHub_API.php:436
-msgid "Enter your personal GitHub.com or GitHub Enterprise Access Token to avoid API access limits."
-msgstr "Введите ваш личный GitHub.com или GitHub Enterprise маркер доступа во избежание ограничения доступа к API."
+msgid ""
+"Enter your personal GitHub.com or GitHub Enterprise Access Token to avoid "
+"API access limits."
+msgstr ""
+"Введите ваш личный GitHub.com или GitHub Enterprise маркер доступа во "
+"избежание ограничения доступа к API."
 
 #: src/GitHub_Updater/API/GitHub_API.php:447
 msgid "GitHub Access Token"
@@ -160,7 +173,8 @@ msgstr "Введите ваш GitLab маркер доступа."
 
 #: src/GitHub_Updater/API/GitLab_API.php:514
 msgid "Enter your GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
-msgstr "Введите ваш GitLab.com, GitLab CE или GitLab Enterprise маркер доступа."
+msgstr ""
+"Введите ваш GitLab.com, GitLab CE или GitLab Enterprise маркер доступа."
 
 #: src/GitHub_Updater/API/GitLab_API.php:525
 msgid "GitLab Access Token"
@@ -171,8 +185,11 @@ msgid "Enter GitLab Access Token for private GitLab repositories."
 msgstr "Введите GitLab Private Token для приватных репозиториев GitLab."
 
 #: src/GitHub_Updater/API/GitLab_API.php:574
-msgid "You must set a GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
-msgstr "Вам необходимо установить GitLab.com, GitLab CE или GitLab Enterprise маркер доступа."
+msgid ""
+"You must set a GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
+msgstr ""
+"Вам необходимо установить GitLab.com, GitLab CE или GitLab Enterprise "
+"маркер доступа."
 
 #: src/GitHub_Updater/API/Gitea_API.php:311
 #: src/GitHub_Updater/API/Gitea_API.php:329
@@ -213,13 +230,16 @@ msgid "Enter plugin or theme slug."
 msgstr "Введите ярлык плагина или темы."
 
 #: src/GitHub_Updater/Base.php:449
-msgid "There may be a problem with WP-Cron. A GitHub Updater WP-Cron event is overdue."
-msgstr "У WP-Cron может возникнуть проблема. Событие WP-Cron для GitHub Updater просрочено."
+msgid ""
+"There may be a problem with WP-Cron. A GitHub Updater WP-Cron event is "
+"overdue."
+msgstr ""
+"У WP-Cron может возникнуть проблема. Событие WP-Cron для GitHub Updater "
+"просрочено."
 
 #. translators: current branch name and link
 #. translators: 1: branch name, 2: jQuery dropdown, 3: closing tag
-#: src/GitHub_Updater/Base.php:882
-#: src/GitHub_Updater/Theme.php:585
+#: src/GitHub_Updater/Base.php:882 src/GitHub_Updater/Theme.php:585
 #, php-format
 msgid "Current branch is `%1$s`, try %2$sanother version%3$s"
 msgstr "Текущая ветка `%1$s`, попробуйте %2$sдругую версию%3$s"
@@ -232,18 +252,15 @@ msgstr "Переключиться на ветку "
 msgid "Switch to release "
 msgstr "Переход на выпуск "
 
-#: src/GitHub_Updater/Base.php:917
-#: src/GitHub_Updater/Theme.php:611
+#: src/GitHub_Updater/Base.php:917 src/GitHub_Updater/Theme.php:611
 msgid "No previous tags to rollback to."
 msgstr "Нет предыдущих тегов для отката."
 
-#: src/GitHub_Updater/Install.php:104
-#: src/GitHub_Updater/Install.php:366
+#: src/GitHub_Updater/Install.php:104 src/GitHub_Updater/Install.php:366
 msgid "Install Plugin"
 msgstr "Установить плагин"
 
-#: src/GitHub_Updater/Install.php:107
-#: src/GitHub_Updater/Install.php:369
+#: src/GitHub_Updater/Install.php:107 src/GitHub_Updater/Install.php:369
 msgid "Install Theme"
 msgstr "Установить тему"
 
@@ -296,8 +313,7 @@ msgctxt "This refers to a network activation in a multisite installation"
 msgid "Network Enable"
 msgstr "Включить сеть"
 
-#: src/GitHub_Updater/Messages.php:112
-#: src/GitHub_Updater/Messages.php:153
+#: src/GitHub_Updater/Messages.php:112 src/GitHub_Updater/Messages.php:153
 #: src/GitHub_Updater/Messages.php:173
 msgid "GitHub Updater Error Code:"
 msgstr "GitHub Updater код ошибки:"
@@ -311,12 +327,21 @@ msgstr "Ограничение скорости GitHub API будет сброш
 #. translators: %s: GitHub personal access token URL
 #: src/GitHub_Updater/Messages.php:125
 #, php-format
-msgid "It looks like you are running into GitHub API rate limits. Be sure and configure a <a href=\"%s\">Personal Access Token</a> to avoid this issue."
-msgstr "Похоже, что вы работаете в пределы скорости GitHub API. Будьте уверены и настроить <a href=\"%s\">персональный маркер доступа</a>, чтобы избежать этой проблемы."
+msgid ""
+"It looks like you are running into GitHub API rate limits. Be sure and "
+"configure a <a href=\"%s\">Personal Access Token</a> to avoid this issue."
+msgstr ""
+"Похоже, что вы работаете в пределы скорости GitHub API. Будьте уверены и "
+"настроить <a href=\"%s\">персональный маркер доступа</a>, чтобы избежать "
+"этой проблемы."
 
 #: src/GitHub_Updater/Messages.php:157
-msgid "There is probably an access token or password error on the GitHub Updater Settings page."
-msgstr "На странице Параметры обновления GitHub, вероятно ошибка маркера или пароля доступа."
+msgid ""
+"There is probably an access token or password error on the GitHub Updater "
+"Settings page."
+msgstr ""
+"На странице Параметры обновления GitHub, вероятно ошибка маркера или пароля "
+"доступа."
 
 #: src/GitHub_Updater/Messages.php:188
 msgid "GitHub Updater Information"
@@ -340,27 +365,33 @@ msgid "Reset RESTful key"
 msgstr "Сбросить RESTful ключ"
 
 #: src/GitHub_Updater/Remote_Management.php:231
-msgid "Please refer to README for complete list of attributes. RESTful endpoints begin at:"
-msgstr "Пожалуйста, обратитесь к README для полного списка атрибутов. Конечные точки RESTful начинаются с:"
+msgid ""
+"Please refer to README for complete list of attributes. RESTful endpoints "
+"begin at:"
+msgstr ""
+"Пожалуйста, обратитесь к README для полного списка атрибутов. Конечные "
+"точки RESTful начинаются с:"
 
 #: src/GitHub_Updater/Remote_Management.php:235
-msgid "Use of Remote Management services may result increase some page load speeds only for `admin` level users in the dashboard."
-msgstr "Использование удаленного управления, службы могут привести увеличить некоторые страницы скорости загрузки только для уровня пользователей `admin` в панели инструментов."
+msgid ""
+"Use of Remote Management services may result increase some page load speeds "
+"only for `admin` level users in the dashboard."
+msgstr ""
+"Использование удаленного управления, службы могут привести увеличить "
+"некоторые страницы скорости загрузки только для уровня пользователей "
+"`admin` в панели инструментов."
 
-#: src/GitHub_Updater/Settings.php:114
-#: src/GitHub_Updater/Settings.php:719
+#: src/GitHub_Updater/Settings.php:114 src/GitHub_Updater/Settings.php:719
 msgid "Settings"
 msgstr "Настройки"
 
 #. Plugin Name of the plugin/theme
-#: src/GitHub_Updater/Settings.php:133
-#: src/GitHub_Updater/Settings.php:172
+#: src/GitHub_Updater/Settings.php:133 src/GitHub_Updater/Settings.php:172
 #: src/GitHub_Updater/Settings.php:223
 msgid "GitHub Updater"
 msgstr "GitHub Updater"
 
-#: src/GitHub_Updater/Settings.php:171
-#: src/GitHub_Updater/Settings.php:310
+#: src/GitHub_Updater/Settings.php:171 src/GitHub_Updater/Settings.php:310
 msgid "GitHub Updater Settings"
 msgstr "GitHub Updater Настройки"
 
@@ -393,8 +424,12 @@ msgid "Overridden Plugins and Themes"
 msgstr "Переопределенные плагины и темы"
 
 #: src/GitHub_Updater/Settings.php:551
-msgid "The following plugins or themes might exist on wp.org, but any updates will be downloaded from their respective git repositories."
-msgstr "На wp.org могут существовать следующие плагины или темы, но любые обновления будут загружаться из соответствующих репозиториев git."
+msgid ""
+"The following plugins or themes might exist on wp.org, but any updates will "
+"be downloaded from their respective git repositories."
+msgstr ""
+"На wp.org могут существовать следующие плагины или темы, но любые "
+"обновления будут загружаться из соответствующих репозиториев git."
 
 #: src/GitHub_Updater/Settings.php:753
 msgid "This is a private repository."
@@ -413,8 +448,7 @@ msgid "Installed Plugins and Themes"
 msgstr "Установленные плагины и темы"
 
 #. translators: %s: theme name
-#: src/GitHub_Updater/Theme.php:337
-#: src/GitHub_Updater/Theme.php:533
+#: src/GitHub_Updater/Theme.php:337 src/GitHub_Updater/Theme.php:533
 #, php-format
 msgid "There is a new version of %s available."
 msgstr "Доступна новая версия %s."
@@ -430,15 +464,13 @@ msgid "Automatic update is unavailable for this theme."
 msgstr "Автоматическое обновление недоступно для этой темы."
 
 #. translators: 1: version number, 2: closing anchor tag, 3: update URL
-#: src/GitHub_Updater/Theme.php:358
-#: src/GitHub_Updater/Theme.php:543
+#: src/GitHub_Updater/Theme.php:358 src/GitHub_Updater/Theme.php:543
 #, php-format
 msgid "View version %1$s details%2$s or %3$supdate now%2$s."
 msgstr "Просмотреть %1$s детали%2$s версии или %3$sобновить%2$s."
 
 #. translators: %s: theme name
-#: src/GitHub_Updater/Theme.php:363
-#: src/GitHub_Updater/Theme.php:548
+#: src/GitHub_Updater/Theme.php:363 src/GitHub_Updater/Theme.php:548
 #, php-format
 msgid "Update %s now"
 msgstr "Обновить %s"
@@ -456,8 +488,14 @@ msgid "https://github.com/afragen/github-updater"
 msgstr "https://github.com/afragen/github-updater"
 
 #. Description of the plugin/theme
-msgid "A plugin to automatically update GitHub, Bitbucket, GitLab, or Gitea hosted plugins, themes, and language packs. It also allows for remote installation of plugins or themes into WordPress."
-msgstr "Плагин для автоматического обновления плагинов, тем и языковых пакетов GitHub, Bitbucket, GitLab или Gitea. Он также позволяет удаленно устанавливать плагины или темы в WordPress."
+msgid ""
+"A plugin to automatically update GitHub, Bitbucket, GitLab, or Gitea hosted "
+"plugins, themes, and language packs. It also allows for remote installation "
+"of plugins or themes into WordPress."
+msgstr ""
+"Плагин для автоматического обновления плагинов, тем и языковых пакетов "
+"GitHub, Bitbucket, GitLab или Gitea. Он также позволяет удаленно "
+"устанавливать плагины или темы в WordPress."
 
 #. Author of the plugin/theme
 msgid "Andy Fragen"

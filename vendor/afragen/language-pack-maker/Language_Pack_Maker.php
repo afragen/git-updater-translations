@@ -55,6 +55,13 @@ class Language_Pack_Maker {
 	private $language_files_dir;
 
 	/**
+	 * Shortcut to `/tmp` directory.
+	 *
+	 * @var string
+	 */
+	private $temp_language_files_dir;
+
+	/**
 	 * Shortcut to `/packages` directory, where zipfiles will live.
 	 *
 	 * @var string
@@ -65,9 +72,12 @@ class Language_Pack_Maker {
 	 * Language_Pack_Maker constructor.
 	 */
 	public function __construct() {
-		$this->root_dir           = dirname( dirname( dirname( __DIR__ ) ) );
-		$this->language_files_dir = $this->root_dir . '/languages';
-		$this->packages_dir       = $this->root_dir . '/packages';
+		$this->root_dir                = dirname( dirname( dirname( __DIR__ ) ) );
+		$this->language_files_dir      = $this->root_dir . '/languages';
+		$this->temp_language_files_dir = $this->root_dir . '/tmp';
+		$this->packages_dir            = $this->root_dir . '/packages';
+		@mkdir( $this->language_files_dir, 0777 );
+		@mkdir( $this->temp_language_files_dir, 0777 );
 		@mkdir( $this->packages_dir, 0777 );
 	}
 
@@ -76,8 +86,9 @@ class Language_Pack_Maker {
 	 */
 	public function run() {
 		$this->directory_list = $this->list_directory( $this->language_files_dir );
-		$this->translations   = $this->process_directory( $this->directory_list );
-		$this->create_mo_files( $this->language_files_dir );
+		$this->copy_to_temp_dir( $this->temp_language_files_dir );
+		$this->translations = $this->process_directory( $this->directory_list );
+		$this->create_mo_files( $this->temp_language_files_dir );
 		$this->packages = $this->create_packages();
 		$this->create_language_packs();
 		$this->create_json();
@@ -91,7 +102,7 @@ class Language_Pack_Maker {
 	 * @return array $dir_list Listing of directory contents.
 	 */
 	private function list_directory( $dir ) {
-		$dir_list = [];
+		$dir_list = array();
 
 		// Only add mo/po/zip/json files.
 		foreach ( glob( $dir . '/*.{mo,po,zip,json}', GLOB_BRACE ) as $file ) {
@@ -99,6 +110,18 @@ class Language_Pack_Maker {
 		}
 
 		return $dir_list;
+	}
+
+	/**
+	 * Copy files from language files directory to temp directory for processing.
+	 *
+	 * @return void
+	 */
+	private function copy_to_temp_dir() {
+		foreach ( $this->directory_list as $file ) {
+			copy( "$this->language_files_dir/$file", "$this->temp_language_files_dir/$file" );
+		}
+		$this->directory_list = $this->list_directory( $this->temp_language_files_dir );
 	}
 
 	/**
@@ -142,7 +165,7 @@ class Language_Pack_Maker {
 	/**
 	 * Create .mo files from .po files.
 	 *
-	 * @param string $dir File path to language files directory.
+	 * @param string $dir File path to temporary language files directory.
 	 *
 	 * @return void
 	 */
@@ -167,12 +190,12 @@ class Language_Pack_Maker {
 	 * @return array $packages Associative array of translation files per translation.
 	 */
 	private function create_packages() {
-		$packages = [];
+		$packages = array();
 		foreach ( $this->translations as $translation ) {
-			$package = [];
+			$package = array();
 			foreach ( $this->directory_list as $file ) {
 				if ( false !== stripos( $file, $translation ) ) {
-					$package[] = $this->language_files_dir . '/' . $file;
+					$package[] = $this->temp_language_files_dir . '/' . $file;
 				}
 			}
 			$packages[ $translation ] = $package;
@@ -201,7 +224,7 @@ class Language_Pack_Maker {
 	 *
 	 * @return bool
 	 */
-	private function create_zip( $files = [], $destination = '', $overwrite = true ) {
+	private function create_zip( $files = array(), $destination = '', $overwrite = true ) {
 		// if the zip file already exists and overwrite is false, return false.
 		if ( file_exists( $destination ) && ! $overwrite ) {
 			return false;
@@ -233,7 +256,7 @@ class Language_Pack_Maker {
 	 */
 	private function create_json() {
 		$packages = $this->list_directory( $this->packages_dir );
-		$arr      = [];
+		$arr      = array();
 
 		foreach ( $packages as $package ) {
 			foreach ( $this->translations as $translation ) {
@@ -260,7 +283,7 @@ class Language_Pack_Maker {
 	 * @return string
 	 */
 	private function get_po_revision( $file ) {
-		$file         = $this->language_files_dir . '/' . $file;
+		$file         = $this->temp_language_files_dir . '/' . $file;
 		$translations = Translations::fromPoFile( $file );
 
 		return $translations->getHeader( 'PO-Revision-Date' );

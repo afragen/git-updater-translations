@@ -1,30 +1,35 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GitHub Updater\n"
-"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-01 18:06+0800\n"
+"PO-Revision-Date: 2019-10-01 18:51+0800\n"
 "Last-Translator: Alex Lion <learnwithalex@gmail.com>\n"
 "Language-Team: Alex Lion <learnwithalex@gmail.com>\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-10-01 18:06+0800\n"
-"PO-Revision-Date: 2019-10-01 18:51+0800\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 2.2.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: github-updater.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #. translators: 1: minimum PHP version required, 2: Upgrade PHP URL
 #: github-updater.php:42
 #, php-format
-msgid "GitHub Updater cannot run on PHP versions older than %1$s. <a href=\"%2$s\">Learn about updating your PHP.</a>"
-msgstr "GitHub Updater 無法執行於比 PHP %s 版更舊的環境。<a href=\"%2$s\" target=\"_blank\">進一步瞭解如何為網站主機升級 PHP</a>。"
+msgid ""
+"GitHub Updater cannot run on PHP versions older than %1$s. <a href=\"%2$s"
+"\">Learn about updating your PHP.</a>"
+msgstr ""
+"GitHub Updater 無法執行於比 PHP %s 版更舊的環境。<a href=\"%2$s\" target="
+"\"_blank\">進一步瞭解如何為網站主機升級 PHP</a>。"
 
 #: github-updater.php:44
 msgid "https://wordpress.org/support/update-php/"
@@ -57,8 +62,11 @@ msgid "Bitbucket"
 msgstr "Bitbucket"
 
 #: src/GitHub_Updater/API/Bitbucket_API.php:453
-msgid "Check box if private repository. Leave unchecked for public repositories."
-msgstr "如需存取私有存放庫，請啟用這項設定。未啟用這項設定則代表存取目標為公開存放庫。"
+msgid ""
+"Check box if private repository. Leave unchecked for public repositories."
+msgstr ""
+"如需存取私有存放庫，請啟用這項設定。未啟用這項設定則代表存取目標為公開存放"
+"庫。"
 
 #: src/GitHub_Updater/API/Bitbucket_API.php:460
 msgid "Enter your personal Bitbucket username and password."
@@ -121,7 +129,9 @@ msgid "Enter your GitHub Access Token. Leave empty for public repositories."
 msgstr "輸入 GitHub 存取權杖。欄位留空僅能存取公開存放庫。"
 
 #: src/GitHub_Updater/API/GitHub_API.php:442
-msgid "Enter your personal GitHub.com or GitHub Enterprise Access Token to avoid API access limits."
+msgid ""
+"Enter your personal GitHub.com or GitHub Enterprise Access Token to avoid "
+"API access limits."
 msgstr "輸入個人 GitHub.com 或 GitHub Enterprise 存取權杖以避免 API 存取限制。"
 
 #: src/GitHub_Updater/API/GitHub_API.php:453
@@ -173,8 +183,10 @@ msgid "Enter GitLab Access Token for private GitLab repositories."
 msgstr "輸入 GitLab 私有存放庫的 GitLab 存取權杖。"
 
 #: src/GitHub_Updater/API/GitLab_API.php:579
-msgid "You must set a GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
-msgstr "網站管理員必須設定 GitLab.com、GitLab CE 或 GitLab Enterprise 的存取權杖。"
+msgid ""
+"You must set a GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
+msgstr ""
+"網站管理員必須設定 GitLab.com、GitLab CE 或 GitLab Enterprise 的存取權杖。"
 
 #: src/GitHub_Updater/API/Gitea_API.php:343
 #: src/GitHub_Updater/API/Gitea_API.php:361
@@ -215,12 +227,13 @@ msgid "Enter plugin or theme slug."
 msgstr "輸入外掛或佈景主題代稱。"
 
 #: src/GitHub_Updater/Base.php:440
-msgid "There may be a problem with WP-Cron. A GitHub Updater WP-Cron event is overdue."
+msgid ""
+"There may be a problem with WP-Cron. A GitHub Updater WP-Cron event is "
+"overdue."
 msgstr "WP-Cron 執行時發生問題。GitHub Updater 的 WP-Cron 事件已逾期。"
 
 #. translators: 1: branch name, 2: jQuery dropdown, 3: closing tag
-#: src/GitHub_Updater/Base.php:822
-#: src/GitHub_Updater/Theme.php:581
+#: src/GitHub_Updater/Base.php:822 src/GitHub_Updater/Theme.php:581
 #, php-format
 msgid "Current branch is `%1$s`, try %2$sanother version%3$s"
 msgstr "目前分支版本為 %1$s，試試%2$s其他版本%3$s"
@@ -233,18 +246,15 @@ msgstr "切換至分支版本 "
 msgid "Switch to release "
 msgstr "切換至正式版本 "
 
-#: src/GitHub_Updater/Base.php:857
-#: src/GitHub_Updater/Theme.php:607
+#: src/GitHub_Updater/Base.php:857 src/GitHub_Updater/Theme.php:607
 msgid "No previous tags to rollback to."
 msgstr "沒有前版標籤可供復原。"
 
-#: src/GitHub_Updater/Install.php:104
-#: src/GitHub_Updater/Install.php:366
+#: src/GitHub_Updater/Install.php:104 src/GitHub_Updater/Install.php:366
 msgid "Install Plugin"
 msgstr "安裝外掛"
 
-#: src/GitHub_Updater/Install.php:107
-#: src/GitHub_Updater/Install.php:369
+#: src/GitHub_Updater/Install.php:107 src/GitHub_Updater/Install.php:369
 msgid "Install Theme"
 msgstr "安裝佈景主題"
 
@@ -297,8 +307,7 @@ msgctxt "This refers to a network activation in a multisite installation"
 msgid "Network Enable"
 msgstr "啟用多站網路支援"
 
-#: src/GitHub_Updater/Messages.php:112
-#: src/GitHub_Updater/Messages.php:153
+#: src/GitHub_Updater/Messages.php:112 src/GitHub_Updater/Messages.php:153
 #: src/GitHub_Updater/Messages.php:173
 msgid "GitHub Updater Error Code:"
 msgstr "GitHub Updater 錯誤代碼:"
@@ -312,11 +321,17 @@ msgstr "GitHub API 的使用量限制將在 %s 分鐘後重設。"
 #. translators: %s: GitHub personal access token URL
 #: src/GitHub_Updater/Messages.php:125
 #, php-format
-msgid "It looks like you are running into GitHub API rate limits. Be sure and configure a <a href=\"%s\">Personal Access Token</a> to avoid this issue."
-msgstr "你的 GitHub API 使用量限制接近上限。請設定<a href=\"%s\" target=\"_blank\">個人存取權杖</a>以避免發生這個狀況。"
+msgid ""
+"It looks like you are running into GitHub API rate limits. Be sure and "
+"configure a <a href=\"%s\">Personal Access Token</a> to avoid this issue."
+msgstr ""
+"你的 GitHub API 使用量限制接近上限。請設定<a href=\"%s\" target=\"_blank\">個"
+"人存取權杖</a>以避免發生這個狀況。"
 
 #: src/GitHub_Updater/Messages.php:157
-msgid "There is probably an access token or password error on the GitHub Updater Settings page."
+msgid ""
+"There is probably an access token or password error on the GitHub Updater "
+"Settings page."
 msgstr "在 GitHub Updater 設定頁面中，發生存取權杖或密碼設定錯誤。"
 
 #: src/GitHub_Updater/Messages.php:188
@@ -347,33 +362,43 @@ msgstr "產生 JSON 檔案"
 #. translators: %s: Link to Git Bulk Updater repository
 #: src/GitHub_Updater/Remote_Management.php:240
 #, php-format
-msgid "The <a href=\"%s\">Git Bulk Updater</a> plugin was specifically created to make the remote management of GitHub Updater supported plugins and themes much simpler."
-msgstr "開發 <a href=\"%s\" target=\"_blank\">Git Bulk Updater</a> 外掛的目的，在於讓 GitHub Updater 支援的外掛及佈景主題遠端管理更加簡單。"
+msgid ""
+"The <a href=\"%s\">Git Bulk Updater</a> plugin was specifically created to "
+"make the remote management of GitHub Updater supported plugins and themes "
+"much simpler."
+msgstr ""
+"開發 <a href=\"%s\" target=\"_blank\">Git Bulk Updater</a> 外掛的目的，在於"
+"讓 GitHub Updater 支援的外掛及佈景主題遠端管理更加簡單。"
 
 #. translators: %1$s: Link to wiki, %2$s: RESTful API URL
 #: src/GitHub_Updater/Remote_Management.php:250
 #, php-format
-msgid "Please refer to the <a href=\"%1$s\">wiki</a> for complete list of attributes. RESTful endpoints begin at: %2$s"
-msgstr "請參閱這份外掛 <a href=\"%1$s\" target=\"_blank\">Wiki</a> 以瞭解完整的屬性清單。RESTful 端點開始於: %2$s"
+msgid ""
+"Please refer to the <a href=\"%1$s\">wiki</a> for complete list of "
+"attributes. RESTful endpoints begin at: %2$s"
+msgstr ""
+"請參閱這份外掛 <a href=\"%1$s\" target=\"_blank\">Wiki</a> 以瞭解完整的屬性清"
+"單。RESTful 端點開始於: %2$s"
 
 #: src/GitHub_Updater/Remote_Management.php:258
-msgid "Use of Remote Management services may result increase some page load speeds only for `admin` level users in the dashboard."
-msgstr "使用遠端管理服務，會增加 [網站管理員] 角色使用者在 [控制台] 中的頁面載入時間。"
+msgid ""
+"Use of Remote Management services may result increase some page load speeds "
+"only for `admin` level users in the dashboard."
+msgstr ""
+"使用遠端管理服務，會增加 [網站管理員] 角色使用者在 [控制台] 中的頁面載入時"
+"間。"
 
-#: src/GitHub_Updater/Settings.php:115
-#: src/GitHub_Updater/Settings.php:720
+#: src/GitHub_Updater/Settings.php:115 src/GitHub_Updater/Settings.php:720
 msgid "Settings"
 msgstr "設定"
 
 #. Plugin Name of the plugin/theme
-#: src/GitHub_Updater/Settings.php:134
-#: src/GitHub_Updater/Settings.php:173
+#: src/GitHub_Updater/Settings.php:134 src/GitHub_Updater/Settings.php:173
 #: src/GitHub_Updater/Settings.php:224
 msgid "GitHub Updater"
 msgstr "GitHub Updater"
 
-#: src/GitHub_Updater/Settings.php:172
-#: src/GitHub_Updater/Settings.php:311
+#: src/GitHub_Updater/Settings.php:172 src/GitHub_Updater/Settings.php:311
 msgid "GitHub Updater Settings"
 msgstr "GitHub Updater 設定"
 
@@ -406,8 +431,12 @@ msgid "Overridden Plugins and Themes"
 msgstr "覆寫外掛及佈景主題"
 
 #: src/GitHub_Updater/Settings.php:552
-msgid "The following plugins or themes might exist on wp.org, but any updates will be downloaded from their respective git repositories."
-msgstr "下列外掛或佈景主題並未上架至 WordPress.org 目錄，但可從各自所屬的 git 存放庫進行更新。"
+msgid ""
+"The following plugins or themes might exist on wp.org, but any updates will "
+"be downloaded from their respective git repositories."
+msgstr ""
+"下列外掛或佈景主題並未上架至 WordPress.org 目錄，但可從各自所屬的 git 存放庫"
+"進行更新。"
 
 #: src/GitHub_Updater/Settings.php:754
 msgid "This is a private repository."
@@ -426,8 +455,7 @@ msgid "Installed Plugins and Themes"
 msgstr "已安裝的外掛和佈景主題"
 
 #. translators: %s: theme name
-#: src/GitHub_Updater/Theme.php:333
-#: src/GitHub_Updater/Theme.php:529
+#: src/GitHub_Updater/Theme.php:333 src/GitHub_Updater/Theme.php:529
 #, php-format
 msgid "There is a new version of %s available."
 msgstr "%s 有新版本可供下載安裝。"
@@ -443,15 +471,13 @@ msgid "Automatic update is unavailable for this theme."
 msgstr "這個佈景主題無法使用自動更新。"
 
 #. translators: 1: version number, 2: closing anchor tag, 3: update URL
-#: src/GitHub_Updater/Theme.php:354
-#: src/GitHub_Updater/Theme.php:539
+#: src/GitHub_Updater/Theme.php:354 src/GitHub_Updater/Theme.php:539
 #, php-format
 msgid "View version %1$s details%2$s or %3$supdate now%2$s."
 msgstr "檢視 %1$s 版的詳細資料%2$s或%3$s立即更新%2$s。"
 
 #. translators: %s: theme name
-#: src/GitHub_Updater/Theme.php:359
-#: src/GitHub_Updater/Theme.php:544
+#: src/GitHub_Updater/Theme.php:359 src/GitHub_Updater/Theme.php:544
 #, php-format
 msgid "Update %s now"
 msgstr "立即更新 %s"
@@ -469,8 +495,14 @@ msgid "https://github.com/afragen/github-updater"
 msgstr "https://github.com/afragen/github-updater"
 
 #. Description of the plugin/theme
-msgid "A plugin to automatically update GitHub, Bitbucket, GitLab, or Gitea hosted plugins, themes, and language packs. It also allows for remote installation of plugins or themes into WordPress."
-msgstr "GitHub Updater 能協助網站管理員將託管於 GitHub、Bitbucket、GitLab 或 Gitea 的外掛、佈景主題和語言套件進行自動更新，還能配合遠端管理服務將位於 git 存放庫的外掛或佈景主題檔案安裝至 WordPress 網站中。"
+msgid ""
+"A plugin to automatically update GitHub, Bitbucket, GitLab, or Gitea hosted "
+"plugins, themes, and language packs. It also allows for remote installation "
+"of plugins or themes into WordPress."
+msgstr ""
+"GitHub Updater 能協助網站管理員將託管於 GitHub、Bitbucket、GitLab 或 Gitea 的"
+"外掛、佈景主題和語言套件進行自動更新，還能配合遠端管理服務將位於 git 存放庫的"
+"外掛或佈景主題檔案安裝至 WordPress 網站中。"
 
 #. Author of the plugin/theme
 msgid "Andy Fragen"
@@ -478,30 +510,25 @@ msgstr "Andy Fragen"
 
 #, php-format
 #~ msgid ""
-"\n"
-"refer to the <a href=\"%s\">wiki</a> for complete list of \"\n"
-"RESTful endpoints begin at:\""
+#~ "Please refer to the <a href=\"%s\">wiki</a> for complete list of "
+#~ "attributes. RESTful endpoints begin at:"
 #~ msgstr ""
-"\n"
-"<a href=\"%s\" target=\"_blank\">Wiki</a> 以瞭解完整的屬性\"\n"
-"端點開始於:\""
+#~ "請參閱這份外掛 <a href=\"%s\" target=\"_blank\">Wiki</a> 以瞭解完整的屬性"
+#~ "清單。RESTful 端點開始於:"
 
 #~ msgid ""
-"\n"
-"Updater cannot run on PHP versions older than %1$s. <a href=\"%2$s\"\n"
-"about upgrading your PHP.</a>\""
+#~ "GitHub Updater cannot run on PHP versions older than %1$s. <a href=\"%2$s"
+#~ "\">Learn about upgrading your PHP.</a>"
 #~ msgstr ""
-"\n"
-"Updater 無法執行於比 PHP %s 版更舊的環境。<a href=\"%2$s\" target=\"\n"
-"PHP</a>。\""
+#~ "GitHub Updater 無法執行於比 PHP %s 版更舊的環境。<a href=\"%2$s\" target="
+#~ "\"_blank\">瞭解如何為網站主機升級 PHP</a>。"
 
 #~ msgid "https://wordpress.org/support/upgrade-php/"
 #~ msgstr "https://wordpress.org/support/upgrade-php/"
 
 #~ msgid ""
-"\n"
-"refer to README for complete list of attributes. RESTful endpoints \"\n"
-"at:\""
+#~ "Please refer to README for complete list of attributes. RESTful endpoints "
+#~ "begin at:"
 #~ msgstr "請參閱 README 檔案以取得完整的屬性清單。RESTful 端點起始位置如下:"
 
 #~ msgid "Override Dot Org is <strong>active</strong>."
@@ -511,13 +538,11 @@ msgstr "Andy Fragen"
 #~ msgstr "[覆寫 WordPress.org 設定] <strong>尚未啟用</strong>。"
 
 #~ msgid ""
-"\n"
-"Dot Org will skip any updates from wordpress.org for plugins \"\n"
-"identical slugs.\""
+#~ "Override Dot Org will skip any updates from wordpress.org for plugins "
+#~ "with identical slugs."
 #~ msgstr ""
-"\n"
-"WordPress.org 設定] 會略過來自 WordPress.org 且外掛代稱完全相同的更\"\n"
-""
+#~ "[覆寫 WordPress.org 設定] 會略過來自 WordPress.org 且外掛代稱完全相同的更"
+#~ "新。"
 
 #~ msgid "Activate Override Dot Org by setting %s"
 #~ msgstr "在 wp-config.php 內加入 %s 以啟用 [覆寫 WordPress.org 設定]。"
@@ -550,10 +575,8 @@ msgstr "Andy Fragen"
 #~ msgstr "成功使用延伸名稱重新命名為 %1$s"
 
 #~ msgid ""
-"\n"
-"Naming renames plugin directories %s to prevent possible \"\n"
-"with WP.org plugins.\""
+#~ "Extended Naming renames plugin directories %s to prevent possible "
+#~ "conflicts with WP.org plugins."
 #~ msgstr ""
-"\n"
-"會將外掛目錄重新命名為 %s，以防止與 WordPress.org 上的外掛發生\"\n"
-""
+#~ "[延伸命名] 會將外掛目錄重新命名為 %s，以防止與 WordPress.org 上的外掛發生"
+#~ "衝突。"

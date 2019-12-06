@@ -2,9 +2,9 @@
 
 **Official Language Pack Repository for GitHub Updater plugin**
 
-Translators, please make PRs here. You only need to submit PRs for the .po files, .mo files will be generated automatically. Please add the .po files to the `originals` folder. Thanks.
+Translators, please make PRs here. You only need to submit PRs for the .po files, .mo files will be generated automatically. Please add the .po files to the `languages` folder. Thanks.
 
-Uses [`Language_Pack_Maker`](https://github.com/afragen/language-pack-maker) installed via composer to create a directory of zip archives of translation .mo/.po files and a `language-pack.json` file containing data to pass to GitHub Updater.
+Uses [`Language_Pack_Maker`](https://github.com/afragen/language-pack-maker) installed via composer to create a directory of zip archives of translation .mo/.po/.json files and a `language-pack.json` file containing data to pass to GitHub Updater.
 
 The format of the generated JSON file is as follows.
 
@@ -44,5 +44,3 @@ $transient->translations( array(
 ```
 
 GitHub Updater merges the correlative plugin or theme data with the data retrieved from the `language-pack.json` to add data to the update transient.
-
-To utilize the Language Pack Creator, you will need to open and run `http://localhost/<my-translation-repo>/vendor/autoload.php` in localhost, or `composer update` in the repository root. This will create the necessary .po, .mo, and zipfiles and `language-pack.json`.

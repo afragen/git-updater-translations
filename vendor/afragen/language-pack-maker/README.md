@@ -8,11 +8,11 @@ Run the composer command: ```composer require afragen/language-pack-maker:dev-ma
 
 ## Requirements
 
-This library requires all .po files to be in a `/originals` directory located in the repository root.
+This library requires all .po files to be in a `/languages` directory located in the repository root.
 
-* It will copy all .po files from `/originals` to `/languages`.
+* It will copy all .po files from `/languages` to a temporary directory.
 * It can run `wp i18n make-json` given the proper repository `composer.json` to create .json translation files for your javascript.
-* It will create/re-create .mo files from the .po files.
+* It will create .mo files from the .po files.
 * It will create zipfiles in a `/packages` directory in the repository root.
 * It will create a `language-pack.json` file in the repository root.
 
@@ -64,8 +64,8 @@ With the following added to your `composer.json` file, it will run the sequence 
 ```
   "scripts": {
     "post-update-cmd": [
-      "mkdir -p ./languages; cp -r ./originals/*.po ./languages/",
-      "wp i18n make-json languages/",
+      "mkdir -p ./tmp; cp -r ./languages/*.po ./tmp",
+      "wp i18n make-json tmp/",
       "php ./vendor/autoload.php"
     ]
   }

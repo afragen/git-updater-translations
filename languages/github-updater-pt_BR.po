@@ -1,27 +1,36 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GitHub Updater\n"
-"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-26 10:14-0800\n"
+"PO-Revision-Date: 2018-12-01 09:15-0800\n"
 "Last-Translator: Celso Bessa - 2Aces <celso.bessa@2aces.com.br>\n"
-"Language-Team: Celso Bessa <celso.bessa@wowperations.com>, Valério Souza <valeriosza@gmail.com>\n"
+"Language-Team: Celso Bessa <celso.bessa@wowperations.com>, Valério Souza "
+"<valeriosza@gmail.com>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2018-11-26 10:14-0800\n"
-"PO-Revision-Date: 2018-12-01 09:15-0800\n"
-"Language: pt_BR\n"
 "X-Generator: Poedit 2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #. translators: 1: minimum PHP version required, 2: Upgrade PHP URL
 #: github-updater.php:40
-#, fuzzy,php-format
-msgid "GitHub Updater cannot run on PHP versions older than %1$s. <a href=\"%2$s\">Learn about upgrading your PHP.</a>"
-msgstr "GitHub Updater não roda em versão do PHP mais velhas que %s. Por favor contate o seu provedor de hospedagem para atualizar seu site."
+#, fuzzy, php-format
+#| msgid ""
+#| "GitHub Updater cannot run on PHP versions older than %s. Please contact "
+#| "your hosting provider to update your site."
+msgid ""
+"GitHub Updater cannot run on PHP versions older than %1$s. <a href=\"%2$s"
+"\">Learn about upgrading your PHP.</a>"
+msgstr ""
+"GitHub Updater não roda em versão do PHP mais velhas que %s. Por favor "
+"contate o seu provedor de hospedagem para atualizar seu site."
 
 #: github-updater.php:42
 msgid "https://wordpress.org/support/upgrade-php/"
@@ -54,8 +63,11 @@ msgid "Bitbucket"
 msgstr "Bitbucket"
 
 #: src/GitHub_Updater/API/Bitbucket_API.php:422
-msgid "Check box if private repository. Leave unchecked for public repositories."
-msgstr "Marque se o repositório é privado. Deixe desmarcado se o repositório for publico."
+msgid ""
+"Check box if private repository. Leave unchecked for public repositories."
+msgstr ""
+"Marque se o repositório é privado. Deixe desmarcado se o repositório for "
+"publico."
 
 #: src/GitHub_Updater/API/Bitbucket_API.php:429
 msgid "Enter your personal Bitbucket username and password."
@@ -115,11 +127,17 @@ msgstr "Configurações do GitHub Privado"
 
 #: src/GitHub_Updater/API/GitHub_API.php:429
 msgid "Enter your GitHub Access Token. Leave empty for public repositories."
-msgstr "Digite seu Token de Acesso do GitHub. Deixe em branco para repositórios públicos."
+msgstr ""
+"Digite seu Token de Acesso do GitHub. Deixe em branco para repositórios "
+"públicos."
 
 #: src/GitHub_Updater/API/GitHub_API.php:436
-msgid "Enter your personal GitHub.com or GitHub Enterprise Access Token to avoid API access limits."
-msgstr "Introduza o seu Token pessoal de acesso do GitHub.com ou do GitHub Empresarial para evitar o limite de acessos da API."
+msgid ""
+"Enter your personal GitHub.com or GitHub Enterprise Access Token to avoid "
+"API access limits."
+msgstr ""
+"Introduza o seu Token pessoal de acesso do GitHub.com ou do GitHub "
+"Empresarial para evitar o limite de acessos da API."
 
 #: src/GitHub_Updater/API/GitHub_API.php:447
 msgid "GitHub Access Token"
@@ -131,7 +149,8 @@ msgstr "GitHub"
 
 #: src/GitHub_Updater/API/GitHub_API.php:475
 msgid "Enter GitHub Access Token for private GitHub repositories."
-msgstr "Introduza o Token de acesso do GitHub para repositórios privados do GitHub."
+msgstr ""
+"Introduza o Token de acesso do GitHub para repositórios privados do GitHub."
 
 #: src/GitHub_Updater/API/GitLab_API.php:431
 msgid "GitLab Personal Access Token"
@@ -159,7 +178,8 @@ msgstr "Digite o Token de Acesso específico de seu repositório GitLab."
 
 #: src/GitHub_Updater/API/GitLab_API.php:514
 msgid "Enter your GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
-msgstr "Introduza o seu Token privado do GitLab.com, GitLab CE ou GitLab Empresarial."
+msgstr ""
+"Introduza o seu Token privado do GitLab.com, GitLab CE ou GitLab Empresarial."
 
 #: src/GitHub_Updater/API/GitLab_API.php:525
 msgid "GitLab Access Token"
@@ -170,8 +190,11 @@ msgid "Enter GitLab Access Token for private GitLab repositories."
 msgstr "Digite GitLab acesso Token para repositórios de GitLab privados."
 
 #: src/GitHub_Updater/API/GitLab_API.php:574
-msgid "You must set a GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
-msgstr "Tem que definir um Token privado do GitLab.com, GitLab CE ou GitLab Empresarial."
+msgid ""
+"You must set a GitLab.com, GitLab CE, or GitLab Enterprise Access Token."
+msgstr ""
+"Tem que definir um Token privado do GitLab.com, GitLab CE ou GitLab "
+"Empresarial."
 
 #: src/GitHub_Updater/API/Gitea_API.php:311
 #: src/GitHub_Updater/API/Gitea_API.php:329
@@ -212,13 +235,16 @@ msgid "Enter plugin or theme slug."
 msgstr ""
 
 #: src/GitHub_Updater/Base.php:449
-msgid "There may be a problem with WP-Cron. A GitHub Updater WP-Cron event is overdue."
-msgstr "Pode haver um problema como WP-Cron. um event WP-Cron do Github Updater está atrasado."
+msgid ""
+"There may be a problem with WP-Cron. A GitHub Updater WP-Cron event is "
+"overdue."
+msgstr ""
+"Pode haver um problema como WP-Cron. um event WP-Cron do Github Updater está "
+"atrasado."
 
 #. translators: current branch name and link
 #. translators: 1: branch name, 2: jQuery dropdown, 3: closing tag
-#: src/GitHub_Updater/Base.php:882
-#: src/GitHub_Updater/Theme.php:585
+#: src/GitHub_Updater/Base.php:882 src/GitHub_Updater/Theme.php:585
 #, php-format
 msgid "Current branch is `%1$s`, try %2$sanother version%3$s"
 msgstr "O ramo actual é `%1$s`, experimente %2$soutro ramo%3$s."
@@ -231,18 +257,15 @@ msgstr "Mudar para o ramo"
 msgid "Switch to release "
 msgstr "Interruptor para liberar"
 
-#: src/GitHub_Updater/Base.php:917
-#: src/GitHub_Updater/Theme.php:611
+#: src/GitHub_Updater/Base.php:917 src/GitHub_Updater/Theme.php:611
 msgid "No previous tags to rollback to."
 msgstr "Nenhuma tag anterior para reverter."
 
-#: src/GitHub_Updater/Install.php:104
-#: src/GitHub_Updater/Install.php:366
+#: src/GitHub_Updater/Install.php:104 src/GitHub_Updater/Install.php:366
 msgid "Install Plugin"
 msgstr "Instalar o Plugin"
 
-#: src/GitHub_Updater/Install.php:107
-#: src/GitHub_Updater/Install.php:369
+#: src/GitHub_Updater/Install.php:107 src/GitHub_Updater/Install.php:369
 msgid "Install Theme"
 msgstr "Instalar um novo tema"
 
@@ -295,30 +318,43 @@ msgctxt "This refers to a network activation in a multisite installation"
 msgid "Network Enable"
 msgstr "Network Ativada"
 
-#: src/GitHub_Updater/Messages.php:112
-#: src/GitHub_Updater/Messages.php:153
+#: src/GitHub_Updater/Messages.php:112 src/GitHub_Updater/Messages.php:153
 #: src/GitHub_Updater/Messages.php:173
 msgid "GitHub Updater Error Code:"
 msgstr "Código de erro de GitHub Updater:"
 
 #. translators: %s: wait time
 #: src/GitHub_Updater/Messages.php:119
-#, fuzzy,php-format
+#, fuzzy, php-format
+#| msgid "GitHub API's rate limit will reset in %s minutes."
 msgid "GitHub API&#8217;s rate limit will reset in %s minutes."
 msgstr "Limite de taxa do GitHub API irá repor em minutos de %1$s."
 
 #. translators: %s: GitHub personal access token URL
 #: src/GitHub_Updater/Messages.php:125
-#, fuzzy,php-format
-msgid "It looks like you are running into GitHub API rate limits. Be sure and configure a <a href=\"%s\">Personal Access Token</a> to avoid this issue."
-msgstr "Parece que você está executando em limites de taxa de API GitHub. Certifique-se e configurar um %sPersonal %s do Token de acesso para evitar esse problema."
+#, fuzzy, php-format
+#| msgid ""
+#| "It looks like you are running into GitHub API rate limits. Be sure and "
+#| "configure a %sPersonal Access Token%s to avoid this issue."
+msgid ""
+"It looks like you are running into GitHub API rate limits. Be sure and "
+"configure a <a href=\"%s\">Personal Access Token</a> to avoid this issue."
+msgstr ""
+"Parece que você está executando em limites de taxa de API GitHub. Certifique-"
+"se e configurar um %sPersonal %s do Token de acesso para evitar esse "
+"problema."
 
 #: src/GitHub_Updater/Messages.php:157
-msgid "There is probably an access token or password error on the GitHub Updater Settings page."
-msgstr "Há provavelmente um erro de token ou senha de acesso na página Definições de Updater GitHub."
+msgid ""
+"There is probably an access token or password error on the GitHub Updater "
+"Settings page."
+msgstr ""
+"Há provavelmente um erro de token ou senha de acesso na página Definições de "
+"Updater GitHub."
 
 #: src/GitHub_Updater/Messages.php:188
 #, fuzzy
+#| msgid "GitHub Updater Settings"
 msgid "GitHub Updater Information"
 msgstr "Configurações do GitHub Update"
 
@@ -340,27 +376,33 @@ msgid "Reset RESTful key"
 msgstr "Repor chave de RESTful"
 
 #: src/GitHub_Updater/Remote_Management.php:231
-msgid "Please refer to README for complete list of attributes. RESTful endpoints begin at:"
-msgstr "Consulte o arquivo Leiame para obter uma lista completa de atributos. Pontos de extremidade rESTful começam às:"
+msgid ""
+"Please refer to README for complete list of attributes. RESTful endpoints "
+"begin at:"
+msgstr ""
+"Consulte o arquivo Leiame para obter uma lista completa de atributos. Pontos "
+"de extremidade rESTful começam às:"
 
 #: src/GitHub_Updater/Remote_Management.php:235
-msgid "Use of Remote Management services may result increase some page load speeds only for `admin` level users in the dashboard."
-msgstr "A utilização de serviços de gestão remota poderá aumentar o tempo de carregamento de algumas páginas do painel de administração para utilizadores com perfil de `administrador`."
+msgid ""
+"Use of Remote Management services may result increase some page load speeds "
+"only for `admin` level users in the dashboard."
+msgstr ""
+"A utilização de serviços de gestão remota poderá aumentar o tempo de "
+"carregamento de algumas páginas do painel de administração para utilizadores "
+"com perfil de `administrador`."
 
-#: src/GitHub_Updater/Settings.php:114
-#: src/GitHub_Updater/Settings.php:719
+#: src/GitHub_Updater/Settings.php:114 src/GitHub_Updater/Settings.php:719
 msgid "Settings"
 msgstr "Configurações"
 
 #. Plugin Name of the plugin/theme
-#: src/GitHub_Updater/Settings.php:133
-#: src/GitHub_Updater/Settings.php:172
+#: src/GitHub_Updater/Settings.php:133 src/GitHub_Updater/Settings.php:172
 #: src/GitHub_Updater/Settings.php:223
 msgid "GitHub Updater"
 msgstr "GitHub Updater"
 
-#: src/GitHub_Updater/Settings.php:171
-#: src/GitHub_Updater/Settings.php:310
+#: src/GitHub_Updater/Settings.php:171 src/GitHub_Updater/Settings.php:310
 msgid "GitHub Updater Settings"
 msgstr "Configurações do GitHub Update"
 
@@ -386,15 +428,20 @@ msgstr "Permitir mudar ramo do plugin"
 
 #: src/GitHub_Updater/Settings.php:526
 msgid "Check to enable branch switching from the Plugins or Themes page."
-msgstr "Seleccione a opção para permitir alternar entre ramos nas páginas de plugins e de temas."
+msgstr ""
+"Seleccione a opção para permitir alternar entre ramos nas páginas de plugins "
+"e de temas."
 
 #: src/GitHub_Updater/Settings.php:550
 #, fuzzy
+#| msgid "Installed Plugins and Themes"
 msgid "Overridden Plugins and Themes"
 msgstr "Temas e Plugins instalados"
 
 #: src/GitHub_Updater/Settings.php:551
-msgid "The following plugins or themes might exist on wp.org, but any updates will be downloaded from their respective git repositories."
+msgid ""
+"The following plugins or themes might exist on wp.org, but any updates will "
+"be downloaded from their respective git repositories."
 msgstr ""
 
 #: src/GitHub_Updater/Settings.php:753
@@ -414,8 +461,7 @@ msgid "Installed Plugins and Themes"
 msgstr "Temas e Plugins instalados"
 
 #. translators: %s: theme name
-#: src/GitHub_Updater/Theme.php:337
-#: src/GitHub_Updater/Theme.php:533
+#: src/GitHub_Updater/Theme.php:337 src/GitHub_Updater/Theme.php:533
 #, php-format
 msgid "There is a new version of %s available."
 msgstr "Está disponível uma nova versão do %s."
@@ -431,15 +477,14 @@ msgid "Automatic update is unavailable for this theme."
 msgstr "Atualização automática não está disponível para esse tema."
 
 #. translators: 1: version number, 2: closing anchor tag, 3: update URL
-#: src/GitHub_Updater/Theme.php:358
-#: src/GitHub_Updater/Theme.php:543
-#, fuzzy,php-format
+#: src/GitHub_Updater/Theme.php:358 src/GitHub_Updater/Theme.php:543
+#, fuzzy, php-format
+#| msgid "View version %1$s details%2$s or %3$supdate now%4$s."
 msgid "View version %1$s details%2$s or %3$supdate now%2$s."
 msgstr "Exibir versão %1$s detalhes %2$s ou %3$supdate agora %4$s."
 
 #. translators: %s: theme name
-#: src/GitHub_Updater/Theme.php:363
-#: src/GitHub_Updater/Theme.php:548
+#: src/GitHub_Updater/Theme.php:363 src/GitHub_Updater/Theme.php:548
 #, php-format
 msgid "Update %s now"
 msgstr "Atualizar %s agora"
@@ -457,8 +502,14 @@ msgid "https://github.com/afragen/github-updater"
 msgstr "https://github.com/afragen/github-updater"
 
 #. Description of the plugin/theme
-msgid "A plugin to automatically update GitHub, Bitbucket, GitLab, or Gitea hosted plugins, themes, and language packs. It also allows for remote installation of plugins or themes into WordPress."
-msgstr "Um plugin para atualizar automaticamente plugins, temas e pacotes de idiomas hospedados no GitHub, Bitbucket, GitLab ou Gitea. Também permite a instalação remota de plugins ou temas no WordPress."
+msgid ""
+"A plugin to automatically update GitHub, Bitbucket, GitLab, or Gitea hosted "
+"plugins, themes, and language packs. It also allows for remote installation "
+"of plugins or themes into WordPress."
+msgstr ""
+"Um plugin para atualizar automaticamente plugins, temas e pacotes de idiomas "
+"hospedados no GitHub, Bitbucket, GitLab ou Gitea. Também permite a "
+"instalação remota de plugins ou temas no WordPress."
 
 #. Author of the plugin/theme
 msgid "Andy Fragen"
@@ -471,13 +522,11 @@ msgstr "Andy Fragen"
 #~ msgstr "Sobrepor Ponto Org está %sinativo%s."
 
 #~ msgid ""
-"\n"
-"Dot Org will skip any updates from wordpress.org for plugins \"\n"
-"identical slugs.\""
+#~ "Override Dot Org will skip any updates from wordpress.org for plugins "
+#~ "with identical slugs."
 #~ msgstr ""
-"\n"
-"Ponto Org vai ignorar quaisquer atualizações do wordpress.org \"\n"
-"plugins com slugs iguais.\""
+#~ "Sobrepor Ponto Org vai ignorar quaisquer atualizações do wordpress.org "
+#~ "para plugins com slugs iguais."
 
 #~ msgid "Activate Override Dot Org by setting %s"
 #~ msgstr "Ativar Sobrepor Ponto Org ao configurar %s"
@@ -489,14 +538,12 @@ msgstr "Andy Fragen"
 #~ msgstr "Instruções de Instalação"
 
 #~ msgid ""
-"\n"
-"Updater cannot run on PHP versions older than 5.3.0. Please \"\n"
-"your hosting provider to update your site.\""
+#~ "GitHub Updater cannot run on PHP versions older than 5.3.0. Please "
+#~ "contact your hosting provider to update your site."
 #~ msgstr ""
-"\n"
-"GitHub Updater não pode ser executado em versões de PHP anteriores à \"\n"
-"Por favor contacte o seu serviço de alojamento para actualizar o \"\n"
-"site.\""
+#~ "O GitHub Updater não pode ser executado em versões de PHP anteriores à "
+#~ "5.3.0. Por favor contacte o seu serviço de alojamento para actualizar o "
+#~ "seu site."
 
 #~ msgid "Rename successful using extended name to %1$s"
 #~ msgstr "Renomear bem sucedido usando nome estendido para %1$s"
@@ -506,8 +553,7 @@ msgstr "Andy Fragen"
 
 #~ msgid "Incorrect command syntax, see %s for proper syntax."
 #~ msgstr ""
-"\n"
-"sintaxe do comando está incorrecta, veja em %s a sintaxe correcta.\""
+#~ "A sintaxe do comando está incorrecta, veja em %s a sintaxe correcta."
 
 #~ msgid "GitHub Updater REST API key has been reset."
 #~ msgstr "Chave de GitHub Updater REST API foram redefinida."
@@ -528,13 +574,11 @@ msgstr "Andy Fragen"
 #~ msgstr "A nomeação estendida está %sdesactivada%s."
 
 #~ msgid ""
-"\n"
-"Naming renames plugin directories %s to prevent possible \"\n"
-"with WP.org plugins.\""
+#~ "Extended Naming renames plugin directories %s to prevent possible "
+#~ "conflicts with WP.org plugins."
 #~ msgstr ""
-"\n"
-"nomeação estendida permite renomear a pasta do plugin %s para prevenir \"\n"
-"conflitos com os plugins do WP.org.\""
+#~ "A nomeação estendida permite renomear a pasta do plugin %s para prevenir "
+#~ "possíveis conflitos com os plugins do WP.org."
 
 #~ msgid "Activate Extended Naming by setting %s"
 #~ msgstr "Active a nomeação estendida através da definição %s"
@@ -543,22 +587,19 @@ msgstr "Andy Fragen"
 #~ msgstr "Digite seu Token de acesso de GitLab."
 
 #~ msgid ""
-"\n"
-"plugin to automatically update GitHub, Bitbucket, or GitLab hosted \"\n"
-"themes, and language packs. It also allows for remote \"\n"
-"of plugins or themes into WordPress.\""
+#~ "A plugin to automatically update GitHub, Bitbucket, or GitLab hosted "
+#~ "plugins, themes, and language packs. It also allows for remote "
+#~ "installation of plugins or themes into WordPress."
 #~ msgstr ""
-"\n"
-"plugin para actualizar automaticamente plugins e temas alojados no \"\n"
-"Bitbucket ou GitLab. Permite a instalação remota de plugins ou \"\n"
-"no WordPress.\""
+#~ "Um plugin para actualizar automaticamente plugins e temas alojados no "
+#~ "GitHub, Bitbucket ou GitLab. Permite a instalação remota de plugins ou "
+#~ "temas no WordPress."
 
 #, fuzzy
 #~ msgid "Enter GitLab Private Token for private GitLab repositories."
 #~ msgstr ""
-"\n"
-"seu Token de Acesso do GitHub. Deixe em branco para repositórios \"\n"
-""
+#~ "Digite seu Token de Acesso do GitHub. Deixe em branco para repositórios "
+#~ "públicos."
 
 #, fuzzy
 #~ msgid "GitLab.com Private Token"
@@ -617,30 +658,26 @@ msgstr "Andy Fragen"
 
 #, fuzzy
 #~ msgid ""
-"\n"
-"plugin to automatically update GitHub, Bitbucket or GitLab hosted \"\n"
-"and themes. It also allows for remote installation of plugins or \"\n"
-"into WordPress. Plugin class based upon <a href=\"https://github.\"\n"
-"\n"
-"Theme class based upon <a href=\"https://github.com/WordPress-Phoenix/\"\n"
-"Framework</a> modifications.\""
+#~ "A plugin to automatically update GitHub, Bitbucket or GitLab hosted "
+#~ "plugins and themes. It also allows for remote installation of plugins or "
+#~ "themes into WordPress. Plugin class based upon <a href=\"https://github."
+#~ "com/codepress/github-plugin-updater\">codepress/github-plugin-updater</"
+#~ "a>. Theme class based upon <a href=\"https://github.com/WordPress-Phoenix/"
+#~ "whitelabel-framework\">Whitelabel Framework</a> modifications."
 #~ msgstr ""
-"\n"
-"plugin para atualizar automaticamente o GitHub ou Bitbucket hospedado \"\n"
-"e temas para WordPress. Plugin classe baseado <a href=\"https://\"\n"
-"\n"
-"Classe de tema com base em modificações de <a href=\"\n"
-"\n"
-".\""
+#~ "Um plugin para atualizar automaticamente o GitHub ou Bitbucket hospedado "
+#~ "plugins e temas para WordPress. Plugin classe baseado <a href=\"https://"
+#~ "github.com/codepress/github-plugin-updater\">codepress/github-plugin-"
+#~ "atualizador</a>. Classe de tema com base em modificações de <a href="
+#~ "\"https://github.com/WordPress-Phoenix/whitelabel-framework\">Whitelabel "
+#~ "Framework</a> ."
 
 #~ msgid ""
-"\n"
-"changelog is available via GitHub Updater. Create a file <code>CHANGES.\"\n"
-"or <code>CHANGELOG.md</code> in your repository.\""
+#~ "No changelog is available via GitHub Updater. Create a file <code>CHANGES."
+#~ "md</code> or <code>CHANGELOG.md</code> in your repository."
 #~ msgstr ""
-"\n"
-"changelog está disponível via GitHub Updater. Crie um arquivo \"\n"
-"ou <code>CHANGELOG.md</code> em seu repositório.\""
+#~ "No changelog está disponível via GitHub Updater. Crie um arquivo "
+#~ "<code>CHANGES.md</code> ou <code>CHANGELOG.md</code> em seu repositório."
 
 #~ msgid "%sView version %s details%s or %supdate now%s."
 #~ msgstr "%sVer versão %s detalhada%s ou %satualizar agora%s."

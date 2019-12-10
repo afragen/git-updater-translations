@@ -7,10 +7,12 @@
  * @author    Andy Fragen
  * @license   MIT
  * @link      https://github.com/afragen/language-pack-maker
- * @version   1.3.1
+ * @version   1.3.2
  */
 
-require_once __DIR__ . '/Language_Pack_Maker.php';
+require_once __DIR__ . '/src/Language_Pack_Maker.php';
 
-echo "<h2>Generating Language Pack Zip Files and JSON file</h2>\n";
+echo "<pre>\n";
+echo ">>Generating Language Pack Zip Files and JSON file<<\n\n";
 ( new Fragen\Language_Pack_Maker\Language_Pack_Maker() )->run();
+echo "</pre>\n";

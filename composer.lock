@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "372f67d02de1cdd127467fca425bb693",
+    "content-hash": "5a02564b93b1dba9b38152a029fdabbd",
     "packages": [
         {
             "name": "afragen/language-pack-maker",
@@ -12,24 +12,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/language-pack-maker.git",
-                "reference": "75c3d83cfdfbd82df49786f16bef2f3080673f63"
+                "reference": "d14d30b65d4f9016f2c2a87981cd5bff20664c44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/75c3d83cfdfbd82df49786f16bef2f3080673f63",
-                "reference": "75c3d83cfdfbd82df49786f16bef2f3080673f63",
+                "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/d14d30b65d4f9016f2c2a87981cd5bff20664c44",
+                "reference": "d14d30b65d4f9016f2c2a87981cd5bff20664c44",
                 "shasum": ""
             },
             "require": {
+                "afragen/wp-cli-runner": "^0.1",
                 "gettext/gettext": "^4.8",
-                "php": ">=5.6",
+                "php": ">=7.0",
                 "wp-cli/i18n-command": "^2"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "Language_Pack_Maker.php"
-                ],
+                "psr-4": {
+                    "Fragen\\Language_Pack_Maker\\": "src/"
+                },
                 "files": [
                     "index.php"
                 ]
@@ -52,7 +53,42 @@
                 "translations",
                 "wordpress"
             ],
-            "time": "2019-12-06T23:06:46+00:00"
+            "time": "2019-12-10T17:06:24+00:00"
+        },
+        {
+            "name": "afragen/wp-cli-runner",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afragen/wp-cli-runner.git",
+                "reference": "2ac62a469704abc92c8582a11f943aa4bc259726"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/afragen/wp-cli-runner/zipball/2ac62a469704abc92c8582a11f943aa4bc259726",
+                "reference": "2ac62a469704abc92c8582a11f943aa4bc259726",
+                "shasum": ""
+            },
+            "require": {
+                "wp-cli/wp-cli": "^2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Fragen\\WP_CLI_Runner\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Helper to test custom WP-CLI commands by bootstrapping WP-CLI",
+            "homepage": "https://github.com/afragen/wp-cli-runner",
+            "keywords": [
+                "testing",
+                "wp-cli"
+            ],
+            "time": "2019-12-07T21:49:28+00:00"
         },
         {
             "name": "cweagans/composer-patches",
@@ -642,8 +678,6 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {
-        "php": ">=5.6"
-    },
+    "platform": [],
     "platform-dev": []
 }

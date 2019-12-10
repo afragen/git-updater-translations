@@ -1,3 +1,10 @@
+## [unreleased]
+
+## 3.0.0 / 2019-12-10
+* process .json files in the framework
+* added WP-CLI _loader_ as composer module, [fork of polevaultweb/phpunit-wp-cli-runner](https://github.com/polevaultweb/phpunit-wp-cli-runner)
+* cleanup temp directory afterwards
+
 ## 2.0.0 / 2019-11-26
 * fix processing of .json files, thanks @ahmader
 * use gettext/gettext to parse translation headers for 'PO-Revision-Date'

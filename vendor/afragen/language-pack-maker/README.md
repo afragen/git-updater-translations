@@ -1,5 +1,7 @@
 # Language Pack Maker
 
+Requires PHP 7.0 or higher.
+
 Uses `class Language_Pack_Maker` installed via composer into your local translation repository to create a directory of zip archives of translation .mo/.po/.json files and a `language-pack.json` file containing data to pass to [GitHub Updater](https://github.com/afragen/github-updater) or [Translations Updater library](https://github.com/afragen/translations-updater).
 
 Install the package via composer.
@@ -11,10 +13,11 @@ Run the composer command: ```composer require afragen/language-pack-maker:dev-ma
 This library requires all .po files to be in a `/languages` directory located in the repository root.
 
 * It will copy all .po files from `/languages` to a temporary directory.
-* It can run `wp i18n make-json` given the proper repository `composer.json` to create .json translation files for your javascript.
 * It will create .mo files from the .po files.
+* It will create .json translation files for your javascript.
 * It will create zipfiles in a `/packages` directory in the repository root.
 * It will create a `language-pack.json` file in the repository root.
+* It will cleanup/remove the temporary directory when finished.
 
 The format of the generated JSON file is as follows.
 
@@ -64,8 +67,6 @@ With the following added to your `composer.json` file, it will run the sequence 
 ```
   "scripts": {
     "post-update-cmd": [
-      "mkdir -p ./tmp; cp -r ./languages/*.po ./tmp",
-      "wp i18n make-json tmp/",
       "php ./vendor/autoload.php"
     ]
   }

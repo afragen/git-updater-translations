@@ -40,6 +40,11 @@ class ComposerStaticInitb777a9f9cc67dadcf2d61f411dbf0b76
             'Gettext\\Languages\\' => 18,
             'Gettext\\' => 8,
         ),
+        'F' => 
+        array (
+            'Fragen\\WP_CLI_Runner\\' => 21,
+            'Fragen\\Language_Pack_Maker\\' => 27,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -75,6 +80,14 @@ class ComposerStaticInitb777a9f9cc67dadcf2d61f411dbf0b76
         array (
             0 => __DIR__ . '/..' . '/gettext/gettext/src',
         ),
+        'Fragen\\WP_CLI_Runner\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/afragen/wp-cli-runner/src',
+        ),
+        'Fragen\\Language_Pack_Maker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/afragen/language-pack-maker/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -108,17 +121,12 @@ class ComposerStaticInitb777a9f9cc67dadcf2d61f411dbf0b76
         ),
     );
 
-    public static $classMap = array (
-        'Fragen\\Language_Pack_Maker\\Language_Pack_Maker' => __DIR__ . '/..' . '/afragen/language-pack-maker/Language_Pack_Maker.php',
-    );
-
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitb777a9f9cc67dadcf2d61f411dbf0b76::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitb777a9f9cc67dadcf2d61f411dbf0b76::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitb777a9f9cc67dadcf2d61f411dbf0b76::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitb777a9f9cc67dadcf2d61f411dbf0b76::$classMap;
 
         }, null, ClassLoader::class);
     }

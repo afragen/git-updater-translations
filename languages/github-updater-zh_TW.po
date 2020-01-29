@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GitHub Updater\n"
-"POT-Creation-Date: 2020-01-22 22:08+0800\n"
-"PO-Revision-Date: 2020-01-22 22:18+0800\n"
+"POT-Creation-Date: 2020-01-29 23:31+0800\n"
+"PO-Revision-Date: 2020-01-29 23:49+0800\n"
 "Last-Translator: Alex Lion <learnwithalex@gmail.com>\n"
 "Language-Team: Alex Lion <learnwithalex@gmail.com>\n"
 "Language: zh_TW\n"
@@ -377,49 +377,61 @@ msgstr ""
 "請參閱這份外掛 <a href=\"%1$s\" target=\"_blank\">Wiki</a> 以瞭解完整的屬性清"
 "單。用於 Webhook 更新的 REST API 端點開始於: %2$s"
 
-#: src/GitHub_Updater/Settings.php:130 src/GitHub_Updater/Settings.php:735
+#: src/GitHub_Updater/Settings.php:139 src/GitHub_Updater/Settings.php:757
 msgid "Settings"
 msgstr "設定"
 
 #. Plugin Name of the plugin/theme
-#: src/GitHub_Updater/Settings.php:149 src/GitHub_Updater/Settings.php:188
-#: src/GitHub_Updater/Settings.php:239
+#: src/GitHub_Updater/Settings.php:158 src/GitHub_Updater/Settings.php:248
 msgid "GitHub Updater"
 msgstr "GitHub Updater"
 
-#: src/GitHub_Updater/Settings.php:187 src/GitHub_Updater/Settings.php:326
+#: src/GitHub_Updater/Settings.php:196 src/GitHub_Updater/Settings.php:335
 msgid "GitHub Updater Settings"
 msgstr "GitHub Updater 設定"
 
-#: src/GitHub_Updater/Settings.php:261
+#: src/GitHub_Updater/Settings.php:197
+msgctxt "Menu item"
+msgid "GitHub Updater"
+msgstr "GitHub Updater"
+
+#: src/GitHub_Updater/Settings.php:270
 msgid "Refresh Cache"
 msgstr "重新整理快取"
 
-#: src/GitHub_Updater/Settings.php:293
+#: src/GitHub_Updater/Settings.php:302
 msgid "Settings saved."
 msgstr "設定已儲存。"
 
-#: src/GitHub_Updater/Settings.php:295
+#: src/GitHub_Updater/Settings.php:304
 msgid "RESTful key reset."
 msgstr "RESTful 金鑰已重設。"
 
-#: src/GitHub_Updater/Settings.php:297
+#: src/GitHub_Updater/Settings.php:306
 msgid "Cache refreshed."
 msgstr "快取已重新整理。"
 
-#: src/GitHub_Updater/Settings.php:339
+#: src/GitHub_Updater/Settings.php:348
 msgid "Enable Branch Switching"
 msgstr "啟用分支版本切換"
 
-#: src/GitHub_Updater/Settings.php:542
-msgid "Check to enable branch switching from the Plugins or Themes page."
-msgstr "啟用這項設定後，便可在外掛或佈景主題頁面中啟用分支版本切換。"
+#: src/GitHub_Updater/Settings.php:360
+msgid "Bypass WP-Cron Background Processing for Debugging"
+msgstr "略過 WP-Cron 背景處理程序進行偵錯"
 
-#: src/GitHub_Updater/Settings.php:566
+#: src/GitHub_Updater/Settings.php:564
+msgid ""
+"Check to enable branch switching from the Plugins or Themes page or to "
+"bypass WP-Cron background processing."
+msgstr ""
+"在這裡可以為外掛或佈景主題頁面的項目啟用分支版本切換，或啟用略過 WP-Cron 背景"
+"處理程序功能。"
+
+#: src/GitHub_Updater/Settings.php:588
 msgid "Overridden Plugins and Themes"
 msgstr "覆寫外掛及佈景主題"
 
-#: src/GitHub_Updater/Settings.php:567
+#: src/GitHub_Updater/Settings.php:589
 msgid ""
 "The following plugins or themes might exist on wp.org, but any updates will "
 "be downloaded from their respective git repositories."
@@ -427,19 +439,19 @@ msgstr ""
 "下列外掛或佈景主題並未上架至 WordPress.org 目錄，但可從各自所屬的 git 存放庫"
 "進行更新。"
 
-#: src/GitHub_Updater/Settings.php:769
+#: src/GitHub_Updater/Settings.php:791
 msgid "This is a private repository."
 msgstr "這是私有存放庫。"
 
-#: src/GitHub_Updater/Settings.php:770
+#: src/GitHub_Updater/Settings.php:792
 msgid "This repository has not connected to the API or was unable to connect."
 msgstr "這個存放庫無法連線至 API 或無法進行連線。"
 
-#: src/GitHub_Updater/Settings.php:771
+#: src/GitHub_Updater/Settings.php:793
 msgid "This repository is hosted on WordPress.org."
 msgstr "這個存放庫託管於 WordPress.org。"
 
-#: src/GitHub_Updater/Settings.php:808
+#: src/GitHub_Updater/Settings.php:830
 msgid "Installed Plugins and Themes"
 msgstr "已安裝的外掛和佈景主題"
 
@@ -502,6 +514,9 @@ msgstr ""
 #. Author of the plugin/theme
 msgid "Andy Fragen"
 msgstr "Andy Fragen"
+
+#~ msgid "Check to enable branch switching from the Plugins or Themes page."
+#~ msgstr "啟用這項設定後，便可在外掛或佈景主題頁面中啟用分支版本切換。"
 
 #~ msgid "Reset RESTful key"
 #~ msgstr "重設 RESTful 金鑰"

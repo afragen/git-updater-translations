@@ -410,7 +410,7 @@ msgstr "Opciones"
 #: src/GitHub_Updater/Settings.php:223
 #, fuzzy
 msgid "GitHub Updater"
-msgstr "Se ha borrado el caché de actualización de GitHub."
+msgstr "GitHub Updater"
 
 #: src/GitHub_Updater/Settings.php:171 src/GitHub_Updater/Settings.php:310
 msgid "GitHub Updater Settings"

@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/language-pack-maker.git",
-                "reference": "d14d30b65d4f9016f2c2a87981cd5bff20664c44"
+                "reference": "eda99b37905b0b125a111b6698793ded8a90a55f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/d14d30b65d4f9016f2c2a87981cd5bff20664c44",
-                "reference": "d14d30b65d4f9016f2c2a87981cd5bff20664c44",
+                "url": "https://api.github.com/repos/afragen/language-pack-maker/zipball/eda99b37905b0b125a111b6698793ded8a90a55f",
+                "reference": "eda99b37905b0b125a111b6698793ded8a90a55f",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +53,7 @@
                 "translations",
                 "wordpress"
             ],
-            "time": "2019-12-10T17:06:24+00:00"
+            "time": "2020-06-04T19:55:10+00:00"
         },
         {
             "name": "afragen/wp-cli-runner",

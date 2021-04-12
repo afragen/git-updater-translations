@@ -1,9 +1,9 @@
 {
-  "name": "afragen/github-updater-translations",
-  "description": "Translation language packs for GitHub Updater plugin",
+  "name": "afragen/git-updater-translations",
+  "description": "Translation language packs for Git Updater plugin",
   "type": "library",
   "keywords": [
-    "github-updater",
+    "git-updater",
     "language packs",
     "translations"
   ],
@@ -19,12 +19,12 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/afragen/github-updater-translations"
+      "url": "https://github.com/afragen/git-updater-translations"
     }
   ],
   "support": {
-    "issues": "https://github.com/afragen/github-updater-translations/issues",
-    "source": "https://github.com/afragen/github-updater-translations"
+    "issues": "https://github.com/afragen/git-updater-translations/issues",
+    "source": "https://github.com/afragen/git-updater-translations"
   },
   "prefer-stable": true,
   "require": {

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Updater\n"
-"POT-Creation-Date: 2021-05-18 10:25-0700\n"
-"PO-Revision-Date: 2021-05-18 15:24-0700\n"
+"POT-Creation-Date: 2021-05-27 16:28-0700\n"
+"PO-Revision-Date: 2021-05-27 16:29-0700\n"
 "Last-Translator: Alex Lion <learnwithalex@gmail.com>\n"
 "Language-Team: Alex Lion <learnwithalex@gmail.com>\n"
 "Language: zh_TW\n"
@@ -21,41 +21,41 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: mu/gu-loader.php:105
+#: mu/gu-loader.php:106
 msgid "Activated as mu-plugin"
 msgstr "啟用為 [強制使用] 外掛"
 
-#: src/Git_Updater/API/GitHub_API.php:352
+#: src/Git_Updater/API/GitHub_API.php:351
 msgid "GitHub Personal Access Token"
 msgstr "GitHub Personal 存取權杖"
 
-#: src/Git_Updater/API/GitHub_API.php:359
+#: src/Git_Updater/API/GitHub_API.php:358
 msgid "GitHub.com Access Token"
 msgstr "GitHub.com 存取權杖"
 
-#: src/Git_Updater/API/GitHub_API.php:375
+#: src/Git_Updater/API/GitHub_API.php:374
 msgid "GitHub Private Settings"
 msgstr "GitHub Private 設定"
 
-#: src/Git_Updater/API/GitHub_API.php:402
+#: src/Git_Updater/API/GitHub_API.php:401
 msgid "Enter your GitHub Access Token. Leave empty for public repositories."
 msgstr "輸入 GitHub 存取權杖。欄位留空僅能存取公開存放庫。"
 
-#: src/Git_Updater/API/GitHub_API.php:409
+#: src/Git_Updater/API/GitHub_API.php:408
 msgid ""
 "Enter your personal GitHub.com or GitHub Enterprise Access Token to avoid "
 "API access limits."
 msgstr "輸入個人 GitHub.com 或 GitHub Enterprise 存取權杖以避免 API 存取限制。"
 
-#: src/Git_Updater/API/GitHub_API.php:420
+#: src/Git_Updater/API/GitHub_API.php:419
 msgid "GitHub Access Token"
 msgstr "GitHub 存取權杖"
 
-#: src/Git_Updater/API/GitHub_API.php:434
+#: src/Git_Updater/API/GitHub_API.php:433
 msgid "GitHub"
 msgstr "GitHub"
 
-#: src/Git_Updater/API/GitHub_API.php:448
+#: src/Git_Updater/API/GitHub_API.php:447
 msgid "Enter GitHub Access Token for private GitHub repositories."
 msgstr "輸入 GitHub 私有存放庫的 GitHub 存取權杖。"
 
@@ -156,7 +156,7 @@ msgid "Free Trial"
 msgstr "免費試用版"
 
 #. translators: %s: documentation URL
-#: src/Git_Updater/Bootstrap.php:68
+#: src/Git_Updater/Bootstrap.php:72
 #, php-format
 msgid ""
 "Git Updater is missing required composer dependencies. <a href=\"%s\" target="
@@ -166,96 +166,96 @@ msgstr ""
 "\"noopenernoreferer\">進一步了解</a>"
 
 #. translators: 1: minimum PHP version required
-#: src/Git_Updater/Bootstrap.php:110
+#: src/Git_Updater/Bootstrap.php:114
 #, php-format
 msgid "Git Updater cannot run on PHP versions older than %1$s."
 msgstr "Git Updater 無法執行於比 PHP %1$s 版更舊的環境。"
 
-#: src/Git_Updater/Messages.php:116 src/Git_Updater/Messages.php:157
-#: src/Git_Updater/Messages.php:177
+#: src/Git_Updater/Messages.php:118 src/Git_Updater/Messages.php:162
+#: src/Git_Updater/Messages.php:182
 msgid "Git Updater Error Code:"
 msgstr "Git Updater 錯誤代碼:"
 
-#. translators: %s: wait time
-#: src/Git_Updater/Messages.php:123
+#. translators: %1$s: git server, %2$s: wait time
+#: src/Git_Updater/Messages.php:125
 #, php-format
-msgid "GitHub API&#8217;s rate limit will reset in %s minutes."
-msgstr "GitHub API 的使用量限制將在 %s 分鐘後重設。"
+msgid "%1$s API&#8217;s rate limit will reset in %2$s minutes."
+msgstr "%1$s API 的使用量限制將在 %2$s 分鐘後重設。"
 
-#. translators: %s: GitHub personal access token URL
-#: src/Git_Updater/Messages.php:129
+#. translators: %1$s: git server, %2$s: GitHub personal access token URL
+#: src/Git_Updater/Messages.php:132
 #, php-format
 msgid ""
-"It looks like you are running into GitHub API rate limits. Be sure and "
-"configure a <a href=\"%s\">Personal Access Token</a> to avoid this issue."
+"It looks like you are running into %1$s API rate limits. Be sure and "
+"configure a <a href=\"%2$s\">Personal Access Token</a> to avoid this issue."
 msgstr ""
-"你的 GitHub API 使用量限制接近上限。請設定<a href=\"%s\" target=\"_blank\">個"
+"你的 %1$s API 使用量限制接近上限。請設定<a href=\"%2$s\" target=\"_blank\">個"
 "人存取權杖</a>以避免發生這個狀況。"
 
-#: src/Git_Updater/Messages.php:161
+#: src/Git_Updater/Messages.php:166
 msgid ""
 "There is probably an access token or password error on the Git Updater "
 "Settings page."
 msgstr "在 Git Updater 設定頁面中，發生存取權杖或密碼設定錯誤。"
 
-#: src/Git_Updater/Messages.php:192
+#: src/Git_Updater/Messages.php:197
 msgid "Git Updater Information"
 msgstr "Git Updater 資訊"
 
-#: src/Git_Updater/Messages.php:194
+#: src/Git_Updater/Messages.php:199
 msgid "Please be patient while WP-Cron finishes making API calls."
 msgstr "請耐心等候 WP-Cron 完成 API 呼叫。"
 
-#: src/Git_Updater/Settings.php:133 src/Git_Updater/Settings.php:799
+#: src/Git_Updater/Settings.php:134 src/Git_Updater/Settings.php:801
 msgid "Settings"
 msgstr "設定"
 
-#: src/Git_Updater/Settings.php:161 src/Git_Updater/Settings.php:264
+#: src/Git_Updater/Settings.php:162 src/Git_Updater/Settings.php:266
 msgid "Git Updater"
 msgstr "Git Updater"
 
-#: src/Git_Updater/Settings.php:207 src/Git_Updater/Settings.php:361
+#: src/Git_Updater/Settings.php:209 src/Git_Updater/Settings.php:363
 msgid "Git Updater Settings"
 msgstr "Git Updater 設定"
 
-#: src/Git_Updater/Settings.php:208
+#: src/Git_Updater/Settings.php:210
 msgctxt "Menu item"
 msgid "Git Updater"
 msgstr "Git Updater"
 
-#: src/Git_Updater/Settings.php:286
+#: src/Git_Updater/Settings.php:288
 msgid "Refresh Cache"
 msgstr "重新整理快取"
 
-#: src/Git_Updater/Settings.php:329
+#: src/Git_Updater/Settings.php:331
 msgid "Settings saved."
 msgstr "設定已儲存。"
 
-#: src/Git_Updater/Settings.php:331
+#: src/Git_Updater/Settings.php:333
 msgid "Cache refreshed."
 msgstr "快取已重新整理。"
 
-#: src/Git_Updater/Settings.php:374
+#: src/Git_Updater/Settings.php:376
 msgid "Enable Branch Switching"
 msgstr "啟用分支版本切換"
 
-#: src/Git_Updater/Settings.php:387
+#: src/Git_Updater/Settings.php:389
 msgid "Bypass WP-Cron Background Processing for Debugging"
 msgstr "略過 WP-Cron 背景處理程序進行偵錯"
 
-#: src/Git_Updater/Settings.php:399
+#: src/Git_Updater/Settings.php:401
 msgid "Display `deprecated hook` messaging in debug.log"
 msgstr "在 debug.log 中顯示淘汰不用的勾點相關訊息"
 
-#: src/Git_Updater/Settings.php:562
+#: src/Git_Updater/Settings.php:564
 msgid "Check to enable."
 msgstr "點擊以啟用。"
 
-#: src/Git_Updater/Settings.php:594
+#: src/Git_Updater/Settings.php:596
 msgid "Overridden Plugins and Themes"
 msgstr "覆寫外掛及佈景主題"
 
-#: src/Git_Updater/Settings.php:595
+#: src/Git_Updater/Settings.php:597
 msgid ""
 "The following plugins or themes might exist on wp.org, but any updates will "
 "be downloaded from their respective git repositories."
@@ -263,21 +263,21 @@ msgstr ""
 "下列外掛或佈景主題並未上架至 WordPress.org 目錄，但可從各自所屬的 git 存放庫"
 "進行更新。"
 
-#: src/Git_Updater/Settings.php:833
+#: src/Git_Updater/Settings.php:835
 msgid "This is a private repository."
 msgstr "這是私有存放庫。"
 
-#: src/Git_Updater/Settings.php:834
+#: src/Git_Updater/Settings.php:836
 msgid "This repository has not connected to the API or was unable to connect."
 msgstr "這個存放庫無法連線至 API 或無法進行連線。"
 
-#: src/Git_Updater/Settings.php:835
+#: src/Git_Updater/Settings.php:837
 msgid "This repository is hosted on WordPress.org."
 msgstr "這個存放庫託管於 WordPress.org。"
 
-#: src/Git_Updater/Settings.php:877
+#: src/Git_Updater/Settings.php:879
 msgid "Installed Plugins and Themes"
-msgstr "已安裝的外掛和佈景主題"
+msgstr "已安裝的外掛及佈景主題"
 
 #. translators: %s: theme name
 #: src/Git_Updater/Theme.php:379 src/Git_Updater/Theme.php:504
@@ -371,6 +371,18 @@ msgstr "%1$s必須安裝的外掛%2$s"
 #: vendor/afragen/wp-dependency-installer/wp-dependency-installer.php:758
 msgid "Required by:"
 msgstr "提出要求的外掛:"
+
+#, php-format
+#~ msgid "GitHub API&#8217;s rate limit will reset in %s minutes."
+#~ msgstr "GitHub API 的使用量限制將在 %s 分鐘後重設。"
+
+#, php-format
+#~ msgid ""
+#~ "It looks like you are running into GitHub API rate limits. Be sure and "
+#~ "configure a <a href=\"%s\">Personal Access Token</a> to avoid this issue."
+#~ msgstr ""
+#~ "你的 GitHub API 使用量限制接近上限。請設定<a href=\"%s\" target=\"_blank"
+#~ "\">個人存取權杖</a>以避免發生這個狀況。"
 
 #~ msgid "Bitbucket Pseudo-Token"
 #~ msgstr "Bitbucket 虛擬權杖"

@@ -246,16 +246,16 @@
         },
         {
             "name": "mck89/peast",
-            "version": "v1.12.0",
+            "version": "v1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mck89/peast.git",
-                "reference": "833be7a294627a8c5b1c482cbf489f73bf9b8086"
+                "reference": "db38b1524f5bda921cbda2385e440c2bb71d18b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mck89/peast/zipball/833be7a294627a8c5b1c482cbf489f73bf9b8086",
-                "reference": "833be7a294627a8c5b1c482cbf489f73bf9b8086",
+                "url": "https://api.github.com/repos/mck89/peast/zipball/db38b1524f5bda921cbda2385e440c2bb71d18b4",
+                "reference": "db38b1524f5bda921cbda2385e440c2bb71d18b4",
                 "shasum": ""
             },
             "require": {
@@ -267,7 +267,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.12.0-dev"
+                    "dev-master": "1.13.0-dev"
                 }
             },
             "autoload": {
@@ -278,7 +278,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -289,9 +289,9 @@
             "description": "Peast is PHP library that generates AST for JavaScript code",
             "support": {
                 "issues": "https://github.com/mck89/peast/issues",
-                "source": "https://github.com/mck89/peast/tree/v1.12.0"
+                "source": "https://github.com/mck89/peast/tree/v1.13.0"
             },
-            "time": "2021-01-08T15:16:19+00:00"
+            "time": "2021-05-22T16:06:09+00:00"
         },
         {
             "name": "mustache/mustache",

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Git Updater\n"
-"POT-Creation-Date: 2021-05-27 16:28-0700\n"
-"PO-Revision-Date: 2021-05-27 16:29-0700\n"
+"POT-Creation-Date: 2021-06-16 01:46-0700\n"
+"PO-Revision-Date: 2021-06-16 01:47-0700\n"
 "Last-Translator: Alex Lion <learnwithalex@gmail.com>\n"
 "Language-Team: Alex Lion <learnwithalex@gmail.com>\n"
 "Language: zh_TW\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.4.3\n"
+"X-Generator: Poedit 3.0\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: github-updater.php\n"
@@ -275,51 +275,55 @@ msgstr "這個存放庫無法連線至 API 或無法進行連線。"
 msgid "This repository is hosted on WordPress.org."
 msgstr "這個存放庫託管於 WordPress.org。"
 
-#: src/Git_Updater/Settings.php:879
+#: src/Git_Updater/Settings.php:838
+msgid "This repository has been ignored and does not connect to the API."
+msgstr "這個存放庫已忽略，且不會連線至 API。"
+
+#: src/Git_Updater/Settings.php:882
 msgid "Installed Plugins and Themes"
 msgstr "已安裝的外掛及佈景主題"
 
 #. translators: %s: theme name
-#: src/Git_Updater/Theme.php:379 src/Git_Updater/Theme.php:504
+#: src/Git_Updater/Theme.php:387 src/Git_Updater/Theme.php:513
 #, php-format
 msgid "There is a new version of %s available."
 msgstr "%s 有新版本可供下載安裝。"
 
 #. translators: %s: theme version
-#: src/Git_Updater/Theme.php:391
+#: src/Git_Updater/Theme.php:399
 #, php-format
 msgid "View version %s details."
 msgstr "檢視 %s 版的詳細資料。"
 
-#: src/Git_Updater/Theme.php:395
+#: src/Git_Updater/Theme.php:403
 msgid "Automatic update is unavailable for this theme."
 msgstr "這個佈景主題無法使用自動更新。"
 
 #. translators: 1: version number, 2: closing anchor tag, 3: update URL
-#: src/Git_Updater/Theme.php:400 src/Git_Updater/Theme.php:515
+#: src/Git_Updater/Theme.php:408 src/Git_Updater/Theme.php:524
 #, php-format
 msgid "View version %1$s details%2$s or %3$supdate now%2$s."
 msgstr "檢視 %1$s 版的詳細資料%2$s或%3$s立即更新%2$s。"
 
 #. translators: %s: theme name
-#: src/Git_Updater/Theme.php:405 src/Git_Updater/Theme.php:520
+#: src/Git_Updater/Theme.php:413 src/Git_Updater/Theme.php:529
 #, php-format
 msgid "Update %s now"
 msgstr "立即更新 %s"
 
 #. translators: 1: version number, 2: closing anchor tag, 3: update URL
-#: src/Git_Updater/Theme.php:527
+#: src/Git_Updater/Theme.php:536
 #, php-format
 msgid "View version %1$s details%2$s."
 msgstr "檢視 %1$s 版的詳細資料%2$s。"
 
 #. translators: %s: opening/closing paragraph and italic tags
-#: src/Git_Updater/Theme.php:533
+#: src/Git_Updater/Theme.php:542
 #, php-format
 msgid "%1$sAutomatic update is unavailable for this theme.%2$s"
 msgstr "%1$s這個佈景主題不提供自動更新功能%2$s。"
 
-#: src/Git_Updater/Traits/GU_Trait.php:657
+#: src/Git_Updater/Traits/GU_Trait.php:667
 msgid ""
 "There may be a problem with WP-Cron. A Git Updater WP-Cron event is overdue."
 msgstr "WP-Cron 執行時發生問題。Git Updater 的 WP-Cron 事件已逾期。"

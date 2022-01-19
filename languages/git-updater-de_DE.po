@@ -494,7 +494,7 @@ msgstr "Automatisches Update ist nicht verfügbar für dieses Theme."
 #, fuzzy, php-format
 #| msgid "View version %1$s details%2$s or %3$supdate now%4$s."
 msgid "View version %1$s details%2$s or %3$supdate now%2$s."
-msgstr "Zeige Details der Version%1$s %2$s oder %3$saktualisiere jetzt%4$s."
+msgstr "Zeige Details der Version%1$s %2$s oder %3$saktualisiere jetzt%2$s."
 
 #. translators: %s: theme name
 #: src/GitHub_Updater/Theme.php:363 src/GitHub_Updater/Theme.php:548

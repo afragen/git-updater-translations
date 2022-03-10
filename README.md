@@ -44,3 +44,16 @@ $transient->translations( array(
 ```
 
 Git Updater merges the correlative plugin or theme data with the data retrieved from the `language-pack.json` to add data to the update transient.
+
+## Add-On Translations
+
+Translation repositories for the Add-Ons are located in the following individual repositories. The above instructions apply.
+
+* [Git Updater PRO translations](https://github.com/afragen/git-updater-pro-translations)
+* [Git Updater Additions translations](https://github.com/afragen/git-updater-additions-translations)
+* [Git Remote Updater translations](https://github.com/afragen/git-remote-updater-translations)
+
+* [Git Updater - Bitbucket translations](https://github.com/afragen/git-updater-bitbucket-translations)
+* [Git Updater - GitLab translations](https://github.com/afragen/git-updater-gitlab-translations)
+* [Git Updater - Gitea translations](https://github.com/afragen/git-updater-gitea-translations)
+* [Git Updater - Gist translations](https://github.com/afragen/git-updater-gist-translations)

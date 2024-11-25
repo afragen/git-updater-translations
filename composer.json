@@ -31,7 +31,7 @@
     "afragen/language-pack-maker": "dev-master"
   },
   "scripts": {
-    "post-update-cmd": [
+    "make-language-packs": [
       "php ./vendor/autoload.php"
     ]
   }

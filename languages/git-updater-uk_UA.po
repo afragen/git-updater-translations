@@ -1,14 +1,14 @@
-# Translation of Git Updater in Chinese (Taiwan)
+# Translation of Git Updater in Ukrainian
 # This file is distributed under the same license as the Git Updater package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-03-15 16:05:35+0000\n"
+"PO-Revision-Date: 2022-03-15 16:04:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
 "X-Generator: GlotPress/4.0.1\n"
-"Language: zh_TW\n"
+"Language: uk_UA\n"
 "Project-Id-Version: Git Updater\n"
 
 #. translators: link to REST API endpoint for branch resetting
@@ -234,122 +234,122 @@ msgstr ""
 
 #: src/Git_Updater/Traits/GU_Trait.php:677
 msgid "There may be a problem with WP-Cron. A Git Updater WP-Cron event is overdue."
-msgstr "WP-Cron 執行時發生問題。Git Updater 的 WP-Cron 事件已逾期。"
+msgstr ""
 
 #. translators: %s: opening/closing paragraph and italic tags
 #: src/Git_Updater/Theme.php:538
 msgid "%1$sAutomatic update is unavailable for this theme.%2$s"
-msgstr "%1$s這個佈景主題不提供自動更新功能%2$s。"
+msgstr ""
 
 #. translators: 1: version number, 2: closing anchor tag, 3: update URL
 #: src/Git_Updater/Theme.php:532
 msgid "View version %1$s details%2$s."
-msgstr "檢視 %1$s 版的詳細資料%2$s。"
+msgstr ""
 
 #. translators: %s: theme name
 #: src/Git_Updater/Theme.php:410 src/Git_Updater/Theme.php:525
 msgid "Update %s now"
-msgstr "立即更新 %s"
+msgstr "Оновити %s зараз"
 
 #. translators: 1: version number, 2: closing anchor tag, 3: update URL
 #: src/Git_Updater/Theme.php:405 src/Git_Updater/Theme.php:520
 msgid "View version %1$s details%2$s or %3$supdate now%2$s."
-msgstr "檢視 %1$s 版的詳細資料%2$s或%3$s立即更新%2$s。"
+msgstr ""
 
 #: src/Git_Updater/Theme.php:400
 msgid "Automatic update is unavailable for this theme."
-msgstr "這個佈景主題無法使用自動更新。"
+msgstr "Автоматичне оновлення недоступно для цієї теми."
 
 #. translators: %s: theme version
 #: src/Git_Updater/Theme.php:396
 msgid "View version %s details."
-msgstr "檢視 %s 版的詳細資料。"
+msgstr "Перегляд версії %s деталі"
 
 #. translators: %s: theme name
 #: src/Git_Updater/Theme.php:384 src/Git_Updater/Theme.php:509
 msgid "There is a new version of %s available."
-msgstr "%s 有新版本可供下載安裝。"
+msgstr "З'явилася нова версія %s не доступний."
 
 #: src/Git_Updater/Settings.php:929
 msgid "Installed Plugins and Themes"
-msgstr "已安裝的外掛及佈景主題"
+msgstr "Встановлених модулів і темами"
 
 #: src/Git_Updater/Settings.php:885
 msgid "This repository has been ignored and does not connect to the API."
-msgstr "這個存放庫已忽略，且不會連線至 API。"
+msgstr ""
 
 #: src/Git_Updater/Settings.php:884
 msgid "This repository is hosted on WordPress.org."
-msgstr "這個存放庫託管於 WordPress.org。"
+msgstr ""
 
 #: src/Git_Updater/Settings.php:883
 msgid "This repository has not connected to the API or was unable to connect."
-msgstr "這個存放庫無法連線至 API 或無法進行連線。"
+msgstr ""
 
 #: src/Git_Updater/Settings.php:882
 msgid "This is a private repository."
-msgstr "這是私有存放庫。"
+msgstr ""
 
 #: src/Git_Updater/Settings.php:651
 msgid "The following plugins or themes might exist on wp.org, but any updates will be downloaded from their respective git repositories."
-msgstr "下列外掛或佈景主題並未上架至 WordPress.org 目錄，但可從各自所屬的 git 存放庫進行更新。"
+msgstr ""
 
 #: src/Git_Updater/Settings.php:650
 msgid "Overridden Plugins and Themes"
-msgstr "覆寫外掛及佈景主題"
+msgstr ""
 
 #: src/Git_Updater/Settings.php:611
 msgid "Check to enable."
-msgstr "點擊以啟用。"
+msgstr ""
 
 #: src/Git_Updater/Settings.php:448
 msgid "Display `deprecated hook` messaging in debug.log"
-msgstr "在 debug.log 中顯示淘汰不用的勾點相關訊息"
+msgstr ""
 
 #: src/Git_Updater/Settings.php:436
 msgid "Bypass WP-Cron Background Processing for Debugging"
-msgstr "略過 WP-Cron 背景處理程序進行偵錯"
+msgstr ""
 
 #: src/Git_Updater/Settings.php:424
 msgid "Enable Branch Switching"
-msgstr "啟用分支版本切換"
+msgstr "Дозволити переключення відділення"
 
 #: src/Git_Updater/Settings.php:380
 msgid "Cache refreshed."
-msgstr "快取已重新整理。"
+msgstr "Кеш оновилася."
 
 #: src/Git_Updater/Settings.php:378
 msgid "Settings saved."
-msgstr "設定已儲存。"
+msgstr "Настройки збережені."
 
 #: src/Git_Updater/Settings.php:333
 msgid "Refresh Cache"
-msgstr "重新整理快取"
+msgstr "Оновити кеш"
 
 #: src/Git_Updater/Settings.php:252
 msgctxt "Menu item"
 msgid "Git Updater"
-msgstr "Git Updater"
+msgstr ""
 
 #: src/Git_Updater/Settings.php:251 src/Git_Updater/Settings.php:411
 msgid "Git Updater Settings"
-msgstr "Git Updater 設定"
+msgstr ""
 
 #: src/Git_Updater/Settings.php:148 src/Git_Updater/Settings.php:848
 msgid "Settings"
-msgstr "設定"
+msgstr "Налаштування"
 
 #: src/Git_Updater/Messages.php:207
 msgid "Please be patient while WP-Cron finishes making API calls."
-msgstr "請耐心等候 WP-Cron 完成 API 呼叫。"
+msgstr ""
 
 #: src/Git_Updater/Messages.php:205
 msgid "Git Updater Information"
-msgstr "Git Updater 資訊"
+msgstr ""
 
 #: src/Git_Updater/Messages.php:174
 msgid "There is probably an access token or password error on the Git Updater Settings page."
-msgstr "在 Git Updater 設定頁面中，發生存取權杖或密碼設定錯誤。"
+msgstr ""
 
 #. translators: %1$s: git server, %2$s: GitHub personal access token URL
 #: src/Git_Updater/Messages.php:140
@@ -359,21 +359,21 @@ msgstr ""
 #. translators: %1$s: git server, %2$s: wait time
 #: src/Git_Updater/Messages.php:133
 msgid "%1$s API&#8217;s rate limit will reset in %2$s minutes."
-msgstr "%1$s API 的使用量限制將在 %2$s 分鐘後重設。"
+msgstr ""
 
 #: src/Git_Updater/Messages.php:126 src/Git_Updater/Messages.php:170
 #: src/Git_Updater/Messages.php:190
 msgid "Git Updater Error Code:"
-msgstr "Git Updater 錯誤代碼:"
+msgstr ""
 
 #. translators: 1: minimum PHP version required
 #: src/Git_Updater/Bootstrap.php:120
 msgid "Git Updater cannot run on PHP versions older than %1$s."
-msgstr "Git Updater 無法執行於比 PHP %1$s 版更舊的環境。"
+msgstr ""
 
 #: src/Git_Updater/API/GitHub_API.php:451
 msgid "Enter GitHub Access Token for private GitHub repositories."
-msgstr "輸入 GitHub 私有存放庫的 GitHub 存取權杖。"
+msgstr "Введіть GitHub маркер доступу для приватних GitHub сховищах."
 
 #: src/Git_Updater/API/GitHub_API.php:437
 msgid "GitHub"
@@ -381,64 +381,64 @@ msgstr "GitHub"
 
 #: src/Git_Updater/API/GitHub_API.php:423
 msgid "GitHub Access Token"
-msgstr "GitHub 存取權杖"
+msgstr "Маркер доступу GitHub"
 
 #: src/Git_Updater/API/GitHub_API.php:410
 msgid "Enter your personal GitHub.com or GitHub Enterprise Access Token to avoid API access limits."
-msgstr "輸入個人 GitHub.com 或 GitHub Enterprise 存取權杖以避免 API 存取限制。"
+msgstr "Введіть ваш особистий GitHub.com або GitHub підприємство доступ до маркера уникнути обмеження доступу до API."
 
 #: src/Git_Updater/API/GitHub_API.php:403
 msgid "Enter your GitHub Access Token. Leave empty for public repositories."
-msgstr "輸入 GitHub 存取權杖。欄位留空僅能存取公開存放庫。"
+msgstr "Введіть маркер доступу GitHub. Залиште порожнім для публічних сховищ."
 
 #: src/Git_Updater/API/GitHub_API.php:376
 msgid "GitHub Private Settings"
-msgstr "GitHub Private 設定"
+msgstr "Налаштування приватного GitHub"
 
 #: src/Git_Updater/API/GitHub_API.php:360
 msgid "GitHub.com Access Token"
-msgstr "GitHub.com 存取權杖"
+msgstr "Маркер доступу GitHub.com"
 
 #: src/Git_Updater/API/GitHub_API.php:353
 msgid "GitHub Personal Access Token"
-msgstr "GitHub Personal 存取權杖"
+msgstr "Маркер доступу GitHub персональних"
 
 #: src/Git_Updater/Add_Ons.php:314 src/Git_Updater/Add_Ons.php:318
 msgid "Install & Activate"
-msgstr "安裝並啟用"
+msgstr ""
 
 #: src/Git_Updater/Add_Ons.php:201
 msgid "Install additional API plugins."
-msgstr "安裝其他 API 附加元件。"
+msgstr ""
 
 #: src/Git_Updater/Add_Ons.php:128 src/Git_Updater/Add_Ons.php:188
 msgid "API Add-Ons"
-msgstr "API 附加元件"
+msgstr ""
 
 #: src/Git_Updater/Add_Ons.php:171
 msgid "Git Updater API plugin installed."
-msgstr "Git Updater API 外掛已安裝。"
+msgstr ""
 
 #: src/Git_Updater/Add_Ons.php:99
 msgid "Git Updater - Gitea"
-msgstr "Git Updater - Gitea"
+msgstr ""
 
 #: src/Git_Updater/Add_Ons.php:86
 msgid "Git Updater - GitLab"
-msgstr "Git Updater - GitLab"
+msgstr ""
 
 #: src/Git_Updater/Add_Ons.php:73
 msgid "Git Updater - Bitbucket"
-msgstr "Git Updater - Bitbucket"
+msgstr ""
 
 #: src/Git_Updater/Add_Ons.php:60
 msgid "Git Updater - Gist"
-msgstr "Git Updater - Gist"
+msgstr ""
 
 #. Author of the plugin
 #: git-updater.php
 msgid "Andy Fragen"
-msgstr ""
+msgstr "Енді Фраген"
 
 #. Description of the plugin
 #: git-updater.php
@@ -454,4 +454,4 @@ msgstr ""
 #: git-updater.php src/Git_Updater/Settings.php:176
 #: src/Git_Updater/Settings.php:309
 msgid "Git Updater"
-msgstr "Git Updater"
+msgstr ""
